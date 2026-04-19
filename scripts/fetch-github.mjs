@@ -181,25 +181,44 @@ async function fetchReadme(slug, token) {
   const r = await gh(`https://api.github.com/repos/${USERNAME}/${slug}/readme`, token, {
     Accept: 'application/vnd.github.raw',
   })
-  if (r.status === 404) return null
+  if (r.status === 404 || r.status === 403) return null
   if (!r.ok) throw new Error(`readme ${slug}: ${r.status}`)
   return await r.text()
+}
+
+// Read the existing generated file so we can preserve READMEs we already
+// fetched locally (e.g. private repos) when CI only has a public token.
+function readExistingReadmes() {
+  try {
+    if (!existsSync(OUT)) return {}
+    const src = readFileSync(OUT, 'utf8')
+    const m = src.match(/export const GH_READMES[^=]*=\s*(\{[\s\S]*?\n\})\s*\n\nexport const GH_GENERATED_AT/)
+    if (!m) return {}
+    return JSON.parse(m[1])
+  } catch (e) {
+    console.warn(`[github] could not parse existing READMEs: ${e.message}`)
+    return {}
+  }
 }
 
 async function main() {
   const token = getToken()
   if (!token) {
-    console.log('[github] no token found — writing stub, skipping fetch')
-    await writeStub()
+    console.log('[github] no token found — keeping committed github.generated.ts as-is')
     return
   }
   console.log('[github] fetching build-time data...')
 
   const slugs = readProjects()
+  const existing = readExistingReadmes()
   let profile = null
   let contribs = null
   let languages = []
-  const readmes = {}
+  // Start from what's already committed — fresh fetches overwrite, failed
+  // fetches fall back to the committed copy. This lets private-repo READMEs
+  // ship via a local `pnpm fetch:github` + git commit without needing a
+  // PAT in CI.
+  const readmes = { ...existing }
 
   try {
     profile = await fetchProfile(token)
@@ -224,23 +243,27 @@ async function main() {
 
   let ok = 0,
     miss = 0,
-    priv = 0
+    kept = 0
   for (const slug of slugs) {
     try {
       const md = await fetchReadme(slug, token)
       if (md) {
         readmes[slug] = md
         ok++
+      } else if (existing[slug]) {
+        // Couldn't fetch (likely private + public-only token) — keep the
+        // committed copy.
+        kept++
       } else {
         miss++
       }
     } catch (e) {
-      miss++
-      if (String(e.message).includes('404')) priv++
+      if (existing[slug]) kept++
+      else miss++
       console.warn(`[github] readme ${slug}: ${e.message}`)
     }
   }
-  console.log(`[github] readmes: ${ok} fetched · ${miss} missing`)
+  console.log(`[github] readmes: ${ok} fresh · ${kept} kept from cache · ${miss} missing`)
 
   await write({ profile, contribs, languages, readmes })
 }
@@ -299,6 +322,6 @@ export const GH_GENERATED_AT = ${JSON.stringify(new Date().toISOString())}
 
 main().catch((e) => {
   console.error('[github] fatal:', e)
-  // Don't fail the build — write a stub so the site still renders.
-  writeStub().finally(() => process.exit(0))
+  // Don't fail the build — the committed github.generated.ts will be used.
+  process.exit(0)
 })

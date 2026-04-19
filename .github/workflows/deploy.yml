@@ -65,9 +65,11 @@ jobs:
       - name: Build
         env:
           VITE_BASE: /${{ github.event.repository.name }}/
-          # GH_TOKEN: PAT with `repo` scope (private READMEs).
-          # Fall back to the default GITHUB_TOKEN (public only) if absent.
-          GH_TOKEN: ${{ secrets.GH_README_TOKEN || secrets.GITHUB_TOKEN }}
+          # Default GITHUB_TOKEN refreshes public-repo stats & READMEs.
+          # Private READMEs are fetched locally via `pnpm fetch:github`
+          # and committed to src/lib/data/github.generated.ts — the fetch
+          # script merges, preserving cached private copies.
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: pnpm build
 
       - name: Copy 404 fallback

@@ -154,11 +154,19 @@ pnpm dev
 - the **language breakdown** (top 8)
 - the **README.md** of every curated project — **including private repos**
 
-It reads a token from `GH_TOKEN` / `GITHUB_TOKEN`, or falls back to
-`gh auth token` when you run locally. In CI the deploy workflow uses
-`secrets.GH_README_TOKEN` (optional) — a classic PAT with `repo` scope —
-so private READMEs ship with the static site. If no token is present the
-script writes an empty stub so the build never breaks.
+It reads a token from `GH_TOKEN` / `GITHUB_TOKEN`, and falls back to
+`gh auth token` when you run locally. The generated file
+`src/lib/data/github.generated.ts` is **committed** so private READMEs you
+fetched locally stay baked into the deployed site — no CI secrets needed.
+CI uses the default `GITHUB_TOKEN` to refresh public stats; the fetch
+script **merges**, preserving any README it can't re-fetch.
+
+To refresh before pushing:
+
+```sh
+pnpm fetch:github     # pulls fresh stats + private READMEs via `gh auth`
+git add src/lib/data/github.generated.ts && git commit -m "data: refresh github snapshot"
+```
 
 ### Keyboard
 
