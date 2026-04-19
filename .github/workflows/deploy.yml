@@ -6,7 +6,7 @@ on:
   # Weekly rebuild — keeps the site fresh and catches environmental drift
   # (toolchain updates, dependency rot, dead links in thumbnails, etc.).
   schedule:
-    - cron: '0 6 * * 1' # every Monday, 06:00 UTC
+    - cron: "0 6 * * 1" # every Monday, 06:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -20,7 +20,7 @@ concurrency:
 
 # Opt into Node.js 24 for all actions (Node 20 deprecates Sept 2026).
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
   build:

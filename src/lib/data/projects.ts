@@ -23,8 +23,8 @@ export const PROFILE = {
   headline: "Rust · TypeScript · WebAssembly · agentic AI",
   tagline:
     "Systems tinkerer · Rust · TypeScript · agentic AI, tiny shells, and interesting OSes",
-  location: "Remote · Indiana, USA (NA/EST time zones)",
-  status: "available for hire",
+  location: "Remote · USA (NA/EST time zones)",
+  status: "Open to opportunities",
   years: 6, // years of professional experience — tweak as you like
   url: "https://github.com/Fanaperana",
   siteUrl: "https://fanaperana.github.io/portfolio/",
