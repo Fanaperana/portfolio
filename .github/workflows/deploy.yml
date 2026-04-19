@@ -3,6 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Weekly rebuild — keeps the site fresh and catches environmental drift
+  # (toolchain updates, dependency rot, dead links in thumbnails, etc.).
+  schedule:
+    - cron: '0 6 * * 1' # every Monday, 06:00 UTC
   workflow_dispatch:
 
 permissions:

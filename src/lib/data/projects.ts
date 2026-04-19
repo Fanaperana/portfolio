@@ -27,7 +27,7 @@ export const PROFILE = {
   status: "available for hire",
   years: 6, // years of professional experience — tweak as you like
   url: "https://github.com/Fanaperana",
-  siteUrl: "https://fanaperana.github.io",
+  siteUrl: "https://fanaperana.github.io/portfolio/",
   avatar: "https://avatars.githubusercontent.com/u/31814043?v=4",
   // TODO: swap placeholder values below with your real contact info.
   email: "fanaperanaprince@gmail.com",

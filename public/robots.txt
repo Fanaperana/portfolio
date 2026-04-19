@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fanaperana.github.io/portfolio/sitemap.xml

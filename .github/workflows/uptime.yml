@@ -1,0 +1,51 @@
+name: Uptime Healthcheck
+
+# Pings the live portfolio every 30 minutes. If it returns anything other
+# than a 200, the job fails AND automatically triggers the Deploy workflow
+# to bring the site back up. You will also see a red X in the Actions tab
+# which GitHub notifies you about by email by default.
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # every 30 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write # needed to re-dispatch the deploy workflow
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: HTTP GET homepage
+        id: check
+        run: |
+          URL="https://fanaperana.github.io/portfolio/"
+          echo "Pinging $URL"
+          HTTP_CODE=$(curl -s -o /tmp/body.html -w "%{http_code}" --max-time 30 --retry 3 --retry-delay 5 "$URL")
+          echo "status=$HTTP_CODE" >> "$GITHUB_OUTPUT"
+          echo "HTTP $HTTP_CODE"
+          # Must be 200 AND must contain the app shell (<div id="app">)
+          if [ "$HTTP_CODE" != "200" ]; then
+            echo "::error::Site returned non-200 ($HTTP_CODE)"
+            exit 1
+          fi
+          if ! grep -q 'id="app"' /tmp/body.html; then
+            echo "::error::Site returned 200 but the app shell is missing"
+            exit 1
+          fi
+          echo "OK"
+
+      - name: Auto-redeploy on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'deploy.yml',
+              ref: 'main',
+            })
+            core.warning('Healthcheck failed — re-triggered deploy.yml')
