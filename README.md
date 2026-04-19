@@ -140,10 +140,36 @@ pnpm dev
 
 | Script             | What it does                                          |
 |--------------------|-------------------------------------------------------|
-| `pnpm build`       | Build the WASM crate + the production Vite bundle     |
+| `pnpm build`       | WASM + build-time GitHub fetch + production Vite bundle |
 | `pnpm preview`     | Preview the production build                          |
+| `pnpm fetch:github`| Refresh `src/lib/data/github.generated.ts`            |
 | `pnpm check`       | `svelte-check` + `tsc` on the Node-side config        |
 | `pnpm test:rust`   | `cargo test -p mini-shell`                            |
+
+### Build-time GitHub pipeline
+
+`scripts/fetch-github.mjs` runs on every build and bakes live data into the bundle:
+
+- the **contribution heatmap** (last 12 months, via GraphQL)
+- the **language breakdown** (top 8)
+- the **README.md** of every curated project — **including private repos**
+
+It reads a token from `GH_TOKEN` / `GITHUB_TOKEN`, or falls back to
+`gh auth token` when you run locally. In CI the deploy workflow uses
+`secrets.GH_README_TOKEN` (optional) — a classic PAT with `repo` scope —
+so private READMEs ship with the static site. If no token is present the
+script writes an empty stub so the build never breaks.
+
+### Keyboard
+
+| Keys                                          | What it does                        |
+|-----------------------------------------------|-------------------------------------|
+| <kbd>⌘</kbd> / <kbd>Ctrl</kbd> + <kbd>K</kbd> | open the command palette            |
+| <kbd>/</kbd>                                  | open the palette (when not typing)  |
+| <kbd>Esc</kbd>                                | close palette or project modal      |
+
+Project cards open a **case-study modal** (URL-addressable via `#/p/<slug>`)
+that renders the repo's README with sanitized HTML (marked + DOMPurify).
 
 ## Repo layout
 

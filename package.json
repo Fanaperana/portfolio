@@ -6,8 +6,9 @@
   "scripts": {
     "wasm": "wasm-pack build crates/mini-shell --target web --out-dir pkg --release",
     "wasm:dev": "wasm-pack build crates/mini-shell --target web --out-dir pkg --dev",
+    "fetch:github": "node scripts/fetch-github.mjs",
     "dev": "vite",
-    "build": "pnpm wasm && vite build",
+    "build": "pnpm wasm && pnpm fetch:github && vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
     "test:rust": "cargo test -p mini-shell"
@@ -34,5 +35,9 @@
     "typescript": "~6.0.2",
     "vite": "^8.0.4",
     "vite-plugin-wasm": "^3.6.0"
+  },
+  "dependencies": {
+    "dompurify": "^3.4.0",
+    "marked": "^18.0.2"
   }
 }

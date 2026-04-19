@@ -13,6 +13,7 @@
     Layers,
   } from "@lucide/svelte";
   import { PROFILE, PROJECTS } from "$lib/data/projects";
+  import GitHubStats from "./GitHubStats.svelte";
 
   const items = [
     {
@@ -179,4 +180,7 @@
       </Card.Content>
     </Card.Root>
   </div>
+
+  <!-- GitHub heatmap + language breakdown (build-time fetched) -->
+  <GitHubStats />
 </section>

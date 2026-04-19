@@ -4,8 +4,15 @@
   import * as Card from '$lib/components/ui/card'
   import { Badge } from '$lib/components/ui/badge'
   import { Star, ArrowUpRight, Lock, ExternalLink } from '@lucide/svelte'
+  import GithubIcon from './icons/GithubIcon.svelte'
 
   let { project }: { project: Project } = $props()
+
+  function openDetail(e: MouseEvent | KeyboardEvent) {
+    e.preventDefault()
+    // Set hash; ProjectDetail listens for hashchange.
+    location.hash = `#/p/${project.slug}`
+  }
 
   const gradients: Record<string, string> = {
     teal: 'from-teal-500/25 to-cyan-900/10',
@@ -31,11 +38,15 @@
   })
 </script>
 
-<a
-  href={project.url}
-  target="_blank"
-  rel="noreferrer"
-  class="group block transition hover:-translate-y-0.5 hover:shadow-[0_0_30px_-8px_var(--color-accent-soft)]"
+<div
+  role="button"
+  tabindex="0"
+  aria-label={`Open ${project.title} case study`}
+  onclick={openDetail}
+  onkeydown={(e) => {
+    if (e.key === 'Enter' || e.key === ' ') openDetail(e)
+  }}
+  class="group block cursor-pointer transition hover:-translate-y-0.5 hover:shadow-[0_0_30px_-8px_var(--color-accent-soft)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
 >
   <Card.Root
     class="gap-0 overflow-hidden border-border/80 bg-card/60 py-0 transition group-hover:border-primary/60"
@@ -109,20 +120,36 @@
         </span>
       </div>
       <p class="flex-1 text-sm text-muted-foreground">{project.description}</p>
-      {#if project.homepage}
-        <button
-          type="button"
-          class="group/link inline-flex w-fit items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-2.5 py-1 font-mono text-[11px] text-primary transition hover:border-primary hover:bg-primary/20"
-          onclick={(e) => {
-            e.preventDefault()
-            e.stopPropagation()
-            window.open(project.homepage, '_blank', 'noopener,noreferrer')
-          }}
-        >
-          <ExternalLink class="size-3" />
-          <span>visit {new URL(project.homepage).host.replace(/^www\./, '')}</span>
-        </button>
-      {/if}
+      <div class="flex flex-wrap gap-2">
+        {#if project.visibility !== 'private'}
+          <button
+            type="button"
+            class="group/link inline-flex w-fit items-center gap-1.5 rounded-full border border-border/60 bg-background/60 px-2.5 py-1 font-mono text-[11px] text-muted-foreground transition hover:border-primary/60 hover:text-primary"
+            onclick={(e) => {
+              e.preventDefault()
+              e.stopPropagation()
+              window.open(project.url, '_blank', 'noopener,noreferrer')
+            }}
+          >
+            <GithubIcon class="size-3" />
+            <span>github</span>
+          </button>
+        {/if}
+        {#if project.homepage}
+          <button
+            type="button"
+            class="group/link inline-flex w-fit items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-2.5 py-1 font-mono text-[11px] text-primary transition hover:border-primary hover:bg-primary/20"
+            onclick={(e) => {
+              e.preventDefault()
+              e.stopPropagation()
+              window.open(project.homepage, '_blank', 'noopener,noreferrer')
+            }}
+          >
+            <ExternalLink class="size-3" />
+            <span>visit {new URL(project.homepage).host.replace(/^www\./, '')}</span>
+          </button>
+        {/if}
+      </div>
       <div class="flex flex-wrap gap-1">
         {#each project.tags.slice(0, 5) as t}
           <Badge variant="outline" class="font-mono text-[10px] text-muted-foreground/80">
@@ -132,4 +159,4 @@
       </div>
     </div>
   </Card.Root>
-</a>
+</div>

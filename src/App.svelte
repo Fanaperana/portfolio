@@ -5,6 +5,8 @@
   import Terminal from '$lib/components/Terminal.svelte'
   import Projects from '$lib/components/Projects.svelte'
   import Footer from '$lib/components/Footer.svelte'
+  import ProjectDetail from '$lib/components/ProjectDetail.svelte'
+  import CommandPalette from '$lib/components/CommandPalette.svelte'
 </script>
 
 <div class="min-h-screen">
@@ -16,4 +18,6 @@
     <Projects />
   </main>
   <Footer />
+  <ProjectDetail />
+  <CommandPalette />
 </div>
