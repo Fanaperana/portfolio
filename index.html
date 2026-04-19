@@ -1,15 +1,106 @@
 <!doctype html>
 <html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark" />
-    <meta name="description" content="Fanaperana — portfolio. A Vite + Svelte site powered by a Rust → WASM mini-shell. Rust, TypeScript, tiny tools." />
-    <title>Fanaperana · portfolio</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0a0b10" />
+
+  <!-- Primary meta -->
+  <title>Fanaperana — Software Engineer · Rust · TypeScript · Agentic AI</title>
+  <meta name="description" content="Portfolio of Fanaperana — software engineer focused on Rust, TypeScript, WebAssembly, agentic AI, and developer tooling. Live, interactive site powered by a hand-rolled Rust → WASM mini-shell." />
+  <meta name="keywords" content="Fanaperana, software engineer portfolio, Rust engineer, TypeScript developer, WebAssembly, wasm-pack, Svelte 5, Vite, Tauri, agentic AI, LLM agents, systems programming, developer portfolio, open to work, hire Rust developer" />
+  <meta name="author" content="Fanaperana" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://fanaperana.github.io/" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="mask-icon" href="/favicon.svg" color="#5eead4" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Fanaperana · Portfolio" />
+  <meta property="og:title" content="Fanaperana — Software Engineer · Rust · TypeScript · Agentic AI" />
+  <meta property="og:description" content="A handwritten portfolio powered by a Rust → WASM mini-shell. Type real pipelines against a curated project list. Open to work." />
+  <meta property="og:url" content="https://fanaperana.github.io/" />
+  <meta property="og:image" content="https://fanaperana.github.io/og-image.png" />
+  <meta property="og:image:alt" content="Fanaperana portfolio — terminal-inspired Rust + Svelte site" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fanaperana — Software Engineer · Rust · TypeScript · Agentic AI" />
+  <meta name="twitter:description" content="A handwritten portfolio powered by a Rust → WASM mini-shell. Type real pipelines against a curated project list." />
+  <meta name="twitter:image" content="https://fanaperana.github.io/og-image.png" />
+
+  <!-- Preload hero font subset (Inter Variable is imported via CSS) -->
+  <link rel="preconnect" href="https://avatars.githubusercontent.com" crossorigin />
+
+  <!-- JSON-LD: Person / portfolio -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Fanaperana",
+      "alternateName": "Fanaperana",
+      "url": "https://fanaperana.github.io/",
+      "image": "https://avatars.githubusercontent.com/u/31814043?v=4",
+      "jobTitle": "Software Engineer",
+      "description": "Software engineer focused on Rust, TypeScript, WebAssembly, agentic AI, and developer tooling.",
+      "sameAs": [
+        "https://github.com/Fanaperana"
+      ],
+      "knowsAbout": [
+        "Rust",
+        "TypeScript",
+        "WebAssembly",
+        "Svelte",
+        "Tauri",
+        "Agentic AI",
+        "LLM agents",
+        "Systems programming",
+        "Developer tooling",
+        "Operating systems",
+        "Wayland compositors"
+      ]
+    }
+  </script>
+
+  <!-- JSON-LD: the site itself -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Fanaperana · Portfolio",
+      "url": "https://fanaperana.github.io/",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "name": "Fanaperana"
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <noscript>
+    <div style="padding:2rem;font-family:ui-monospace,monospace;color:#d7dbe6;background:#0a0b10;">
+      <h1>Fanaperana — Portfolio</h1>
+      <p>
+        This site is interactive (Rust → WASM mini-shell + Svelte). Please enable JavaScript,
+        or visit
+        <a href="https://github.com/Fanaperana" style="color:#5eead4">github.com/Fanaperana</a>
+        to browse my work directly.
+      </p>
+    </div>
+  </noscript>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
