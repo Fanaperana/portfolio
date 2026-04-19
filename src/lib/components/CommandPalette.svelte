@@ -7,7 +7,7 @@
     · terminal commands (executed when focused in the terminal)
 -->
 <script lang="ts">
-  import { onMount, tick } from 'svelte'
+  import { onMount, tick } from "svelte";
   import {
     Search,
     User,
@@ -20,156 +20,162 @@
     CornerDownLeft,
     ExternalLink,
     Eye,
-  } from '@lucide/svelte'
-  import { PROFILE, PROJECTS } from '$lib/data/projects'
-  import GithubIcon from './icons/GithubIcon.svelte'
-  import LinkedinIcon from './icons/LinkedinIcon.svelte'
+  } from "@lucide/svelte";
+  import { PROFILE, PROJECTS } from "$lib/data/projects";
+  import GithubIcon from "./icons/GithubIcon.svelte";
+  import LinkedinIcon from "./icons/LinkedinIcon.svelte";
 
   type Item = {
-    id: string
-    group: 'navigate' | 'project' | 'external' | 'action'
-    label: string
-    hint?: string
-    keywords?: string
-    Icon: any
-    run: () => void
-  }
+    id: string;
+    group: "navigate" | "project" | "external" | "action";
+    label: string;
+    hint?: string;
+    keywords?: string;
+    Icon: any;
+    run: () => void;
+  };
 
-  let open = $state(false)
-  let query = $state('')
-  let activeIndex = $state(0)
-  let inputEl = $state<HTMLInputElement | undefined>(undefined)
-  let listEl = $state<HTMLUListElement | undefined>(undefined)
+  let open = $state(false);
+  let query = $state("");
+  let activeIndex = $state(0);
+  let inputEl = $state<HTMLInputElement | undefined>(undefined);
+  let listEl = $state<HTMLUListElement | undefined>(undefined);
 
   const navigate = (hash: string) => () => {
-    close()
+    close();
     if (location.hash === hash) {
       // Force re-scroll
-      const el = document.querySelector(hash)
-      el?.scrollIntoView({ behavior: 'smooth' })
+      const el = document.querySelector(hash);
+      el?.scrollIntoView({ behavior: "smooth" });
     } else {
-      location.hash = hash
+      location.hash = hash;
     }
-  }
+  };
   const openExternal = (url: string) => () => {
-    close()
-    window.open(url, '_blank', 'noopener,noreferrer')
-  }
+    close();
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
   const openProject = (slug: string) => () => {
-    close()
-    location.hash = `#/p/${slug}`
-  }
+    close();
+    location.hash = `#/p/${slug}`;
+  };
   const copyEmail = () => {
-    close()
-    navigator.clipboard?.writeText(PROFILE.email).catch(() => {})
-  }
+    close();
+    navigator.clipboard?.writeText(PROFILE.email).catch(() => {});
+  };
 
   const baseItems: Item[] = [
     {
-      id: 'nav:about',
-      group: 'navigate',
-      label: 'Go to about',
-      hint: '#about',
+      id: "nav:about",
+      group: "navigate",
+      label: "Go to about",
+      hint: "#about",
       Icon: User,
-      run: navigate('#about'),
+      run: navigate("#about"),
     },
     {
-      id: 'nav:terminal',
-      group: 'navigate',
-      label: 'Go to terminal',
-      hint: '#terminal',
-      keywords: 'shell wasm rust',
+      id: "nav:terminal",
+      group: "navigate",
+      label: "Go to terminal",
+      hint: "#terminal",
+      keywords: "shell wasm rust",
       Icon: TerminalIcon,
-      run: navigate('#terminal'),
+      run: navigate("#terminal"),
     },
     {
-      id: 'nav:projects',
-      group: 'navigate',
-      label: 'Go to projects',
-      hint: '#projects',
+      id: "nav:projects",
+      group: "navigate",
+      label: "Go to projects",
+      hint: "#projects",
       Icon: FolderTree,
-      run: navigate('#projects'),
+      run: navigate("#projects"),
     },
     {
-      id: 'act:email',
-      group: 'action',
+      id: "act:email",
+      group: "action",
       label: `Copy email — ${PROFILE.email}`,
-      hint: 'clipboard',
-      keywords: 'contact mail',
+      hint: "clipboard",
+      keywords: "contact mail",
       Icon: Mail,
       run: copyEmail,
     },
     {
-      id: 'ext:email',
-      group: 'external',
-      label: 'Compose email',
+      id: "ext:email",
+      group: "external",
+      label: "Compose email",
       hint: `mailto:${PROFILE.email}`,
       Icon: Mail,
       run: () => {
-        close()
-        location.href = `mailto:${PROFILE.email}`
+        close();
+        location.href = `mailto:${PROFILE.email}`;
       },
     },
     {
-      id: 'ext:linkedin',
-      group: 'external',
-      label: 'LinkedIn',
-      hint: PROFILE.linkedin.replace(/^https?:\/\//, ''),
+      id: "ext:linkedin",
+      group: "external",
+      label: "LinkedIn",
+      hint: PROFILE.linkedin.replace(/^https?:\/\//, ""),
       Icon: LinkedinIcon,
       run: openExternal(PROFILE.linkedin),
     },
     {
-      id: 'ext:github',
-      group: 'external',
-      label: 'GitHub',
-      hint: PROFILE.url.replace(/^https?:\/\//, ''),
-      keywords: 'repos',
+      id: "ext:github",
+      group: "external",
+      label: "GitHub",
+      hint: PROFILE.url.replace(/^https?:\/\//, ""),
+      keywords: "repos",
       Icon: GithubIcon,
       run: openExternal(PROFILE.url),
     },
     {
-      id: 'ext:resume',
-      group: 'external',
-      label: 'Download résumé',
-      hint: PROFILE.resume ?? '/resume.pdf',
-      keywords: 'cv pdf',
+      id: "ext:resume",
+      group: "external",
+      label: "Download résumé",
+      hint: PROFILE.resume ?? "/resume.pdf",
+      keywords: "cv pdf",
       Icon: FileDown,
-      run: openExternal(PROFILE.resume ?? '/resume.pdf'),
+      run: openExternal(PROFILE.resume ?? "/resume.pdf"),
     },
-  ]
+  ];
 
   const projectItems: Item[] = PROJECTS.map((p) => ({
     id: `p:${p.slug}`,
-    group: 'project' as const,
+    group: "project" as const,
     label: p.title,
     hint: `${p.language} · view README`,
-    keywords: `${p.slug} ${p.description} ${p.tags.join(' ')}`,
+    keywords: `${p.slug} ${p.description} ${p.tags.join(" ")}`,
     Icon: Eye,
     run: openProject(p.slug),
-  }))
+  }));
 
-  const allItems = [...baseItems, ...projectItems]
+  const allItems = [...baseItems, ...projectItems];
 
   // tiny scorer — matches every query char in order, prefers shorter matches
   function score(item: Item, q: string): number {
-    if (!q) return 1
-    const hay = (item.label + ' ' + (item.hint ?? '') + ' ' + (item.keywords ?? '')).toLowerCase()
-    const needle = q.toLowerCase()
+    if (!q) return 1;
+    const hay = (
+      item.label +
+      " " +
+      (item.hint ?? "") +
+      " " +
+      (item.keywords ?? "")
+    ).toLowerCase();
+    const needle = q.toLowerCase();
     let s = 0,
       i = 0,
-      last = -1
+      last = -1;
     for (const c of needle) {
-      const found = hay.indexOf(c, last + 1)
-      if (found === -1) return 0
+      const found = hay.indexOf(c, last + 1);
+      if (found === -1) return 0;
       // closer to previous hit = better
-      s += 1 / (found - last)
-      last = found
+      s += 1 / (found - last);
+      last = found;
     }
     // bonus for exact substring
-    if (hay.includes(needle)) s += 2
+    if (hay.includes(needle)) s += 2;
     // bonus if label starts with query
-    if (item.label.toLowerCase().startsWith(needle)) s += 3
-    return s
+    if (item.label.toLowerCase().startsWith(needle)) s += 3;
+    return s;
   }
 
   const filtered = $derived(
@@ -178,108 +184,115 @@
       .filter((x) => x.s > 0)
       .sort((a, b) => b.s - a.s)
       .slice(0, 40)
-      .map((x) => x.i),
-  )
+      .map((x) => x.i)
+  );
 
   const grouped = $derived.by(() => {
-    const out: Record<string, Item[]> = {}
+    const out: Record<string, Item[]> = {};
     for (const it of filtered) {
-      ;(out[it.group] ??= []).push(it)
+      (out[it.group] ??= []).push(it);
     }
-    return out
-  })
+    return out;
+  });
 
-  const groupOrder: Item['group'][] = ['navigate', 'project', 'action', 'external']
-  const groupLabels: Record<Item['group'], string> = {
-    navigate: 'navigate',
-    project: 'projects · view README',
-    action: 'actions',
-    external: 'external links',
-  }
+  const groupOrder: Item["group"][] = [
+    "navigate",
+    "project",
+    "action",
+    "external",
+  ];
+  const groupLabels: Record<Item["group"], string> = {
+    navigate: "navigate",
+    project: "projects · view README",
+    action: "actions",
+    external: "external links",
+  };
 
   async function openPalette() {
-    open = true
-    query = ''
-    activeIndex = 0
-    await tick()
-    inputEl?.focus()
+    open = true;
+    query = "";
+    activeIndex = 0;
+    await tick();
+    inputEl?.focus();
   }
 
   function close() {
-    open = false
-    query = ''
+    open = false;
+    query = "";
   }
 
   function runActive() {
-    const it = filtered[activeIndex]
-    if (it) it.run()
+    const it = filtered[activeIndex];
+    if (it) it.run();
   }
 
   function onKeyGlobal(e: KeyboardEvent) {
-    const mod = e.metaKey || e.ctrlKey
-    if (mod && e.key.toLowerCase() === 'k') {
-      e.preventDefault()
-      open ? close() : openPalette()
-      return
+    const mod = e.metaKey || e.ctrlKey;
+    if (mod && e.key.toLowerCase() === "k") {
+      e.preventDefault();
+      open ? close() : openPalette();
+      return;
     }
     // '/' opens palette when nothing else is focused on text input
     if (
       !open &&
-      e.key === '/' &&
+      e.key === "/" &&
       !(e.target instanceof HTMLInputElement) &&
       !(e.target instanceof HTMLTextAreaElement) &&
       !(e.target as HTMLElement | null)?.isContentEditable
     ) {
-      e.preventDefault()
-      openPalette()
+      e.preventDefault();
+      openPalette();
     }
   }
 
   function onKeyLocal(e: KeyboardEvent) {
-    if (e.key === 'Escape') {
-      e.preventDefault()
-      close()
-    } else if (e.key === 'ArrowDown') {
-      e.preventDefault()
-      activeIndex = Math.min(filtered.length - 1, activeIndex + 1)
-      scrollActive()
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault()
-      activeIndex = Math.max(0, activeIndex - 1)
-      scrollActive()
-    } else if (e.key === 'Enter') {
-      e.preventDefault()
-      runActive()
+    if (e.key === "Escape") {
+      e.preventDefault();
+      close();
+    } else if (e.key === "ArrowDown") {
+      e.preventDefault();
+      activeIndex = Math.min(filtered.length - 1, activeIndex + 1);
+      scrollActive();
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      activeIndex = Math.max(0, activeIndex - 1);
+      scrollActive();
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      runActive();
     }
   }
 
   function scrollActive() {
     requestAnimationFrame(() => {
-      const el = listEl?.querySelector<HTMLElement>(`[data-idx="${activeIndex}"]`)
-      el?.scrollIntoView({ block: 'nearest' })
-    })
+      const el = listEl?.querySelector<HTMLElement>(
+        `[data-idx="${activeIndex}"]`
+      );
+      el?.scrollIntoView({ block: "nearest" });
+    });
   }
 
   // Reset activeIndex when query changes
   $effect(() => {
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-    query
-    activeIndex = 0
-  })
+    query;
+    activeIndex = 0;
+  });
 
   onMount(() => {
-    window.addEventListener('keydown', onKeyGlobal)
-    return () => window.removeEventListener('keydown', onKeyGlobal)
-  })
+    window.addEventListener("keydown", onKeyGlobal);
+    return () => window.removeEventListener("keydown", onKeyGlobal);
+  });
 
   // Flat index for active highlighting across groups
-  function flatIndex(group: Item['group'], localIdx: number) {
-    let total = 0
+  function flatIndex(group: Item["group"], localIdx: number) {
+    let total = 0;
     for (const g of groupOrder) {
-      if (g === group) return total + localIdx
-      total += grouped[g]?.length ?? 0
+      if (g === group) return total + localIdx;
+      total += grouped[g]?.length ?? 0;
     }
-    return -1
+    return -1;
   }
 </script>
 
@@ -320,20 +333,26 @@
         placeholder="Type a command or search…"
         class="min-w-0 flex-1 bg-transparent font-mono text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none"
       />
-      <kbd class="hidden items-center gap-1 rounded-md border border-border/60 bg-background/70 px-1.5 py-0.5 font-mono text-[10px] text-muted-foreground sm:inline-flex">
+      <kbd
+        class="hidden items-center gap-1 rounded-md border border-border/60 bg-background/70 px-1.5 py-0.5 font-mono text-[10px] text-muted-foreground sm:inline-flex"
+      >
         ESC
       </kbd>
     </div>
 
     <ul bind:this={listEl} class="max-h-[60vh] overflow-y-auto py-2">
       {#if filtered.length === 0}
-        <li class="px-4 py-6 text-center font-mono text-sm text-muted-foreground">
+        <li
+          class="px-4 py-6 text-center font-mono text-sm text-muted-foreground"
+        >
           no matches for <span class="text-foreground">"{query}"</span>
         </li>
       {:else}
         {#each groupOrder as g (g)}
           {#if grouped[g]?.length}
-            <li class="px-3 pt-2 pb-1 font-mono text-[10px] tracking-wider text-muted-foreground/60 uppercase">
+            <li
+              class="px-3 pt-2 pb-1 font-mono text-[10px] tracking-wider text-muted-foreground/60 uppercase"
+            >
               {groupLabels[g]}
             </li>
             {#each grouped[g] as item, li (item.id)}
@@ -344,8 +363,8 @@
                   data-idx={idx}
                   class={`flex w-full items-center gap-3 px-4 py-2 text-left font-mono text-sm transition ${
                     idx === activeIndex
-                      ? 'bg-primary/10 text-foreground'
-                      : 'text-muted-foreground hover:bg-primary/5 hover:text-foreground'
+                      ? "bg-primary/10 text-foreground"
+                      : "text-muted-foreground hover:bg-primary/5 hover:text-foreground"
                   }`}
                   onmouseenter={() => (activeIndex = idx)}
                   onclick={item.run}
@@ -353,16 +372,22 @@
                   <item.Icon class="size-4 flex-none text-primary/80" />
                   <span class="min-w-0 flex-1 truncate">{item.label}</span>
                   {#if item.hint}
-                    <span class="hidden truncate text-[11px] text-muted-foreground/60 sm:inline">
+                    <span
+                      class="hidden truncate text-[11px] text-muted-foreground/60 sm:inline"
+                    >
                       {item.hint}
                     </span>
                   {/if}
                   {#if idx === activeIndex}
                     <CornerDownLeft class="size-3 flex-none text-primary" />
-                  {:else if item.group === 'external'}
-                    <ArrowUpRight class="size-3 flex-none text-muted-foreground/50" />
-                  {:else if item.group === 'project'}
-                    <ExternalLink class="size-3 flex-none text-muted-foreground/40" />
+                  {:else if item.group === "external"}
+                    <ArrowUpRight
+                      class="size-3 flex-none text-muted-foreground/50"
+                    />
+                  {:else if item.group === "project"}
+                    <ExternalLink
+                      class="size-3 flex-none text-muted-foreground/40"
+                    />
                   {/if}
                 </button>
               </li>
@@ -372,13 +397,34 @@
       {/if}
     </ul>
 
-    <div class="flex items-center justify-between border-t border-border/70 bg-background/30 px-4 py-2 font-mono text-[10px] text-muted-foreground">
+    <div
+      class="flex items-center justify-between border-t border-border/70 bg-background/30 px-4 py-2 font-mono text-[10px] text-muted-foreground"
+    >
       <div class="flex items-center gap-3">
-        <span><kbd class="rounded border border-border/60 bg-background/70 px-1">↑</kbd> <kbd class="rounded border border-border/60 bg-background/70 px-1">↓</kbd> navigate</span>
-        <span><kbd class="rounded border border-border/60 bg-background/70 px-1">↵</kbd> select</span>
-        <span><kbd class="rounded border border-border/60 bg-background/70 px-1">esc</kbd> close</span>
+        <span
+          ><kbd class="rounded border border-border/60 bg-background/70 px-1"
+            >↑</kbd
+          >
+          <kbd class="rounded border border-border/60 bg-background/70 px-1"
+            >↓</kbd
+          > navigate</span
+        >
+        <span
+          ><kbd class="rounded border border-border/60 bg-background/70 px-1"
+            >↵</kbd
+          > select</span
+        >
+        <span
+          ><kbd class="rounded border border-border/60 bg-background/70 px-1"
+            >esc</kbd
+          > close</span
+        >
       </div>
-      <span class="hidden sm:inline">press <kbd class="rounded border border-border/60 bg-background/70 px-1">⌘K</kbd> anywhere</span>
+      <span class="hidden sm:inline"
+        >press <kbd
+          class="rounded border border-border/60 bg-background/70 px-1">⌘K</kbd
+        > anywhere</span
+      >
     </div>
   </div>
 {/if}

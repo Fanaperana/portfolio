@@ -3,58 +3,62 @@
   Data comes from src/lib/data/github.generated.ts (refreshed at build time).
 -->
 <script lang="ts">
-  import * as Card from '$lib/components/ui/card'
-  import { Badge } from '$lib/components/ui/badge'
+  import * as Card from "$lib/components/ui/card";
+  import { Badge } from "$lib/components/ui/badge";
   import {
     GH_PROFILE,
     GH_CONTRIBS,
     GH_LANGUAGES,
-  } from '$lib/data/github.generated'
-  import { PROFILE } from '$lib/data/projects'
+  } from "$lib/data/github.generated";
+  import { PROFILE } from "$lib/data/projects";
 
   // Group contrib days into weeks (7 rows × N cols) for the heatmap.
-  type Day = { date: string; count: number; color: string }
+  type Day = { date: string; count: number; color: string };
   const weeks: Day[][] = (() => {
-    if (!GH_CONTRIBS) return []
-    const days = GH_CONTRIBS.days
-    const out: Day[][] = []
+    if (!GH_CONTRIBS) return [];
+    const days = GH_CONTRIBS.days;
+    const out: Day[][] = [];
     // GitHub's calendar always starts on a Sunday; pad the first week if needed.
-    const firstDow = new Date(days[0].date + 'T00:00:00Z').getUTCDay()
-    const padded: (Day | null)[] = Array(firstDow).fill(null).concat(days)
+    const firstDow = new Date(days[0].date + "T00:00:00Z").getUTCDay();
+    const padded: (Day | null)[] = Array(firstDow).fill(null).concat(days);
     for (let i = 0; i < padded.length; i += 7) {
-      out.push(padded.slice(i, i + 7) as Day[])
+      out.push(padded.slice(i, i + 7) as Day[]);
     }
-    return out
-  })()
+    return out;
+  })();
 
   const maxCount = (() => {
-    if (!GH_CONTRIBS) return 0
-    return GH_CONTRIBS.days.reduce((m, d) => Math.max(m, d.count), 0)
-  })()
+    if (!GH_CONTRIBS) return 0;
+    return GH_CONTRIBS.days.reduce((m, d) => Math.max(m, d.count), 0);
+  })();
 
   function intensity(count: number): string {
-    if (count === 0) return 'var(--color-border)'
-    const pct = Math.min(1, count / Math.max(1, maxCount))
-    if (pct < 0.15) return 'color-mix(in oklab, var(--color-accent) 25%, var(--color-border))'
-    if (pct < 0.35) return 'color-mix(in oklab, var(--color-accent) 45%, var(--color-border))'
-    if (pct < 0.6) return 'color-mix(in oklab, var(--color-accent) 70%, transparent)'
-    return 'var(--color-accent)'
+    if (count === 0) return "var(--color-border)";
+    const pct = Math.min(1, count / Math.max(1, maxCount));
+    if (pct < 0.15)
+      return "color-mix(in oklab, var(--color-accent) 25%, var(--color-border))";
+    if (pct < 0.35)
+      return "color-mix(in oklab, var(--color-accent) 45%, var(--color-border))";
+    if (pct < 0.6)
+      return "color-mix(in oklab, var(--color-accent) 70%, transparent)";
+    return "var(--color-accent)";
   }
 
   // Max language count, for relative bars.
-  const langMax = GH_LANGUAGES.reduce((m, l) => Math.max(m, l.count), 0)
+  const langMax = GH_LANGUAGES.reduce((m, l) => Math.max(m, l.count), 0);
 
   // Profile line
   const profileLine = (() => {
-    if (!GH_PROFILE) return null
-    const years = (new Date().getFullYear() - new Date(GH_PROFILE.createdAt).getFullYear())
+    if (!GH_PROFILE) return null;
+    const years =
+      new Date().getFullYear() - new Date(GH_PROFILE.createdAt).getFullYear();
     return {
       followers: GH_PROFILE.followers,
       following: GH_PROFILE.following,
       repos: GH_PROFILE.publicRepos,
       years,
-    }
-  })()
+    };
+  })();
 </script>
 
 {#if GH_CONTRIBS || GH_LANGUAGES.length > 0}
@@ -64,11 +68,16 @@
       <Card.Header>
         <div class="flex flex-wrap items-center justify-between gap-3">
           <Card.Title class="font-mono text-sm">
-            <span class="text-muted-foreground/60">$ </span>git log --all --author=&quot;{PROFILE.login}&quot;
+            <span class="text-muted-foreground/60">$ </span>git log --all
+            --author=&quot;{PROFILE.login}&quot;
           </Card.Title>
           {#if GH_CONTRIBS}
-            <Badge variant="outline" class="font-mono text-[11px] text-muted-foreground">
-              {GH_CONTRIBS.totalContributions.toLocaleString()} contributions · last 12 months
+            <Badge
+              variant="outline"
+              class="font-mono text-[11px] text-muted-foreground"
+            >
+              {GH_CONTRIBS.totalContributions.toLocaleString()} contributions · last
+              12 months
             </Badge>
           {/if}
         </div>
@@ -102,7 +111,9 @@
           </div>
 
           <!-- Legend + totals -->
-          <div class="mt-3 flex flex-wrap items-center justify-between gap-3 font-mono text-[11px] text-muted-foreground">
+          <div
+            class="mt-3 flex flex-wrap items-center justify-between gap-3 font-mono text-[11px] text-muted-foreground"
+          >
             <div class="flex items-center gap-3">
               <span>{GH_CONTRIBS.totalCommits} commits</span>
               <span class="text-muted-foreground/40">·</span>
@@ -148,7 +159,9 @@
                     style={`width: ${Math.round((lang.count / langMax) * 100)}%`}
                   ></div>
                 </div>
-                <span class="text-right text-muted-foreground/70">{lang.count}</span>
+                <span class="text-right text-muted-foreground/70"
+                  >{lang.count}</span
+                >
               </div>
             {/each}
           </div>
@@ -159,7 +172,9 @@
         {/if}
 
         {#if profileLine}
-          <div class="mt-4 border-t border-border/60 pt-3 font-mono text-[11px] text-muted-foreground">
+          <div
+            class="mt-4 border-t border-border/60 pt-3 font-mono text-[11px] text-muted-foreground"
+          >
             <div class="flex flex-wrap items-center gap-3">
               <span>{profileLine.repos} public repos</span>
               <span class="text-muted-foreground/40">·</span>

@@ -3,112 +3,112 @@
   private repos). URL-addressable via `#/p/<slug>` so recruiters can share.
 -->
 <script lang="ts">
-  import { onMount, tick } from 'svelte'
-  import { Marked } from 'marked'
-  import DOMPurify from 'dompurify'
-  import { X, ExternalLink, Lock, Star, Calendar } from '@lucide/svelte'
-  import GithubIcon from './icons/GithubIcon.svelte'
-  import { Button } from '$lib/components/ui/button'
-  import { Badge } from '$lib/components/ui/badge'
-  import { PROJECTS, PROFILE, type Project } from '$lib/data/projects'
-  import { GH_READMES } from '$lib/data/github.generated'
-  import { timeAgo } from '$lib/time'
+  import { onMount, tick } from "svelte";
+  import { Marked } from "marked";
+  import DOMPurify from "dompurify";
+  import { X, ExternalLink, Lock, Star, Calendar } from "@lucide/svelte";
+  import GithubIcon from "./icons/GithubIcon.svelte";
+  import { Button } from "$lib/components/ui/button";
+  import { Badge } from "$lib/components/ui/badge";
+  import { PROJECTS, PROFILE, type Project } from "$lib/data/projects";
+  import { GH_READMES } from "$lib/data/github.generated";
+  import { timeAgo } from "$lib/time";
 
-  let open = $state(false)
-  let project = $state<Project | null>(null)
-  let content = $state('') // sanitized HTML
-  let scrollEl = $state<HTMLDivElement | undefined>(undefined)
+  let open = $state(false);
+  let project = $state<Project | null>(null);
+  let content = $state(""); // sanitized HTML
+  let scrollEl = $state<HTMLDivElement | undefined>(undefined);
 
   const marked = new Marked({
     gfm: true,
     breaks: false,
-  })
+  });
 
   function fromHash() {
-    if (typeof location === 'undefined') return null
-    const m = location.hash.match(/^#\/p\/([^/?&]+)/)
-    return m ? decodeURIComponent(m[1]) : null
+    if (typeof location === "undefined") return null;
+    const m = location.hash.match(/^#\/p\/([^/?&]+)/);
+    return m ? decodeURIComponent(m[1]) : null;
   }
 
   async function load(slug: string | null) {
     if (!slug) {
-      open = false
-      project = null
-      content = ''
-      document.body.style.overflow = ''
-      return
+      open = false;
+      project = null;
+      content = "";
+      document.body.style.overflow = "";
+      return;
     }
-    const p = PROJECTS.find((x) => x.slug.toLowerCase() === slug.toLowerCase())
+    const p = PROJECTS.find((x) => x.slug.toLowerCase() === slug.toLowerCase());
     if (!p) {
-      open = false
-      project = null
-      content = ''
-      return
+      open = false;
+      project = null;
+      content = "";
+      return;
     }
-    project = p
-    open = true
-    document.body.style.overflow = 'hidden'
+    project = p;
+    open = true;
+    document.body.style.overflow = "hidden";
 
-    const raw = GH_READMES[p.slug]
+    const raw = GH_READMES[p.slug];
     if (raw) {
-      const html = await marked.parse(raw)
+      const html = await marked.parse(raw);
       content = DOMPurify.sanitize(html, {
-        ADD_ATTR: ['target', 'rel'],
-      })
+        ADD_ATTR: ["target", "rel"],
+      });
     } else {
-      content = ''
+      content = "";
     }
-    await tick()
-    if (scrollEl) scrollEl.scrollTop = 0
+    await tick();
+    if (scrollEl) scrollEl.scrollTop = 0;
     // Make all links open in a new tab
-    await tick()
-    scrollEl?.querySelectorAll('a[href]').forEach((a) => {
-      const href = a.getAttribute('href') || ''
-      if (href.startsWith('#')) return
+    await tick();
+    scrollEl?.querySelectorAll("a[href]").forEach((a) => {
+      const href = a.getAttribute("href") || "";
+      if (href.startsWith("#")) return;
       // Resolve relative paths against the repo default branch
-      if (!/^https?:\/\//.test(href) && !href.startsWith('mailto:')) {
-        const abs = `https://github.com/${PROFILE.login}/${p.slug}/blob/HEAD/${href.replace(/^\.?\//, '')}`
-        a.setAttribute('href', abs)
+      if (!/^https?:\/\//.test(href) && !href.startsWith("mailto:")) {
+        const abs = `https://github.com/${PROFILE.login}/${p.slug}/blob/HEAD/${href.replace(/^\.?\//, "")}`;
+        a.setAttribute("href", abs);
       }
-      a.setAttribute('target', '_blank')
-      a.setAttribute('rel', 'noreferrer')
-    })
+      a.setAttribute("target", "_blank");
+      a.setAttribute("rel", "noreferrer");
+    });
     // Rewrite relative <img src> to raw.githubusercontent.com so they render
-    scrollEl?.querySelectorAll('img').forEach((img) => {
-      const src = img.getAttribute('src') || ''
-      if (!src || /^https?:\/\//.test(src) || src.startsWith('data:')) return
-      const clean = src.replace(/^\.?\//, '')
+    scrollEl?.querySelectorAll("img").forEach((img) => {
+      const src = img.getAttribute("src") || "";
+      if (!src || /^https?:\/\//.test(src) || src.startsWith("data:")) return;
+      const clean = src.replace(/^\.?\//, "");
       img.setAttribute(
-        'src',
-        `https://raw.githubusercontent.com/${PROFILE.login}/${p.slug}/HEAD/${clean}`,
-      )
-      img.setAttribute('loading', 'lazy')
-    })
+        "src",
+        `https://raw.githubusercontent.com/${PROFILE.login}/${p.slug}/HEAD/${clean}`
+      );
+      img.setAttribute("loading", "lazy");
+    });
   }
 
   function close() {
-    history.replaceState(null, '', location.pathname + location.search)
-    load(null)
+    history.replaceState(null, "", location.pathname + location.search);
+    load(null);
   }
 
   function onKey(e: KeyboardEvent) {
-    if (e.key === 'Escape' && open) {
-      e.preventDefault()
-      close()
+    if (e.key === "Escape" && open) {
+      e.preventDefault();
+      close();
     }
   }
 
   onMount(() => {
-    const apply = () => load(fromHash())
-    apply()
-    window.addEventListener('hashchange', apply)
-    window.addEventListener('keydown', onKey)
+    const apply = () => load(fromHash());
+    apply();
+    window.addEventListener("hashchange", apply);
+    window.addEventListener("keydown", onKey);
     return () => {
-      window.removeEventListener('hashchange', apply)
-      window.removeEventListener('keydown', onKey)
-      document.body.style.overflow = ''
-    }
-  })
+      window.removeEventListener("hashchange", apply);
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  });
 </script>
 
 {#if open && project}
@@ -131,7 +131,9 @@
       class="relative flex max-h-full w-full max-w-4xl flex-col overflow-hidden rounded-xl border border-border/80 bg-card shadow-[0_0_0_1px_var(--color-accent-soft)]"
     >
       <!-- Header -->
-      <div class="flex flex-wrap items-center gap-3 border-b border-border/80 px-5 py-4">
+      <div
+        class="flex flex-wrap items-center gap-3 border-b border-border/80 px-5 py-4"
+      >
         <div class="flex items-center gap-1.5">
           <span class="h-2.5 w-2.5 rounded-full bg-[#ff5f56]"></span>
           <span class="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]"></span>
@@ -140,34 +142,54 @@
         <div class="min-w-0 flex-1">
           <div class="flex items-center gap-2 font-mono text-sm">
             <span class="text-muted-foreground/60">~/</span>
-            <span class="truncate text-foreground">{PROFILE.login.toLowerCase()}/{project.slug}</span>
+            <span class="truncate text-foreground"
+              >{PROFILE.login.toLowerCase()}/{project.slug}</span
+            >
             <span class="text-muted-foreground/60">/README.md</span>
           </div>
           <div class="mt-1 flex flex-wrap items-center gap-2 text-xs">
-            <Badge variant="outline" class="font-mono text-[10px]">{project.language}</Badge>
-            {#if project.visibility === 'private'}
-              <Badge variant="outline" class="gap-1 border-amber-500/40 font-mono text-[10px] text-amber-300">
+            <Badge variant="outline" class="font-mono text-[10px]"
+              >{project.language}</Badge
+            >
+            {#if project.visibility === "private"}
+              <Badge
+                variant="outline"
+                class="gap-1 border-amber-500/40 font-mono text-[10px] text-amber-300"
+              >
                 <Lock class="size-3" /> private
               </Badge>
             {/if}
             {#if project.highlight}
-              <Badge class="bg-primary font-mono text-[10px] text-primary-foreground">featured</Badge>
+              <Badge
+                class="bg-primary font-mono text-[10px] text-primary-foreground"
+                >featured</Badge
+              >
             {/if}
             {#if project.stars > 0}
-              <span class="inline-flex items-center gap-1 font-mono text-[11px] text-muted-foreground">
-                <Star class="size-3" /> {project.stars}
+              <span
+                class="inline-flex items-center gap-1 font-mono text-[11px] text-muted-foreground"
+              >
+                <Star class="size-3" />
+                {project.stars}
               </span>
             {/if}
-            <span class="inline-flex items-center gap-1 font-mono text-[11px] text-muted-foreground">
-              <Calendar class="size-3" /> {timeAgo(project.pushed_at)}
+            <span
+              class="inline-flex items-center gap-1 font-mono text-[11px] text-muted-foreground"
+            >
+              <Calendar class="size-3" />
+              {timeAgo(project.pushed_at)}
             </span>
             {#each project.tags.slice(0, 4) as t (t)}
-              <Badge variant="outline" class="font-mono text-[10px] text-muted-foreground/80">#{t}</Badge>
+              <Badge
+                variant="outline"
+                class="font-mono text-[10px] text-muted-foreground/80"
+                >#{t}</Badge
+              >
             {/each}
           </div>
         </div>
         <div class="flex items-center gap-2">
-          {#if project.visibility !== 'private'}
+          {#if project.visibility !== "private"}
             <Button
               variant="outline"
               size="sm"
@@ -179,11 +201,21 @@
             </Button>
           {/if}
           {#if project.homepage}
-            <Button size="sm" href={project.homepage} target="_blank" rel="noreferrer">
+            <Button
+              size="sm"
+              href={project.homepage}
+              target="_blank"
+              rel="noreferrer"
+            >
               <ExternalLink class="size-3.5" /> visit
             </Button>
           {/if}
-          <Button variant="ghost" size="icon" onclick={close} aria-label="Close">
+          <Button
+            variant="ghost"
+            size="icon"
+            onclick={close}
+            aria-label="Close"
+          >
             <X class="size-4" />
           </Button>
         </div>
@@ -203,11 +235,16 @@
             </p>
             <p class="text-sm text-muted-foreground">
               README preview isn't available for this project yet
-              {#if project.visibility === 'private'}
-                (private repo — set <code class="rounded bg-background px-1.5 py-0.5 font-mono text-xs text-primary">GH_README_TOKEN</code> in CI to include it).
+              {#if project.visibility === "private"}
+                (private repo — set <code
+                  class="rounded bg-background px-1.5 py-0.5 font-mono text-xs text-primary"
+                  >GH_README_TOKEN</code
+                > in CI to include it).
               {/if}
             </p>
-            <h3 class="mt-4 font-mono text-base font-semibold text-foreground">{project.title}</h3>
+            <h3 class="mt-4 font-mono text-base font-semibold text-foreground">
+              {project.title}
+            </h3>
             <p class="text-base text-foreground">{project.description}</p>
           </div>
         {/if}
@@ -241,7 +278,8 @@
   }
   :global(.readme-body h2) {
     font-size: 1.35rem;
-    border-bottom: 1px solid color-mix(in oklab, var(--color-border) 50%, transparent);
+    border-bottom: 1px solid
+      color-mix(in oklab, var(--color-border) 50%, transparent);
     padding-bottom: 0.3rem;
   }
   :global(.readme-body h3) {
