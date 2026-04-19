@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "tailwind": {
+      "source": "smithery.ai",
+      "sourceType": "well-known",
+      "computedHash": "19b2225f9143e1042af43bc6c9775cc8f9946a9dbbccc4d490d60dfa1859bf44"
+    }
+  }
+}
