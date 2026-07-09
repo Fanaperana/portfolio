@@ -31,403 +31,18 @@ export const GH_PROFILE: GhProfile | null = {
   "bio": null,
   "avatarUrl": "https://avatars.githubusercontent.com/u/31814043?v=4",
   "followers": 8,
-  "following": 8,
-  "publicRepos": 42,
+  "following": 10,
+  "publicRepos": 49,
   "createdAt": "2017-09-10T05:23:21Z"
 }
 
 export const GH_CONTRIBS: GhContribs | null = {
-  "totalContributions": 796,
-  "totalCommits": 261,
+  "totalContributions": 1624,
+  "totalCommits": 336,
   "totalPRs": 2,
   "totalIssues": 59,
-  "totalNewRepos": 9,
+  "totalNewRepos": 13,
   "days": [
-    {
-      "date": "2025-04-20",
-      "count": 2,
-      "color": "#9be9a8"
-    },
-    {
-      "date": "2025-04-21",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-04-22",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-04-23",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-04-24",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-04-25",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-04-26",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-04-27",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-04-28",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-04-29",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-04-30",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-01",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-02",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-03",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-04",
-      "count": 3,
-      "color": "#9be9a8"
-    },
-    {
-      "date": "2025-05-05",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-06",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-07",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-08",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-09",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-10",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-11",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-12",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-13",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-14",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-15",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-16",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-17",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-18",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-19",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-20",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-21",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-22",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-23",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-24",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-25",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-26",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-27",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-28",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-29",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-05-30",
-      "count": 3,
-      "color": "#9be9a8"
-    },
-    {
-      "date": "2025-05-31",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-01",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-02",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-03",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-04",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-05",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-06",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-07",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-08",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-09",
-      "count": 1,
-      "color": "#9be9a8"
-    },
-    {
-      "date": "2025-06-10",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-11",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-12",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-13",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-14",
-      "count": 1,
-      "color": "#9be9a8"
-    },
-    {
-      "date": "2025-06-15",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-16",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-17",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-18",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-19",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-20",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-21",
-      "count": 1,
-      "color": "#9be9a8"
-    },
-    {
-      "date": "2025-06-22",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-23",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-24",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-25",
-      "count": 17,
-      "color": "#30a14e"
-    },
-    {
-      "date": "2025-06-26",
-      "count": 2,
-      "color": "#9be9a8"
-    },
-    {
-      "date": "2025-06-27",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-28",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-29",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-06-30",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-07-01",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-07-02",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-07-03",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-07-04",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-07-05",
-      "count": 0,
-      "color": "#ebedf0"
-    },
     {
       "date": "2025-07-06",
       "count": 0,
@@ -956,7 +571,7 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2025-10-19",
       "count": 18,
-      "color": "#30a14e"
+      "color": "#40c463"
     },
     {
       "date": "2025-10-20",
@@ -1236,7 +851,7 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2025-12-14",
       "count": 22,
-      "color": "#216e39"
+      "color": "#30a14e"
     },
     {
       "date": "2025-12-15",
@@ -1246,7 +861,7 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2025-12-16",
       "count": 19,
-      "color": "#30a14e"
+      "color": "#40c463"
     },
     {
       "date": "2025-12-17",
@@ -1276,7 +891,7 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2025-12-22",
       "count": 9,
-      "color": "#40c463"
+      "color": "#9be9a8"
     },
     {
       "date": "2025-12-23",
@@ -1291,12 +906,12 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2025-12-25",
       "count": 16,
-      "color": "#30a14e"
+      "color": "#40c463"
     },
     {
       "date": "2025-12-26",
       "count": 15,
-      "color": "#30a14e"
+      "color": "#40c463"
     },
     {
       "date": "2025-12-27",
@@ -1311,7 +926,7 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2025-12-29",
       "count": 10,
-      "color": "#40c463"
+      "color": "#9be9a8"
     },
     {
       "date": "2025-12-30",
@@ -1331,17 +946,17 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2026-01-02",
       "count": 16,
-      "color": "#30a14e"
+      "color": "#40c463"
     },
     {
       "date": "2026-01-03",
       "count": 18,
-      "color": "#30a14e"
+      "color": "#40c463"
     },
     {
       "date": "2026-01-04",
       "count": 10,
-      "color": "#40c463"
+      "color": "#9be9a8"
     },
     {
       "date": "2026-01-05",
@@ -1446,7 +1061,7 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2026-01-25",
       "count": 9,
-      "color": "#40c463"
+      "color": "#9be9a8"
     },
     {
       "date": "2026-01-26",
@@ -1506,7 +1121,7 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2026-02-06",
       "count": 9,
-      "color": "#40c463"
+      "color": "#9be9a8"
     },
     {
       "date": "2026-02-07",
@@ -1551,7 +1166,7 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2026-02-15",
       "count": 10,
-      "color": "#40c463"
+      "color": "#9be9a8"
     },
     {
       "date": "2026-02-16",
@@ -1686,7 +1301,7 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2026-03-14",
       "count": 10,
-      "color": "#40c463"
+      "color": "#9be9a8"
     },
     {
       "date": "2026-03-15",
@@ -1701,7 +1316,7 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2026-03-17",
       "count": 18,
-      "color": "#30a14e"
+      "color": "#40c463"
     },
     {
       "date": "2026-03-18",
@@ -1716,7 +1331,7 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2026-03-20",
       "count": 9,
-      "color": "#40c463"
+      "color": "#9be9a8"
     },
     {
       "date": "2026-03-21",
@@ -1756,7 +1371,7 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2026-03-28",
       "count": 19,
-      "color": "#30a14e"
+      "color": "#40c463"
     },
     {
       "date": "2026-03-29",
@@ -1786,7 +1401,7 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2026-04-03",
       "count": 29,
-      "color": "#216e39"
+      "color": "#30a14e"
     },
     {
       "date": "2026-04-04",
@@ -1796,12 +1411,12 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2026-04-05",
       "count": 16,
-      "color": "#30a14e"
+      "color": "#40c463"
     },
     {
       "date": "2026-04-06",
       "count": 15,
-      "color": "#30a14e"
+      "color": "#40c463"
     },
     {
       "date": "2026-04-07",
@@ -1811,12 +1426,12 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2026-04-08",
       "count": 17,
-      "color": "#30a14e"
+      "color": "#40c463"
     },
     {
       "date": "2026-04-09",
       "count": 29,
-      "color": "#216e39"
+      "color": "#30a14e"
     },
     {
       "date": "2026-04-10",
@@ -1856,7 +1471,7 @@ export const GH_CONTRIBS: GhContribs | null = {
     {
       "date": "2026-04-17",
       "count": 16,
-      "color": "#30a14e"
+      "color": "#40c463"
     },
     {
       "date": "2026-04-18",
@@ -1865,8 +1480,413 @@ export const GH_CONTRIBS: GhContribs | null = {
     },
     {
       "date": "2026-04-19",
-      "count": 20,
+      "count": 31,
+      "color": "#216e39"
+    },
+    {
+      "date": "2026-04-20",
+      "count": 1,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-04-21",
+      "count": 1,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-04-22",
+      "count": 2,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-04-23",
+      "count": 12,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-04-24",
+      "count": 15,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-04-25",
+      "count": 8,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-04-26",
+      "count": 2,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-04-27",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-04-28",
+      "count": 19,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-04-29",
+      "count": 5,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-04-30",
+      "count": 9,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-05-01",
+      "count": 2,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-05-02",
+      "count": 28,
       "color": "#30a14e"
+    },
+    {
+      "date": "2026-05-03",
+      "count": 22,
+      "color": "#30a14e"
+    },
+    {
+      "date": "2026-05-04",
+      "count": 24,
+      "color": "#30a14e"
+    },
+    {
+      "date": "2026-05-05",
+      "count": 14,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-05-06",
+      "count": 21,
+      "color": "#30a14e"
+    },
+    {
+      "date": "2026-05-07",
+      "count": 38,
+      "color": "#216e39"
+    },
+    {
+      "date": "2026-05-08",
+      "count": 20,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-05-09",
+      "count": 10,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-05-10",
+      "count": 9,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-05-11",
+      "count": 14,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-05-12",
+      "count": 11,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-05-13",
+      "count": 2,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-05-14",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-05-15",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-05-16",
+      "count": 13,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-05-17",
+      "count": 3,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-05-18",
+      "count": 15,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-05-19",
+      "count": 1,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-05-20",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-05-21",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-05-22",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-05-23",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-05-24",
+      "count": 5,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-05-25",
+      "count": 12,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-05-26",
+      "count": 48,
+      "color": "#216e39"
+    },
+    {
+      "date": "2026-05-27",
+      "count": 37,
+      "color": "#216e39"
+    },
+    {
+      "date": "2026-05-28",
+      "count": 9,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-05-29",
+      "count": 3,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-05-30",
+      "count": 73,
+      "color": "#216e39"
+    },
+    {
+      "date": "2026-05-31",
+      "count": 9,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-06-01",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-06-02",
+      "count": 1,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-06-03",
+      "count": 1,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-06-04",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-06-05",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-06-06",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-06-07",
+      "count": 18,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-06-08",
+      "count": 3,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-06-09",
+      "count": 12,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-06-10",
+      "count": 34,
+      "color": "#216e39"
+    },
+    {
+      "date": "2026-06-11",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-06-12",
+      "count": 7,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-06-13",
+      "count": 22,
+      "color": "#30a14e"
+    },
+    {
+      "date": "2026-06-14",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-06-15",
+      "count": 10,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-06-16",
+      "count": 39,
+      "color": "#216e39"
+    },
+    {
+      "date": "2026-06-17",
+      "count": 25,
+      "color": "#30a14e"
+    },
+    {
+      "date": "2026-06-18",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-06-19",
+      "count": 6,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-06-20",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-06-21",
+      "count": 6,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-06-22",
+      "count": 2,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-06-23",
+      "count": 11,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-06-24",
+      "count": 16,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-06-25",
+      "count": 40,
+      "color": "#216e39"
+    },
+    {
+      "date": "2026-06-26",
+      "count": 19,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-06-27",
+      "count": 7,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-06-28",
+      "count": 21,
+      "color": "#30a14e"
+    },
+    {
+      "date": "2026-06-29",
+      "count": 2,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-06-30",
+      "count": 5,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-07-01",
+      "count": 3,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-07-02",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-07-03",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-07-04",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-07-05",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-07-06",
+      "count": 19,
+      "color": "#40c463"
+    },
+    {
+      "date": "2026-07-07",
+      "count": 3,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-07-08",
+      "count": 1,
+      "color": "#9be9a8"
+    },
+    {
+      "date": "2026-07-09",
+      "count": 0,
+      "color": "#ebedf0"
     }
   ]
 }
@@ -1874,30 +1894,30 @@ export const GH_CONTRIBS: GhContribs | null = {
 export const GH_LANGUAGES: GhLanguage[] = [
   {
     "name": "TypeScript",
-    "count": 30
+    "count": 33
   },
   {
     "name": "Rust",
-    "count": 13
+    "count": 24
+  },
+  {
+    "name": "Python",
+    "count": 7
   },
   {
     "name": "PHP",
     "count": 7
   },
   {
-    "name": "Python",
-    "count": 6
-  },
-  {
     "name": "Vue",
     "count": 6
   },
   {
-    "name": "JavaScript",
-    "count": 4
+    "name": "HTML",
+    "count": 5
   },
   {
-    "name": "HTML",
+    "name": "JavaScript",
     "count": 4
   },
   {
@@ -1912,7 +1932,7 @@ export const GH_READMES: Record<string, string> = {
   "avil": "<div align=\"center\">\n\n# 🧭 AVIL — Adaptive Verified Iteration Loop\n\n### *A Self-Improving Software Development Lifecycle for Agentic AI Systems*\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)\n[![Paper](https://img.shields.io/badge/paper-PDF-c75725)](build/avil.pdf)\n[![Made with LaTeX](https://img.shields.io/badge/made%20with-LaTeX-1b4787)](https://www.latex-project.org/)\n[![Tectonic](https://img.shields.io/badge/compiler-tectonic-1b4787)](https://tectonic-typesetting.github.io/)\n[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-2e7d32.svg)](CONTRIBUTING.md)\n[![Code of Conduct](https://img.shields.io/badge/Code%20of%20Conduct-2.1-ff69b4.svg)](CODE_OF_CONDUCT.md)\n\n*Turn one-shot, hallucinated AI code into a verified, measured, self-improving lifecycle.*\n\n[📄 Read the Paper](build/avil.pdf) · [🧩 The Model](#-the-formal-model-in-one-minute) · [🚀 Quick Start](#-quick-start) · [🤝 Contribute](CONTRIBUTING.md)\n\n</div>\n\n---\n\n## ✨ Why AVIL?\n\nLLM coding agents are powerful — and **brittle**. They silently regress, inflate scope, hallucinate APIs, and discard partial progress when a single step fails. The culprit isn't only model capacity; it's the **absence of a lifecycle** that forces each unit of work to be small, verified, scored, and fed back into the agent's own strategy.\n\n**AVIL** (Adaptive Verified Iteration Loop) is that lifecycle.\n\nIt combines three classical ideas — **Agile iterations**, **Test-Driven Development**, and **Reinforcement Learning** — into a single, formal, verification-first control loop designed specifically for **agentic AI systems**. Every iteration is a thin vertical slice. Every slice is layered-verified. Every outcome is scored. Every score rewrites the agent's next move.\n\n> **In one sentence:** *AVIL is a software development lifecycle where AI agents plan in typed iterations, verify in layered stacks, score their work quantitatively, and self-improve from their own history.*\n\n---\n\n## 🎯 What's in this Repository?\n\nThis repo contains the **full research paper** on AVIL — LaTeX source, BibTeX, and a publication-styled PDF you can hand to a teammate or drop into a reading group tomorrow.\n\n| File | What it is |\n|------|------------|\n| [`avil.tex`](avil.tex) | Full LaTeX source — every section, diagram, algorithm |\n| [`avil.bib`](avil.bib) | Bibliography (Agile, TDD, RL, agentic AI, formal methods) |\n| [`build/avil.pdf`](build/avil.pdf) | **11-page publication-ready PDF** (arXiv-style) |\n| [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to propose changes via AVIL's own iteration style |\n| [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) | Contributor Covenant 2.1 |\n| [`SECURITY.md`](SECURITY.md) | How to report issues privately |\n\n---\n\n## 🧠 The Big Idea\n\nAVIL formalizes agentic software work as a **closed control loop** of seven components:\n\n```\n      ┌─────────┐     ┌─────────┐     ┌─────────┐     ┌─────────┐\n      │ Planner │ ──► │Executor │ ──► │Verifier │ ──► │ Scorer  │\n      └────▲────┘     └─────────┘     └─────────┘     └────┬────┘\n           │                                               │ S(I)\n           │ π                                             ▼\n      ┌────┴────┐                                    ┌─────────┐\n      │ Adapter │◄───────────────────── θ ──────────│ Learner │\n      └─────────┘                                    └─────────┘\n                       │                                │\n                       └──── shared Memory: H, θ, π, M ─┘\n```\n\n- **Planner** produces typed iterations `I` under **Progressive Vertical Slicing (PVS)**\n- **Executor** realizes the change set `Δ`\n- **Verifier** runs a 5-layer stack: *syntactic · semantic · behavioral · contract · acceptance*\n- **Scorer** reduces everything to a scalar `S(I)`\n- **Learner** `L(H)` updates heuristics from history\n- **Adapter** `A(M)` revises the planning strategy\n\n→ See [`build/avil.pdf`](build/avil.pdf) Figure 1 for the real (color) version.\n\n---\n\n## 📐 The Formal Model in One Minute\n\n**Iteration (Def. 3.1).** `I = ⟨id, τ, ships, oos, ac, ρ⟩` — a typed unit of work with explicit acceptance criteria and out-of-scope declarations.\n\n**Scoring function.**\n\n$$\nS(I) \\;=\\; w_\\sigma\\sigma - w_\\delta\\phi(\\delta) - w_\\kappa\\kappa + w_\\alpha\\alpha - w_\\tau\\psi(\\tau/\\tau^\\star)\n$$\n\nRewards success and scope adherence; penalizes defects with diminishing severity and time only beyond budget.\n\n**Learning function.**\n\n$$\n\\theta_{t+1} = L(H_t, \\theta_t) = \\theta_t + \\eta\\,\\widehat{\\nabla}_\\theta\\,\\overline{S}(H_t)\n$$\n\nStochastic ascent on the mean iteration score.\n\n**Adaptation function.**\n\n$$\n\\pi_{t+1} = A(M_t) = \\arg\\max_{\\pi}\\;\\mathbb{E}[\\,S(I) - \\lambda\\,\\mathcal{C}(\\pi)\\,]\n$$\n\nStructural strategy revision with a complexity regularizer.\n\n---\n\n## 📊 Simulated Evaluation (n = 1000 tasks)\n\nAVIL vs. Agile vs. TDD vs. naive one-shot AI generation:\n\n| Regime | Defect rate ↓ | Efficiency ↑ | Traceability ↑ | Recovery ↑ |\n|---|---|---|---|---|\n| Naive AI generation | 7.8 ± 0.4 | 0.41 | 0.12 | 0.18 |\n| Agile | 4.6 ± 0.3 | 0.58 | 0.47 | 0.44 |\n| TDD | 3.9 ± 0.3 | 0.62 | 0.55 | 0.51 |\n| **AVIL** | **2.3 ± 0.2** | **0.74** | **0.88** | **0.72** |\n\n> *Simulated results exercise the formal model under controlled conditions; they are not empirical claims on real codebases. See §Limitations in the paper.*\n\n---\n\n## 🚀 Quick Start\n\n### Read the paper\nJust open [`build/avil.pdf`](build/avil.pdf).\n\n### Build from source\nYou need either [Tectonic](https://tectonic-typesetting.github.io/) (recommended, zero-config) or a full TeX Live installation.\n\n```bash\n# with tectonic (auto-downloads any missing packages)\ntectonic -X compile avil.tex --outdir build\n\n# or with latexmk\nlatexmk -pdf -output-directory=build avil.tex\n```\n\nThe result is `build/avil.pdf`.\n\n---\n\n## 🧩 Applying AVIL to Your Own Agent\n\nAVIL is a **lifecycle**, not a library. To apply it to an existing coding agent:\n\n1. **Define the iteration schema.** Every task produces an `Iteration` record with `ships`, `oos`, `acceptance criteria`, `risk`.\n2. **Wire a verifier stack.** Start with lint + unit tests. Add behavioral / contract / acceptance layers as the project matures.\n3. **Compute `S(I)` per iteration.** Begin with unit weights; tune later via `L(H)`.\n4. **Log everything into `H`.** The history is the substrate for all learning and adaptation.\n5. **Enforce PVS.** Reject iterations whose `ships` set is not a thin end-to-end vertical slice.\n6. **Split on risk.** Use Algorithm 12.2 from the paper when `ρ(I) > ρ★`.\n\nThe paper gives you the math, the pseudocode, and the multi-agent extension. The rest is engineering.\n\n---\n\n## 🗺️ Iteration History (This Paper Was Built With AVIL)\n\nThis repository is itself a vertical-sliced artifact. Every section of the paper was shipped in a single, scoped iteration:\n\n<details>\n<summary><b>Click to expand the full iteration log</b></summary>\n\n| ID | Title | Type |\n|---|---|---|\n| I1 | Paper skeleton | structural |\n| I2 | Abstract + keywords | user_visible |\n| I3 | Introduction | user_visible |\n| I3a | Related Work | user_visible |\n| I4 | Problem statement + terminology | user_visible |\n| I5 | AVIL architecture | user_visible |\n| I6 | Iteration model / PVS integration | user_visible |\n| I7 | Verification system | user_visible |\n| I8 | Scoring function `S(I)` | formal |\n| I9 | Learning function `L(H)` | formal |\n| I10 | Adaptation function `A(M)` | formal |\n| I10a | Multi-agent extension | user_visible |\n| I11 | Formal model | formal |\n| I12 | Algorithms (pseudocode) | formal |\n| I13 | Diagrams (TikZ) | user_visible |\n| I14 | Simulated evaluation | user_visible |\n| I15 | Discussion | user_visible |\n| I16 | Limitations | user_visible |\n| I17 | Future work | user_visible |\n| I18 | Conclusion | user_visible |\n| I19 | References (BibTeX) | structural |\n| I20 | Formatting cleanup + first compile | structural |\n| I21 | Visual polish (arXiv / HF look) | user_visible |\n\n</details>\n\n---\n\n## 📚 Citation\n\nIf AVIL is useful in your research or agent design, please cite the paper:\n\n```bibtex\n@misc{avil2026,\n  title        = {Adaptive Verified Iteration Loop ({AVIL}):\n                  A Self-Improving Software Development Lifecycle\n                  for Agentic {AI} Systems},\n  author       = {Fanaperana},\n  year         = {2026},\n  howpublished = {\\url{https://github.com/Fanaperana/AVIL}},\n  note         = {Preprint}\n}\n```\n\n---\n\n## 🛠️ Tech Stack\n\n- **LaTeX** (article class) — document source\n- **TikZ + pgfplots** — diagrams and graphs\n- **tcolorbox** — colored definition and abstract callouts\n- **Tectonic** — zero-config compilation\n- **BibTeX** (`plain` style) — references\n\n---\n\n## 🤝 Contributing\n\nContributions are very welcome — typo fixes, bibliography additions, new diagrams, empirical results, language translations, **or an open-source reference implementation of the AVIL loop**.\n\nPlease read [`CONTRIBUTING.md`](CONTRIBUTING.md) before opening a PR. Every change to this repo is itself an AVIL iteration: declare `ships`, declare `oos`, include acceptance criteria.\n\nBy participating, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md).\n\n---\n\n## 🔒 Security\n\nFound a problem that shouldn't be public (e.g. a compiled-PDF exploit, a leaked credential in history)? See [`SECURITY.md`](SECURITY.md).\n\n---\n\n## ⭐ Support the Project\n\nIf AVIL sparks ideas for your own agent, **a star is the best thank-you** — it helps the work find other researchers and practitioners working on reliable agentic AI.\n\n<p align=\"center\">\n  <a href=\"https://github.com/Fanaperana/AVIL/stargazers\">\n    <img src=\"https://img.shields.io/github/stars/Fanaperana/AVIL?style=social\" alt=\"Star on GitHub\"/>\n  </a>\n</p>\n\n---\n\n## 📜 License\n\nReleased under the [MIT License](LICENSE) — use it, remix it, publish on top of it. The paper itself is intended to be freely redistributable; attribution is appreciated.\n\n---\n\n<div align=\"center\">\n\n*Built iteration by iteration.* 🧭\n\n</div>\n",
   "mosaicflow-svelte": "<p align=\"center\">\n  <img src=\"static/MosaicFlow-Word.png\" alt=\"MosaicFlow\" width=\"400\">\n</p>\n\n<p align=\"center\">\n  <strong>A powerful node-based canvas for visual information mapping and research</strong>\n</p>\n\n<p align=\"center\">\n  <a href=\"#features\">Features</a> •\n  <a href=\"#installation\">Installation</a> •\n  <a href=\"#usage\">Usage</a> •\n  <a href=\"#node-types\">Node Types</a> •\n  <a href=\"#keyboard-shortcuts\">Shortcuts</a> •\n  <a href=\"#tech-stack\">Tech Stack</a>\n</p>\n\n<p align=\"center\">\n  <img src=\"https://img.shields.io/badge/Tauri-2.0-blue?style=flat-square&logo=tauri\" alt=\"Tauri\">\n  <img src=\"https://img.shields.io/badge/Svelte-5-orange?style=flat-square&logo=svelte\" alt=\"Svelte 5\">\n  <img src=\"https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript\" alt=\"TypeScript\">\n  <img src=\"https://img.shields.io/badge/License-MIT-green?style=flat-square\" alt=\"License\">\n</p>\n\n---\n\n## ✨ Features\n\n### 🎨 **Visual Canvas**\n- Infinite canvas with pan and zoom capabilities\n- Drag & drop node creation from the sidebar palette\n- Right-click context menu for quick node creation\n- Smart collision detection to prevent node overlapping\n- Two cursor modes: **Select** (for editing) and **Drag** (for navigation)\n\n### 📦 **18+ Node Types**\nCreate rich, interconnected investigations with specialized nodes for:\n- **Notes** - Rich markdown editing with live preview\n- **Images** - Visual evidence with captions\n- **Links** - Web references with favicons\n- **Code** - Syntax-highlighted code snippets\n- **Timestamps** - Flexible date/time display\n- **People & Organizations** - Entity mapping\n- **Domains & IPs** - Network infrastructure tracking\n- **Hashes** - File integrity and threat indicators\n- **Credentials** - Breach data correlation\n- **Social Posts** - Social media evidence capture\n- **Maps** - Geolocation data\n- **Routers** - Network device information\n- **Snapshots** - Webpage archival\n- **Actions** - Task tracking and to-dos\n\n### 🔗 **Connections & Relationships**\n- Create edges between nodes to show relationships\n- Multiple edge styles: solid, dashed, dotted, animated\n- Arrow markers with customizable colors\n- Label edges to describe relationships\n\n### 📁 **Grouping & Organization**\n- Group multiple nodes together with `Ctrl+G`\n- Collapsible groups with customizable labels\n- Font styling options for group headers\n- Ungroup with `Ctrl+Shift+G`\n\n### 🎯 **Properties Panel**\n- Comprehensive node customization\n- Color, border, opacity controls\n- Node-specific options (timestamps, code language, etc.)\n- Real-time property updates\n\n### 💾 **Project Management**\n- Save and load investigation files (.mosaic)\n- Auto-save functionality\n- File dialog integration\n\n---\n\n## 🚀 Installation\n\n### Prerequisites\n- [Node.js](https://nodejs.org/) (v18+)\n- [pnpm](https://pnpm.io/) package manager\n- [Rust](https://www.rust-lang.org/tools/install) (for Tauri)\n\n### Setup\n\n```bash\n# Clone the repository\ngit clone https://github.com/Fanaperana/MosaicFlow-Svelte.git\ncd MosaicFlow-Svelte\n\n# Install dependencies\npnpm install\n\n# Run in development mode\npnpm tauri dev\n\n# Build for production\npnpm tauri build\n```\n\n---\n\n## 📖 Usage\n\n### Creating Nodes\n1. **Drag & Drop**: Drag nodes from the left sidebar palette onto the canvas\n2. **Context Menu**: Right-click on the canvas and select a node type from the menu\n3. **Quick Add**: Use the toolbar buttons for common node types\n\n### Connecting Nodes\n1. Hover over a node to reveal connection handles\n2. Drag from a handle to another node\n3. Release to create a connection\n\n### Organizing Your Canvas\n- **Pan**: Hold `Space` + drag, or use drag mode\n- **Zoom**: Scroll wheel or pinch gesture\n- **Select Multiple**: Click and drag to create a selection box\n- **Group**: Select nodes and press `Ctrl+G`\n\n### Editing Properties\n1. Click on a node to select it\n2. Use the Properties Panel on the right to customize:\n   - Colors and borders\n   - Node-specific content\n   - Visual styling options\n\n---\n\n## 🧩 Node Types\n\n| Category | Nodes | Description |\n|----------|-------|-------------|\n| **Content** | Note, Image, Code, Link | Core content nodes for evidence |\n| **Entities** | Person, Organization | People and company tracking |\n| **Technical** | Domain, Hash, Credential, Router | Technical indicators |\n| **Social** | Social Post | Social media content |\n| **Utility** | Timestamp, Map, Action, Snapshot | Supporting information |\n| **Organization** | Group, Link List | Grouping and collection nodes |\n\n---\n\n## ⌨️ Keyboard Shortcuts\n\n| Shortcut | Action |\n|----------|--------|\n| `Ctrl + G` | Group selected nodes |\n| `Ctrl + Shift + G` | Ungroup selected group |\n| `Ctrl + S` | Save project |\n| `Ctrl + O` | Open project |\n| `Ctrl + N` | New project |\n| `Delete` | Delete selected nodes/edges |\n| `Space + Drag` | Pan canvas |\n| `Escape` | Deselect all |\n\n---\n\n## 🛠️ Tech Stack\n\n- **[Tauri 2.0](https://v2.tauri.app/)** - Cross-platform desktop framework\n- **[SvelteKit](https://kit.svelte.dev/)** - Frontend framework with Svelte 5\n- **[SvelteFlow](https://svelteflow.dev/)** - Node-based UI library\n- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript\n- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first styling\n- **[shadcn-svelte](https://shadcn-svelte.com/)** - UI component library\n- **[CodeMirror](https://codemirror.net/)** - Code editor for code nodes\n- **[Lucide](https://lucide.dev/)** - Beautiful icons\n\n---\n\n## 📁 Project Structure\n\n```\nmosaicflow/\n├── src/\n│   ├── lib/\n│   │   ├── components/     # Svelte components\n│   │   │   ├── nodes/      # Custom node components\n│   │   │   ├── ui/         # shadcn UI components\n│   │   │   └── editor/     # Rich text editor\n│   │   ├── stores/         # Svelte stores\n│   │   ├── services/       # File operations\n│   │   └── types.ts        # TypeScript definitions\n│   └── routes/             # SvelteKit routes\n├── src-tauri/              # Rust backend\n│   ├── src/                # Rust source code\n│   └── tauri.conf.json     # Tauri configuration\n└── static/                 # Static assets\n```\n\n---\n\n## 🤝 Contributing\n\nContributions are welcome! All work in this repo is issue-driven so every change maps to an issue and a closing commit.\n\n- Start with an issue: open a `bug`, `feature`, `enhancement`, `refactor`, or `docs` issue describing the change and acceptance criteria.\n- Branch naming: `<type>/<issue-number>-<slug>` (e.g., `feature/42-maplibre-integration`).\n- Commits: use [Conventional Commits](https://www.conventionalcommits.org/) and close the issue in the footer (e.g., `Closes #42`).\n- PRs: reference the issue in the title/body and keep the scope limited to that issue.\n- Checks: run `pnpm check` before opening a PR.\n\nQuick flow:\n1. Fork the repository (or create a branch if you have access).\n2. Create an issue describing the change.\n3. Create your branch (`git checkout -b feature/42-maplibre-integration`).\n4. Commit with a closing footer (`fix(stores): lock blocks dragging\\n\\nCloses #42`).\n5. Push and open a Pull Request.\n\n---\n\n## 📄 License\n\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.\n\n---\n\n## 🙏 Acknowledgments\n\n- [Tauri Team](https://tauri.app/) for the amazing framework\n- [Svelte Team](https://svelte.dev/) for Svelte 5\n- [xyflow](https://www.xyflow.com/) for SvelteFlow\n- [shadcn](https://ui.shadcn.com/) for the beautiful components\n\n---\n\n<p align=\"center\">\n  Made with ❤️ for researchers and visual thinkers\n</p>\n",
   "cahier": "<p align=\"center\">\n  <img src=\"https://lucide.dev/api/gh-icon/book-open\" width=\"80\" alt=\"Cahier\" />\n</p>\n\n<h1 align=\"center\">Cahier</h1>\n\n<p align=\"center\">\n  A modern, themeable PDF reader built with React — designed for focused reading.\n</p>\n\n<p align=\"center\">\n  <img src=\"https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white\" alt=\"React 19\" />\n  <img src=\"https://img.shields.io/badge/TypeScript-6.0-3178C6?style=flat-square&logo=typescript&logoColor=white\" alt=\"TypeScript 6\" />\n  <img src=\"https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite&logoColor=white\" alt=\"Vite 8\" />\n  <img src=\"https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white\" alt=\"Tailwind CSS 4\" />\n  <img src=\"https://img.shields.io/badge/Turborepo-2.5-EF4444?style=flat-square&logo=turborepo&logoColor=white\" alt=\"Turborepo\" />\n  <img src=\"https://img.shields.io/badge/pnpm-10-F69220?style=flat-square&logo=pnpm&logoColor=white\" alt=\"pnpm\" />\n  <img src=\"https://img.shields.io/badge/pdf.js-4.10-E34F26?style=flat-square\" alt=\"pdf.js\" />\n  <img src=\"https://img.shields.io/badge/license-MIT-green?style=flat-square\" alt=\"MIT License\" />\n  <img src=\"https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square\" alt=\"PRs Welcome\" />\n  <img src=\"https://img.shields.io/badge/offline-first-blueviolet?style=flat-square\" alt=\"Offline First\" />\n</p>\n\n<p align=\"center\">\n  <a href=\"#features\">Features</a> •\n  <a href=\"#getting-started\">Getting Started</a> •\n  <a href=\"#architecture\">Architecture</a> •\n  <a href=\"#themes\">Themes</a> •\n  <a href=\"#plugins\">Plugins</a> •\n  <a href=\"#contributing\">Contributing</a>\n</p>\n\n---\n\n## Features\n\n- **Multi-layout reading** — Single page, book spread, and continuous scroll modes\n- **8 built-in themes** — Light, Dark, Sepia, Night (AMOLED), Forest, and Ocean with multiple variants each\n- **Page color matching** — Pages adapt to match your theme using CSS blend modes for a seamless reading experience\n- **Fit to screen** — One-click optimal zoom for any layout\n- **PDF thumbnails** — Library shows rendered first-page previews, cached in IndexedDB\n- **Offline-first** — All documents stored locally in IndexedDB; no server required\n- **Plugin architecture** — Extensible with bookmarks, notes, AI, dictionary, comments, OCR, and parser plugins\n- **Drag & drop upload** — Drop PDFs directly into the library\n- **Search & sort** — Filter your library, sorted by last opened\n\n## Tech Stack\n\n| Layer | Technology |\n|-------|-----------|\n| Frontend | React 19, TypeScript 6, React Router 7 |\n| Styling | Tailwind CSS 4, CVA, Tailwind Merge |\n| PDF Engine | pdf.js (pdfjs-dist) |\n| State | Zustand 5 with persist middleware |\n| Storage | IndexedDB via idb |\n| Virtualization | TanStack Virtual |\n| Build | Vite 8, Turborepo, pnpm workspaces |\n\n## Getting Started\n\n### Prerequisites\n\n- **Node.js** ≥ 20\n- **pnpm** ≥ 10\n\n### Install & Run\n\n```bash\n# Clone the repo\ngit clone https://github.com/Fanaperana/cahier.git\ncd cahier\n\n# Install dependencies\npnpm install\n\n# Start development server\npnpm dev\n```\n\nThe app will be available at `http://localhost:5173`.\n\n### Scripts\n\n| Command | Description |\n|---------|-------------|\n| `pnpm dev` | Start the dev server |\n| `pnpm build` | Build all packages |\n| `pnpm lint` | Lint all packages |\n| `pnpm typecheck` | Type-check all packages |\n| `pnpm preview` | Preview the production build |\n\n## Architecture\n\nCahier is a **Turborepo monorepo** with pnpm workspaces:\n\n```\ncahier/\n├── apps/\n│   └── web/              # Main React application\n├── packages/\n│   ├── core/             # PDF loading, rendering, state, storage, plugin system\n│   ├── ui/               # Shared UI components (Button, Input, Slider, Tooltip)\n│   ├── themes/           # Theme presets and configuration\n│   └── plugin-api/       # Plugin development API\n└── plugins/\n    ├── plugin-bookmarks/ # Bookmark management\n    ├── plugin-notes/     # Note-taking\n    ├── plugin-ai/        # AI-powered features\n    ├── plugin-dictionary/ # Dictionary lookup\n    ├── plugin-comments/  # Document annotations\n    ├── plugin-ocr/       # Optical character recognition\n    └── plugin-parser/    # Document parsing\n```\n\n### Key Design Decisions\n\n- **IndexedDB for storage** — Full PDF ArrayBuffers are stored client-side. No backend needed.\n- **CSS blend modes for theming** — Dark themes use `mix-blend-mode: screen` with `invert(1) hue-rotate(180deg)` to make page backgrounds match the reading area exactly.\n- **Signal-based fit-to-screen** — Each layout independently calculates optimal zoom from its container dimensions.\n- **Cached thumbnails** — First-page renders are stored as WebP blobs in IndexedDB for instant library loading.\n\n## Themes\n\nCahier ships with **8 themes**, each with multiple variants:\n\n| Theme | Description | Variants |\n|-------|-------------|----------|\n| **Light** | Clean white | White, Warm White, Cool Gray |\n| **Dark** | Charcoal | Charcoal, Deep Black, Dark Fade |\n| **Sepia** | Parchment | Parchment, Warm Paper, Aged Paper |\n| **Night** | AMOLED black | AMOLED Black, Soft Black |\n| **Forest** | Deep green | Deep Forest, Canopy |\n| **Ocean** | Deep blue | Deep Ocean, Abyss, Wave |\n\nDark themes include `grayscale(10%) contrast(110%)` filters for sharper, less eye-straining text.\n\n## Plugins\n\nCahier uses a plugin registry system. Plugins are registered at app startup and can extend the reader with custom sidebar panels, toolbar actions, and document processing.\n\n| Plugin | Status | Description |\n|--------|--------|-------------|\n| Bookmarks | 🔨 Scaffold | Save and manage page bookmarks |\n| Notes | 🔨 Scaffold | Create reading notes |\n| AI Assistant | 🔨 Scaffold | AI-powered reading features |\n| Dictionary | 🔨 Scaffold | Word lookup and definitions |\n| Comments | 🔨 Scaffold | Annotate documents |\n| OCR | 🔨 Scaffold | Extract text from scanned PDFs |\n| Parser | 🔨 Scaffold | Advanced document parsing |\n\n## License\n\nThis project is licensed under the [MIT License](LICENSE).\n\n## Contributing\n\nContributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) before submitting a pull request.\n\n## Security\n\nTo report a security vulnerability, please see our [Security Policy](SECURITY.md).\n\n## Code of Conduct\n\nThis project follows a [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.\n",
-  "spdf": "<div align=\"center\">\n\n# spdf\n\n**spdf** — *speed-f*: a **s**patial **PDF** parser.\nColumn-aware text extraction at a lightning pace, in Rust.\n\n<!-- typewriter.gif placeholder — drop a recording of the website hero\n     here when we cut one. The phrases cycle through:\n       \"fast, spatial PDF parsing in Rust.\"\n       \"speedf. a lightning-fast PDF parser.\"\n       \"spacial PDF parser. column-aware by design.\"\n       \"single static binary. PDFium embedded.\"\n       \"OCR built in. Tesseract + HTTP.\"\n-->\n\nExtract text with preserved columns, tables, and layout — plus optional OCR\nfor scans, format conversion for Office docs, and a single self-contained\nbinary.\n\n[![CI](https://github.com/Fanaperana/spdf/actions/workflows/ci.yml/badge.svg)](https://github.com/Fanaperana/spdf/actions/workflows/ci.yml)\n[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)\n[![Rust](https://img.shields.io/badge/rust-1.85%2B-orange.svg)](rust-toolchain.toml)\n[![Platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey.svg)](#install)\n\n</div>\n\n---\n\n## Why spdf\n\nMost PDF-to-text tools collapse whitespace, shuffle columns, and emit one\ngiant line salad — fine for search indexing, useless for anything that cares\nabout *where* things appear on the page (invoices, tax bills, property\nrecords, scientific tables, legal forms).\n\n`spdf` keeps the geometry:\n\n- **Column-aware projection** — tables, two-column layouts, sidebars, and\n  indented blocks come back in reading order with their spatial structure\n  intact.\n- **Faux-bold & shadow dedup** — PDFs that \"draw text twice\" to simulate\n  bold no longer produce `TaTax Infofo`; you get `Tax Info`.\n- **Word reconstruction** — PDFium-style per-glyph extraction is stitched\n  back into words (`1 8 3 6` → `1836`) using a liteparse-compatible merge\n  heuristic.\n- **QR / barcode / microprint filtering** — the hundreds of tiny numeric\n  glyphs that encode a QR code are auto-dropped so they don't destroy the\n  surrounding table.\n- **Optional OCR** — Tesseract locally, or any HTTP OCR server (PaddleOCR,\n  EasyOCR, etc.) for image-only pages. One flag to turn it off when you\n  know the PDF is born-digital.\n- **Format conversion** — Office docs via LibreOffice shell-out, images via\n  ImageMagick, all behind the same CLI.\n- **One static binary.** Install PDFium once, ship `spdf` anywhere.\n\n## Comparison\n\nBenchmarked on two real-world U.S. county tax documents (TAX_APPEAL_MOM\nset) with `--no-ocr`. Token-level F1 measured against the same documents\nparsed through [LiteParse](https://github.com/run-llama/liteparse) using the\nprovided reference outputs in [tests/parity/](tests/parity/).\n\n| Feature                              | spdf (this project) | LiteParse  | pdftotext  | pypdfium2  |\n| ------------------------------------ | :-----------------: | :--------: | :--------: | :--------: |\n| Language                             | Rust                | TypeScript | C++        | C++/Python |\n| Single static binary                 | ✅                  | ❌ (Node)  | ✅         | ❌         |\n| Column-aware text projection         | ✅                  | ✅         | partial    | ❌         |\n| Faux-bold shadow dedup               | ✅                  | ✅         | ❌         | ❌         |\n| QR / microprint filter               | ✅                  | ✅         | ❌         | ❌         |\n| OCR fallback (Tesseract + HTTP)      | ✅                  | ✅         | ❌         | ❌         |\n| Office-format conversion             | ✅                  | ✅         | ❌         | ❌         |\n| Batch mode                           | ✅                  | ✅         | ❌         | ❌         |\n| JSON output with per-item bboxes     | ✅                  | ✅         | ❌         | partial    |\n| C ABI FFI crate                      | ✅                  | ❌         | ✅         | ✅         |\n| **Token F1 vs LiteParse (tax bill)** | **0.990**           | 1.000      | ~0.82      | ~0.80      |\n| **Token F1 vs LiteParse (PRC)**      | **0.922**           | 1.000      | ~0.75      | ~0.78      |\n| **Startup time (cold)**              | ~25 ms              | ~450 ms    | ~10 ms     | ~120 ms    |\n\nParity harness and golden outputs live in [tests/parity/](tests/parity/);\nrun `python3 tests/parity/compare.py` to reproduce.\n\n## Benchmark\n\nReproducible head-to-head against [LiteParse](https://github.com/run-llama/liteparse)\non the fixtures in [example/](example/). Ground truth is raw\n`tesseract <image> - -l eng` (PDFs rendered with `pdftoppm -r 150` first);\ntokens are compared case-insensitively as a multiset.\n\n> This is a like-for-like comparison, not a knock on LiteParse. LiteParse\n> is the project spdf was designed against — we owe the original authors\n> for the reference implementation of the spatial projection algorithm,\n> and the goal of publishing these numbers is transparency about where\n> the Rust port stands, not to make the TypeScript original look bad.\n\n<!-- BENCHMARK:BEGIN -->\n<!-- generated by benchmark/run.sh — do not edit by hand -->\n\n| fixture | engine | wall-clock | tokens | recall | precision | F1 |\n|---|---|---:|---:|---:|---:|---:|\n| irs-f1040.pdf | spdf | 268 ms | 1094 | 63.8% | 86.5% | 73.4% |\n| irs-f1040.pdf | **liteparse** | **541 ms** | **1575** | **81.8%** | **77.0%** | **79.4%** |\n| irs-fw9-p1-2.pdf | spdf | 76 ms | 2253 | 99.1% | 98.4% | 98.7% |\n| irs-fw9-p1-2.pdf | **liteparse** | **465 ms** | **2253** | **99.1%** | **98.4%** | **98.8%** |\n| nist-sp-800-53r5-p1-2.pdf | spdf | 17 ms | 96 | 82.5% | 97.9% | 89.5% |\n| nist-sp-800-53r5-p1-2.pdf | **liteparse** | **461 ms** | **94** | **82.5%** | **100.0%** | **90.4%** |\n| nist-sp-800-63b-p1-2.pdf | spdf | 969 ms | 222 | 93.5% | 96.8% | 95.1% |\n| nist-sp-800-63b-p1-2.pdf | **liteparse** | **5530 ms** | **226** | **95.2%** | **96.9%** | **96.1%** |\n| rfc8446-p1-2.pdf | **spdf** | **20 ms** | **399** | **99.5%** | **99.7%** | **99.6%** |\n| rfc8446-p1-2.pdf | liteparse | 375 ms | 399 | 99.5% | 99.7% | 99.6% |\n| rfc9110-p1-2.pdf | **spdf** | **235 ms** | **8** | **0.0%** | **0.0%** | **0.0%** |\n| rfc9110-p1-2.pdf | liteparse | 3101 ms | 8 | 0.0% | 0.0% | 0.0% |\n| example-1.jpg | **spdf** | **1067 ms** | **231** | **82.0%** | **96.5%** | **88.7%** |\n| example-1.jpg | liteparse | 7070 ms | 146 | 42.3% | 78.8% | 55.0% |\n| test-ocr.pdf | **spdf** | **274 ms** | **20** | **100.0%** | **100.0%** | **100.0%** |\n| test-ocr.pdf | liteparse | 3212 ms | 20 | 100.0% | 100.0% | 100.0% |\n\n**Mean over fixtures:** spdf **F1 80.6%** in **366 ms**; liteparse F1 77.4% in 2594 ms.\n\n<!-- BENCHMARK:END -->\n\n### Spatial precision\n\nToken accuracy alone doesn't tell you whether an engine put each word in\nthe *right place on the page* — which is the whole point of a spatial\nparser. We also compare every matched word's bounding box against the\nraw-tesseract ground truth and report mean IoU, the fraction of matches\nthat clear IoU ≥ 0.5 (the COCO-style \"well localised\" bar), and the\nmean centroid error in PDF points.\n\n<!-- SPATIAL:BEGIN -->\n<!-- generated by benchmark/spatial.py — do not edit by hand -->\n\n| fixture | engine | matched | mean IoU | IoU≥0.5 | centroid err |\n|---|---|---:|---:|---:|---:|\n| example-1.jpg | **spdf** | **212** | **0.976** | **97.6%** | **4.50 pt** |\n| example-1.jpg | liteparse | 109 | 0.667 | 67.9% | 28.03 pt |\n| test-ocr.pdf | spdf | 5 | 0.952 | 100.0% | 0.64 pt |\n| test-ocr.pdf | **liteparse** | **4** | **0.957** | **100.0%** | **0.54 pt** |\n| irs-f1040.pdf | **spdf** | **115** | **0.476** | **55.7%** | **97.90 pt** |\n| irs-f1040.pdf | liteparse | 84 | 0.351 | 52.4% | 135.73 pt |\n| irs-fw9-p1-2.pdf | **spdf** | **29** | **0.517** | **58.6%** | **169.21 pt** |\n| irs-fw9-p1-2.pdf | liteparse | 28 | 0.348 | 53.6% | 175.61 pt |\n| nist-sp-800-53r5-p1-2.pdf | **spdf** | **3** | **0.964** | **100.0%** | **0.35 pt** |\n| nist-sp-800-53r5-p1-2.pdf | liteparse | 1 | 0.634 | 100.0% | 2.01 pt |\n| nist-sp-800-63b-p1-2.pdf | **spdf** | **14** | **0.678** | **78.6%** | **84.12 pt** |\n| nist-sp-800-63b-p1-2.pdf | liteparse | 20 | 0.471 | 65.0% | 103.50 pt |\n| rfc8446-p1-2.pdf | **spdf** | **1** | **0.869** | **100.0%** | **0.44 pt** |\n| rfc8446-p1-2.pdf | liteparse | 4 | 0.427 | 50.0% | 171.02 pt |\n| rfc9110-p1-2.pdf | **spdf** | **0** | **0.000** | **0.0%** | **0.00 pt** |\n| rfc9110-p1-2.pdf | liteparse | 0 | 0.000 | 0.0% | 0.00 pt |\n\n**Mean over fixtures:** spdf **mean IoU 0.679**, **73.8%** of matches ≥ 0.5, centroid error **44.64 pt**; liteparse 0.482 / 61.1% / 77.05 pt.\n\n<!-- SPATIAL:END -->\n\nPer-fixture raw outputs are committed under [benchmark/outputs/](benchmark/outputs/)\nso the numbers are auditable. Reproduce on your own machine:\n\n```sh\nmake build-ocr   # or `make install-ocr`\nLITEPARSE_DIR=/path/to/liteparse make benchmark-update\n```\n\n## Production-readiness\n\nspdf is pre-1.0. The table below tracks what we've hardened so you can\ndecide whether it fits your threat model; see [CHANGELOG.md](CHANGELOG.md)\nfor per-release detail.\n\n| Area | Status |\n| --- | --- |\n| JSON output schema (byte-compatible with LiteParse) | stable (covered by parity harness) |\n| Typed error enum at the public API (`SpdfError`) | stable |\n| Benchmark corpus (public-domain: IRS, NIST, RFC, scanned image) | 9 fixtures in [example/](example/) |\n| Property tests (`cargo test -p spdf-projection proptests`) | panic-freedom + shuffle-stability |\n| Fuzz harness (`cargo +nightly fuzz run parse_pdf`) | [fuzz/](fuzz/) — run before exposing to untrusted input |\n| Cross-platform CI | Linux + macOS + Windows; MSRV 1.85; rustdoc warnings gated |\n| Resource guards (`timeout_secs`, `max_input_bytes`, `max_pages`) | available via [`SpdfParser::builder`](crates/spdf-core/src/lib.rs) |\n| Security policy | see [SECURITY.md](SECURITY.md) |\n| CLI / Rust library API | best-effort stable, breaks noted in [CHANGELOG.md](CHANGELOG.md) |\n| `spdf-ffi` C ABI | **unstable** — symbols may change across 0.x releases |\n| crates.io publication | [`spdf-core`](https://crates.io/crates/spdf-core), [`spdf-cli`](https://crates.io/crates/spdf-cli), and all sub-crates are on crates.io from 0.2.0-alpha.1 |\n\n**Recommended posture** when parsing untrusted PDFs today:\n\n```rust\nlet parser = SpdfParser::builder()\n    .timeout_secs(30)           // defensive deadline\n    .max_input_bytes(50 << 20)  // 50 MiB input cap\n    .max_pages(500)             // reject page-tree bombs\n    .build();\n```\n\nThen wrap the process in a resource-capped sandbox (`systemd-run\n--property=MemoryMax=1G`, Firejail, Docker `--memory=`). Follow the\nfull hardening checklist in [SECURITY.md](SECURITY.md).\n\n## Install\n\n### From crates.io\n\n```sh\ncargo install spdf-cli --version 0.2.0-alpha.2\n# installs the `spdf` binary. `libpdfium` is downloaded and bundled\n# at build time (no extra runtime deps). Add `--features tesseract`\n# to compile in local Tesseract OCR.\n```\n\n### Prebuilt binaries\n\nSelf-contained tarballs (bundled `libpdfium`, no runtime deps) are\nattached to each [GitHub release](https://github.com/Fanaperana/spdf/releases).\nDownload, extract, and run. OCR is not compiled into the prebuilt\nbinaries — use `--ocr-server-url` for HTTP OCR or `cargo install`\nwith `--features spdf-cli/tesseract` for a local Tesseract build.\n\n| Target | Tarball | Status |\n| --- | --- | :---: |\n| `x86_64-unknown-linux-gnu` | `spdf-<version>-x86_64-unknown-linux-gnu.tar.gz` | ✅ attached to v0.2.0-alpha.2 |\n| `aarch64-unknown-linux-gnu` | `spdf-<version>-aarch64-unknown-linux-gnu.tar.gz` | ⬜ TODO |\n| `x86_64-apple-darwin` | `spdf-<version>-x86_64-apple-darwin.tar.gz` | ⬜ TODO — build on macOS Intel |\n| `aarch64-apple-darwin` | `spdf-<version>-aarch64-apple-darwin.tar.gz` | ⬜ TODO — build on Apple Silicon |\n| `x86_64-pc-windows-msvc` | `spdf-<version>-x86_64-pc-windows-msvc.zip` | ⬜ TODO — build on Windows |\n\nTo produce a release tarball on a new host:\n\n```sh\ncargo build --release -p spdf-cli\nVER=0.2.0-alpha.2\nTARGET=$(rustc -vV | awk '/^host:/ {print $2}')\nDIR=\"spdf-${VER}-${TARGET}\"\nmkdir -p \"dist/${DIR}\"\ncp target/release/spdf \"dist/${DIR}/\"          # use spdf.exe on Windows\ncp LICENSE README.md CHANGELOG.md \"dist/${DIR}/\"\ntar czf \"dist/${DIR}.tar.gz\" -C dist \"${DIR}\"   # or zip on Windows\nsha256sum \"dist/${DIR}.tar.gz\" > \"dist/${DIR}.tar.gz.sha256\"\ngh release upload v${VER} \"dist/${DIR}.tar.gz\" \"dist/${DIR}.tar.gz.sha256\"\n```\n\n### From source\n\n```sh\n# from source (requires Rust 1.85+)\ncargo install --path crates/spdf-cli\n\n# or build locally\ncargo build --release -p spdf-cli\n./target/release/spdf --help\n```\n\n### Runtime dependency: PDFium\n\n`spdf` dynamically loads a PDFium shared library. On macOS:\n\n```sh\nbrew install pdfium\n```\n\nOr download a prebuilt binary from\n[bblanchon/pdfium-binaries](https://github.com/bblanchon/pdfium-binaries/releases)\nand point `PDFIUM_LIB_PATH` at it.\n\n### Platform support matrix\n\n| Platform | Core parsing | OCR (Tesseract) | Notes |\n| --- | :---: | :---: | --- |\n| Linux x86_64 | ✅ | ✅ | primary development target |\n| macOS (Intel + Apple Silicon) | ✅ | ✅ | requires `brew install tesseract` |\n| Windows x86_64 | ✅ | ⚠️ source-build only | see below |\n\n**Windows OCR caveat.** The `tesseract` Rust crate used by `spdf-ocr`\nlinks against `libtesseract` + `libleptonica` via `bindgen`, which needs\na working C toolchain (clang) and a `vcpkg` or manually-installed\nTesseract/Leptonica. The CI matrix builds spdf on Windows **without**\nthe `tesseract` feature; the Linux/macOS jobs cover OCR. If you need\nWindows OCR in production today, install Tesseract via `vcpkg install\ntesseract leptonica --triplet x64-windows`, set `LIBCLANG_PATH`, and\nbuild with `cargo build --release -p spdf-cli --features\nspdf-cli/tesseract`. The [HTTP OCR backend](#cli) (`--ocr-server-url`)\nworks on every platform and is the recommended option for Windows until\nwe cut a proper MSVC-native build.\n\n## Quick start\n\n```sh\n# Confirm the install\nspdf --version\n\n# Plain text with preserved layout\nspdf parse invoice.pdf --no-ocr --format text\n\n# Read from stdin (handy for piping through curl / aws s3 cp)\ncat invoice.pdf | spdf parse - --no-ocr\n\n# Structured JSON with per-glyph bounding boxes\nspdf parse invoice.pdf --no-ocr --format json > out.json\n\n# Password-protected PDFs\nspdf parse confidential.pdf --password 'hunter2'\n\n# Keep very-small glyphs (<2 pt) — useful for IRS-style form field labels\nspdf parse irs-fw9.pdf --preserve-small-text\n\n# OCR-only mode for scanned PDFs (local Tesseract; needs --features tesseract)\nspdf parse scan.pdf --ocr-language eng\n\n# Use an external OCR server (PaddleOCR, EasyOCR, etc.) — works on every platform\nspdf parse scan.pdf --ocr-server-url http://localhost:8000\n\n# Render specific pages\nspdf parse book.pdf --target-pages 1-3,7,12-15\n\n# Dump pages as PNGs\nspdf screenshot report.pdf -o ./pages --dpi 200\n\n# Batch-convert a directory of PDFs\nspdf batch-parse ./inputs ./outputs --format text\n```\n\nExit codes: `0` success, `1` parse/OCR error (with `Error: …` on stderr),\n`2` invalid CLI arguments (standard clap).\n\n## Library usage\n\n```rust\nuse spdf_core::SpdfParser;\nuse spdf_types::ParseConfig;\n\nlet parser = SpdfParser::new(ParseConfig {\n    ocr_enabled: false,\n    ..Default::default()\n});\nlet result = parser.parse(std::path::Path::new(\"invoice.pdf\"))?;\nfor page in &result.pages {\n    println!(\"--- page {} ---\\n{}\", page.page_num, page.text);\n}\n# Ok::<(), spdf_types::SpdfError>(())\n```\n\nOr use the ergonomic builder if you only want to tweak a few knobs:\n\n```rust\nuse spdf_core::SpdfParser;\n\nlet parser = SpdfParser::builder()\n    .timeout_secs(30)\n    .max_input_bytes(50 << 20)\n    .ocr_enabled(false)\n    .build();\nlet result = parser.parse(std::path::Path::new(\"invoice.pdf\"))?;\n# Ok::<(), spdf_types::SpdfError>(())\n```\n\n## Architecture\n\n```\ncrates/\n  spdf-types/        public schema\n  spdf-processing/   text / geometry / markup helpers\n  spdf-projection/   spatial reconstruction (the crown jewel)\n  spdf-pdf/          PdfEngine trait + PDFium impl\n  spdf-ocr/          OcrEngine trait + Tesseract + HTTP impls\n  spdf-convert/      LibreOffice / ImageMagick shell-outs\n  spdf-output/       JSON + text formatters\n  spdf-core/         orchestrator\n  spdf-cli/          spdf binary\n  spdf-ffi/          C ABI cdylib\nxtask/               parity harness, benches, pdfium fetcher\n```\n\nSee [AGENTS.md](AGENTS.md) for the full crate map and\n[CONTRIBUTING.md](CONTRIBUTING.md) for development workflow.\n\n## Roadmap\n\n- Node bindings (`@spdf/node`) on top of `spdf-ffi`\n- Python bindings via PyO3\n- `spdf serve` — a local HTTP parsing service\n- Optional ML-based reading-order classifier (opt-in, `burn` feature flag)\n\n## Release process (for maintainers)\n\nReleases are fully automated by [`.github/workflows/release.yml`](.github/workflows/release.yml):\n\n1. Bump `version` in the workspace `Cargo.toml` and update [CHANGELOG.md](CHANGELOG.md).\n2. `git commit -am \"release 0.x.y\" && git push`\n3. `git tag -a v0.x.y -m \"spdf 0.x.y\" && git push origin v0.x.y`\n\nThe workflow then:\n- builds the `x86_64-unknown-linux-gnu` tarball and attaches it to the\n  GitHub release (creating one if missing),\n- runs `cargo publish` for all 9 crates in topological order using the\n  `CRATES_IO_TOKEN` repository secret, with retry-on-429 for the\n  crates.io new-crate rate limit.\n\nTo smoke-test the pipeline without consuming a real version number, run\nthe workflow manually from the **Actions** tab with `dry_run = true` —\nit skips uploads and runs `cargo publish --dry-run` for every crate.\n\n## Acknowledgements\n\nspdf is an independent Rust project authored by\n[Fanaperana](https://github.com/Fanaperana). The spatial projection\nalgorithm was inspired by (and is benchmarked against)\n[LiteParse](https://github.com/run-llama/liteparse), but spdf is not a\nport or rewrite — it's its own implementation, with its own engine\nchoices (PDFium + Tesseract), its own data model, and its own hardening\nwork. Rendering is powered by\n[PDFium](https://pdfium.googlesource.com/pdfium/); OCR uses\n[Tesseract](https://github.com/tesseract-ocr/tesseract).\n\n## License\n\n[MIT](LICENSE) © 2026 spdf contributors.\n",
+  "spdf": "<div align=\"center\">\n\n# spdf\n\n**spdf** — *speed-f*: a **s**patial **PDF** parser.\nColumn-aware text extraction at a lightning pace, in Rust.\n\n<!-- typewriter.gif placeholder — drop a recording of the website hero\n     here when we cut one. The phrases cycle through:\n       \"fast, spatial PDF parsing in Rust.\"\n       \"speedf. a lightning-fast PDF parser.\"\n       \"spacial PDF parser. column-aware by design.\"\n       \"single static binary. PDFium embedded.\"\n       \"OCR built in. Tesseract + HTTP.\"\n-->\n\nExtract text with preserved columns, tables, and layout — plus optional OCR\nfor scans, format conversion for Office docs, and a single self-contained\nbinary.\n\n[![CI](https://github.com/Fanaperana/spdf/actions/workflows/ci.yml/badge.svg)](https://github.com/Fanaperana/spdf/actions/workflows/ci.yml)\n[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)\n[![Rust](https://img.shields.io/badge/rust-1.85%2B-orange.svg)](rust-toolchain.toml)\n[![Platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey.svg)](#install)\n\n</div>\n\n---\n\n## Why spdf\n\nMost PDF-to-text tools collapse whitespace, shuffle columns, and emit one\ngiant line salad — fine for search indexing, useless for anything that cares\nabout *where* things appear on the page (invoices, tax bills, property\nrecords, scientific tables, legal forms).\n\n`spdf` keeps the geometry:\n\n- **Column-aware projection** — tables, two-column layouts, sidebars, and\n  indented blocks come back in reading order with their spatial structure\n  intact.\n- **Faux-bold & shadow dedup** — PDFs that \"draw text twice\" to simulate\n  bold no longer produce `TaTax Infofo`; you get `Tax Info`.\n- **Word reconstruction** — PDFium-style per-glyph extraction is stitched\n  back into words (`1 8 3 6` → `1836`) using a liteparse-compatible merge\n  heuristic.\n- **QR / barcode / microprint filtering** — the hundreds of tiny numeric\n  glyphs that encode a QR code are auto-dropped so they don't destroy the\n  surrounding table.\n- **Optional OCR** — Tesseract locally, or any HTTP OCR server (PaddleOCR,\n  EasyOCR, etc.) for image-only pages. One flag to turn it off when you\n  know the PDF is born-digital.\n- **Format conversion** — Office docs via LibreOffice shell-out, images via\n  ImageMagick, all behind the same CLI.\n- **One static binary.** Install PDFium once, ship `spdf` anywhere.\n\n## Comparison\n\nBenchmarked on two real-world U.S. county tax documents (TAX_APPEAL_MOM\nset) with `--no-ocr`. Token-level F1 measured against the same documents\nparsed through [LiteParse](https://github.com/run-llama/liteparse) using the\nprovided reference outputs in [tests/parity/](tests/parity/).\n\n| Feature                              | spdf (this project) | LiteParse  | pdftotext  | pypdfium2  |\n| ------------------------------------ | :-----------------: | :--------: | :--------: | :--------: |\n| Language                             | Rust                | TypeScript | C++        | C++/Python |\n| Single static binary                 | ✅                  | ❌ (Node)  | ✅         | ❌         |\n| Column-aware text projection         | ✅                  | ✅         | partial    | ❌         |\n| Faux-bold shadow dedup               | ✅                  | ✅         | ❌         | ❌         |\n| QR / microprint filter               | ✅                  | ✅         | ❌         | ❌         |\n| OCR fallback (Tesseract + HTTP)      | ✅                  | ✅         | ❌         | ❌         |\n| Office-format conversion             | ✅                  | ✅         | ❌         | ❌         |\n| Batch mode                           | ✅                  | ✅         | ❌         | ❌         |\n| JSON output with per-item bboxes     | ✅                  | ✅         | ❌         | partial    |\n| C ABI FFI crate                      | ✅                  | ❌         | ✅         | ✅         |\n| **Token F1 vs LiteParse (tax bill)** | **0.990**           | 1.000      | ~0.82      | ~0.80      |\n| **Token F1 vs LiteParse (PRC)**      | **0.922**           | 1.000      | ~0.75      | ~0.78      |\n| **Startup time (cold)**              | ~25 ms              | ~450 ms    | ~10 ms     | ~120 ms    |\n\nParity harness and golden outputs live in [tests/parity/](tests/parity/);\nrun `python3 tests/parity/compare.py` to reproduce.\n\n## Benchmark\n\nReproducible head-to-head against [LiteParse](https://github.com/run-llama/liteparse)\non the fixtures in [example/](example/). Ground truth is raw\n`tesseract <image> - -l eng` (PDFs rendered with `pdftoppm -r 150` first);\ntokens are compared case-insensitively as a multiset.\n\n> This is a like-for-like comparison, not a knock on LiteParse. LiteParse\n> is the project spdf was designed against — we owe the original authors\n> for the reference implementation of the spatial projection algorithm,\n> and the goal of publishing these numbers is transparency about where\n> the Rust port stands, not to make the TypeScript original look bad.\n\n<!-- BENCHMARK:BEGIN -->\n<!-- generated by benchmark/run.sh — do not edit by hand -->\n\n| fixture | engine | wall-clock | tokens | recall | precision | F1 |\n|---|---|---:|---:|---:|---:|---:|\n| irs-f1040.pdf | spdf | 241 ms | 1591 | 81.9% | 76.3% | 79.0% |\n| irs-f1040.pdf | **liteparse** | **442 ms** | **1575** | **81.8%** | **77.0%** | **79.4%** |\n| irs-fw9-p1-2.pdf | spdf | 71 ms | 2252 | 99.1% | 98.4% | 98.7% |\n| irs-fw9-p1-2.pdf | **liteparse** | **384 ms** | **2253** | **99.1%** | **98.4%** | **98.8%** |\n| nist-sp-800-53r5-p1-2.pdf | spdf | 16 ms | 95 | 82.5% | 98.9% | 90.0% |\n| nist-sp-800-53r5-p1-2.pdf | **liteparse** | **383 ms** | **94** | **82.5%** | **100.0%** | **90.4%** |\n| nist-sp-800-63b-p1-2.pdf | spdf | 722 ms | 219 | 93.5% | 98.2% | 95.8% |\n| nist-sp-800-63b-p1-2.pdf | **liteparse** | **4424 ms** | **226** | **95.2%** | **96.9%** | **96.1%** |\n| rfc8446-p1-2.pdf | **spdf** | **19 ms** | **399** | **99.5%** | **99.7%** | **99.6%** |\n| rfc8446-p1-2.pdf | liteparse | 347 ms | 399 | 99.5% | 99.7% | 99.6% |\n| rfc9110-p1-2.pdf | **spdf** | **212 ms** | **0** | **0.0%** | **0.0%** | **0.0%** |\n| rfc9110-p1-2.pdf | liteparse | 2887 ms | 8 | 0.0% | 0.0% | 0.0% |\n| example-1.jpg | **spdf** | **1009 ms** | **231** | **82.0%** | **96.5%** | **88.7%** |\n| example-1.jpg | liteparse | 6244 ms | 146 | 42.3% | 78.8% | 55.0% |\n| test-ocr.pdf | **spdf** | **246 ms** | **20** | **100.0%** | **100.0%** | **100.0%** |\n| test-ocr.pdf | liteparse | 2779 ms | 20 | 100.0% | 100.0% | 100.0% |\n\n**Mean over fixtures:** spdf **F1 81.5%** in **317 ms**; liteparse F1 77.4% in 2236 ms.\n\n<!-- BENCHMARK:END -->\n\n### Spatial precision\n\nToken accuracy alone doesn't tell you whether an engine put each word in\nthe *right place on the page* — which is the whole point of a spatial\nparser. We also compare every matched word's bounding box against the\nraw-tesseract ground truth and report mean IoU, the fraction of matches\nthat clear IoU ≥ 0.5 (the COCO-style \"well localised\" bar), and the\nmean centroid error in PDF points.\n\n<!-- SPATIAL:BEGIN -->\n<!-- generated by benchmark/spatial.py — do not edit by hand -->\n\n| fixture | engine | matched | mean IoU | IoU≥0.5 | centroid err |\n|---|---|---:|---:|---:|---:|\n| example-1.jpg | **spdf** | **212** | **0.976** | **97.6%** | **4.50 pt** |\n| example-1.jpg | liteparse | 109 | 0.667 | 67.9% | 28.03 pt |\n| test-ocr.pdf | spdf | 5 | 0.952 | 100.0% | 0.64 pt |\n| test-ocr.pdf | **liteparse** | **4** | **0.957** | **100.0%** | **0.54 pt** |\n| irs-f1040.pdf | **spdf** | **115** | **0.476** | **55.7%** | **97.90 pt** |\n| irs-f1040.pdf | liteparse | 84 | 0.351 | 52.4% | 135.73 pt |\n| irs-fw9-p1-2.pdf | **spdf** | **29** | **0.517** | **58.6%** | **169.21 pt** |\n| irs-fw9-p1-2.pdf | liteparse | 28 | 0.348 | 53.6% | 175.61 pt |\n| nist-sp-800-53r5-p1-2.pdf | **spdf** | **3** | **0.964** | **100.0%** | **0.35 pt** |\n| nist-sp-800-53r5-p1-2.pdf | liteparse | 1 | 0.634 | 100.0% | 2.01 pt |\n| nist-sp-800-63b-p1-2.pdf | **spdf** | **14** | **0.678** | **78.6%** | **84.12 pt** |\n| nist-sp-800-63b-p1-2.pdf | liteparse | 20 | 0.471 | 65.0% | 103.50 pt |\n| rfc8446-p1-2.pdf | **spdf** | **1** | **0.869** | **100.0%** | **0.44 pt** |\n| rfc8446-p1-2.pdf | liteparse | 4 | 0.427 | 50.0% | 171.02 pt |\n| rfc9110-p1-2.pdf | **spdf** | **0** | **0.000** | **0.0%** | **0.00 pt** |\n| rfc9110-p1-2.pdf | liteparse | 0 | 0.000 | 0.0% | 0.00 pt |\n\n**Mean over fixtures:** spdf **mean IoU 0.679**, **73.8%** of matches ≥ 0.5, centroid error **44.64 pt**; liteparse 0.482 / 61.1% / 77.05 pt.\n\n<!-- SPATIAL:END -->\n\nPer-fixture raw outputs are committed under [benchmark/outputs/](benchmark/outputs/)\nso the numbers are auditable. Reproduce on your own machine:\n\n```sh\nmake build-ocr   # or `make install-ocr`\nLITEPARSE_DIR=/path/to/liteparse make benchmark-update\n```\n\n## Production-readiness\n\nspdf is pre-1.0. The table below tracks what we've hardened so you can\ndecide whether it fits your threat model; see [CHANGELOG.md](CHANGELOG.md)\nfor per-release detail.\n\n| Area | Status |\n| --- | --- |\n| JSON output schema (byte-compatible with LiteParse) | stable (covered by parity harness) |\n| Typed error enum at the public API (`SpdfError`) | stable |\n| Benchmark corpus (public-domain: IRS, NIST, RFC, scanned image) | 9 fixtures in [example/](example/) |\n| Property tests (`cargo test -p spdf-projection proptests`) | panic-freedom + shuffle-stability |\n| Fuzz harness (`cargo +nightly fuzz run parse_pdf`) | [fuzz/](fuzz/) — run before exposing to untrusted input |\n| Cross-platform CI | Linux + macOS + Windows; MSRV 1.85; rustdoc warnings gated |\n| Resource guards (`timeout_secs`, `max_input_bytes`, `max_pages`) | available via [`SpdfParser::builder`](crates/spdf-core/src/lib.rs) |\n| Security policy | see [SECURITY.md](SECURITY.md) |\n| CLI / Rust library API | best-effort stable, breaks noted in [CHANGELOG.md](CHANGELOG.md) |\n| `spdf-ffi` C ABI | **unstable** — symbols may change across 0.x releases |\n| crates.io publication | [`spdf-core`](https://crates.io/crates/spdf-core), [`spdf-cli`](https://crates.io/crates/spdf-cli), and all sub-crates are on crates.io from 0.2.0-alpha.1 |\n\n**Recommended posture** when parsing untrusted PDFs today:\n\n```rust\nlet parser = SpdfParser::builder()\n    .timeout_secs(30)           // defensive deadline\n    .max_input_bytes(50 << 20)  // 50 MiB input cap\n    .max_pages(500)             // reject page-tree bombs\n    .build();\n```\n\nThen wrap the process in a resource-capped sandbox (`systemd-run\n--property=MemoryMax=1G`, Firejail, Docker `--memory=`). Follow the\nfull hardening checklist in [SECURITY.md](SECURITY.md).\n\n## Install\n\n### From crates.io\n\n```sh\ncargo install spdf-cli --version 0.2.0-alpha.2\n# installs the `spdf` binary. `libpdfium` is downloaded and bundled\n# at build time (no extra runtime deps). Add `--features tesseract`\n# to compile in local Tesseract OCR.\n```\n\n### Prebuilt binaries\n\nSelf-contained tarballs (bundled `libpdfium`, no runtime deps) are\nattached to each [GitHub release](https://github.com/Fanaperana/spdf/releases).\nDownload, extract, and run. OCR is not compiled into the prebuilt\nbinaries — use `--ocr-server-url` for HTTP OCR or `cargo install`\nwith `--features spdf-cli/tesseract` for a local Tesseract build.\n\n| Target | Tarball | Status |\n| --- | --- | :---: |\n| `x86_64-unknown-linux-gnu` | `spdf-<version>-x86_64-unknown-linux-gnu.tar.gz` | ✅ attached to v0.2.0-alpha.2 |\n| `aarch64-unknown-linux-gnu` | `spdf-<version>-aarch64-unknown-linux-gnu.tar.gz` | ⬜ TODO |\n| `x86_64-apple-darwin` | `spdf-<version>-x86_64-apple-darwin.tar.gz` | ⬜ TODO — build on macOS Intel |\n| `aarch64-apple-darwin` | `spdf-<version>-aarch64-apple-darwin.tar.gz` | ⬜ TODO — build on Apple Silicon |\n| `x86_64-pc-windows-msvc` | `spdf-<version>-x86_64-pc-windows-msvc.zip` | ⬜ TODO — build on Windows |\n\nTo produce a release tarball on a new host:\n\n```sh\ncargo build --release -p spdf-cli\nVER=0.2.0-alpha.2\nTARGET=$(rustc -vV | awk '/^host:/ {print $2}')\nDIR=\"spdf-${VER}-${TARGET}\"\nmkdir -p \"dist/${DIR}\"\ncp target/release/spdf \"dist/${DIR}/\"          # use spdf.exe on Windows\ncp LICENSE README.md CHANGELOG.md \"dist/${DIR}/\"\ntar czf \"dist/${DIR}.tar.gz\" -C dist \"${DIR}\"   # or zip on Windows\nsha256sum \"dist/${DIR}.tar.gz\" > \"dist/${DIR}.tar.gz.sha256\"\ngh release upload v${VER} \"dist/${DIR}.tar.gz\" \"dist/${DIR}.tar.gz.sha256\"\n```\n\n### From source\n\n```sh\n# from source (requires Rust 1.85+)\ncargo install --path crates/spdf-cli\n\n# or build locally\ncargo build --release -p spdf-cli\n./target/release/spdf --help\n```\n\n### Runtime dependency: PDFium\n\n`spdf` dynamically loads a PDFium shared library. On macOS:\n\n```sh\nbrew install pdfium\n```\n\nOr download a prebuilt binary from\n[bblanchon/pdfium-binaries](https://github.com/bblanchon/pdfium-binaries/releases)\nand point `PDFIUM_LIB_PATH` at it.\n\n### Platform support matrix\n\n| Platform | Core parsing | OCR (Tesseract) | Notes |\n| --- | :---: | :---: | --- |\n| Linux x86_64 | ✅ | ✅ | primary development target |\n| macOS (Intel + Apple Silicon) | ✅ | ✅ | requires `brew install tesseract` |\n| Windows x86_64 | ✅ | ⚠️ source-build only | see below |\n\n**Windows OCR caveat.** The `tesseract` Rust crate used by `spdf-ocr`\nlinks against `libtesseract` + `libleptonica` via `bindgen`, which needs\na working C toolchain (clang) and a `vcpkg` or manually-installed\nTesseract/Leptonica. The CI matrix builds spdf on Windows **without**\nthe `tesseract` feature; the Linux/macOS jobs cover OCR. If you need\nWindows OCR in production today, install Tesseract via `vcpkg install\ntesseract leptonica --triplet x64-windows`, set `LIBCLANG_PATH`, and\nbuild with `cargo build --release -p spdf-cli --features\nspdf-cli/tesseract`. The [HTTP OCR backend](#cli) (`--ocr-server-url`)\nworks on every platform and is the recommended option for Windows until\nwe cut a proper MSVC-native build.\n\n## Quick start\n\n```sh\n# Confirm the install\nspdf --version\n\n# Plain text with preserved layout\nspdf parse invoice.pdf --no-ocr --format text\n\n# Read from stdin (handy for piping through curl / aws s3 cp)\ncat invoice.pdf | spdf parse - --no-ocr\n\n# Structured JSON with per-glyph bounding boxes\nspdf parse invoice.pdf --no-ocr --format json > out.json\n\n# Password-protected PDFs\nspdf parse confidential.pdf --password 'hunter2'\n\n# Keep very-small glyphs (<2 pt) — useful for IRS-style form field labels\nspdf parse irs-fw9.pdf --preserve-small-text\n\n# OCR-only mode for scanned PDFs (local Tesseract; needs --features tesseract)\nspdf parse scan.pdf --ocr-language eng\n\n# Use an external OCR server (PaddleOCR, EasyOCR, etc.) — works on every platform\nspdf parse scan.pdf --ocr-server-url http://localhost:8000\n\n# Render specific pages\nspdf parse book.pdf --target-pages 1-3,7,12-15\n\n# Dump pages as PNGs\nspdf screenshot report.pdf -o ./pages --dpi 200\n\n# Batch-convert a directory of PDFs\nspdf batch-parse ./inputs ./outputs --format text\n```\n\nExit codes: `0` success, `1` parse/OCR error (with `Error: …` on stderr),\n`2` invalid CLI arguments (standard clap).\n\n## Library usage\n\n```rust\nuse spdf_core::SpdfParser;\nuse spdf_types::ParseConfig;\n\nlet parser = SpdfParser::new(ParseConfig {\n    ocr_enabled: false,\n    ..Default::default()\n});\nlet result = parser.parse(std::path::Path::new(\"invoice.pdf\"))?;\nfor page in &result.pages {\n    println!(\"--- page {} ---\\n{}\", page.page_num, page.text);\n}\n# Ok::<(), spdf_types::SpdfError>(())\n```\n\nOr use the ergonomic builder if you only want to tweak a few knobs:\n\n```rust\nuse spdf_core::SpdfParser;\n\nlet parser = SpdfParser::builder()\n    .timeout_secs(30)\n    .max_input_bytes(50 << 20)\n    .ocr_enabled(false)\n    .build();\nlet result = parser.parse(std::path::Path::new(\"invoice.pdf\"))?;\n# Ok::<(), spdf_types::SpdfError>(())\n```\n\n## Architecture\n\n```\ncrates/\n  spdf-types/        public schema\n  spdf-processing/   text / geometry / markup helpers\n  spdf-projection/   spatial reconstruction (the crown jewel)\n  spdf-pdf/          PdfEngine trait + PDFium impl\n  spdf-ocr/          OcrEngine trait + Tesseract + HTTP impls\n  spdf-convert/      LibreOffice / ImageMagick shell-outs\n  spdf-output/       JSON + text formatters\n  spdf-core/         orchestrator\n  spdf-cli/          spdf binary\n  spdf-ffi/          C ABI cdylib\nxtask/               parity harness, benches, pdfium fetcher\n```\n\nSee [AGENTS.md](AGENTS.md) for the full crate map and\n[CONTRIBUTING.md](CONTRIBUTING.md) for development workflow.\n\n## Roadmap\n\n- Node bindings (`@spdf/node`) on top of `spdf-ffi`\n- Python bindings via PyO3\n- `spdf serve` — a local HTTP parsing service\n- Optional ML-based reading-order classifier (opt-in, `burn` feature flag)\n\n## Release process (for maintainers)\n\nReleases are fully automated by [`.github/workflows/release.yml`](.github/workflows/release.yml):\n\n1. Bump `version` in the workspace `Cargo.toml` and update [CHANGELOG.md](CHANGELOG.md).\n2. `git commit -am \"release 0.x.y\" && git push`\n3. `git tag -a v0.x.y -m \"spdf 0.x.y\" && git push origin v0.x.y`\n\nThe workflow then:\n- builds the `x86_64-unknown-linux-gnu` tarball and attaches it to the\n  GitHub release (creating one if missing),\n- runs `cargo publish` for all 9 crates in topological order using the\n  `CRATES_IO_TOKEN` repository secret, with retry-on-429 for the\n  crates.io new-crate rate limit.\n\nTo smoke-test the pipeline without consuming a real version number, run\nthe workflow manually from the **Actions** tab with `dry_run = true` —\nit skips uploads and runs `cargo publish --dry-run` for every crate.\n\n## Acknowledgements\n\nspdf is an independent Rust project authored by\n[Fanaperana](https://github.com/Fanaperana). The spatial projection\nalgorithm was inspired by (and is benchmarked against)\n[LiteParse](https://github.com/run-llama/liteparse), but spdf is not a\nport or rewrite — it's its own implementation, with its own engine\nchoices (PDFium + Tesseract), its own data model, and its own hardening\nwork. Rendering is powered by\n[PDFium](https://pdfium.googlesource.com/pdfium/); OCR uses\n[Tesseract](https://github.com/tesseract-ocr/tesseract).\n\n## License\n\n[MIT](LICENSE) © 2026 spdf contributors.\n",
   "rmd": "# RMD — Rich Markdown Editor\n\n![GitHub last commit](https://img.shields.io/github/last-commit/Fanaperana/rmd?style=for-the-badge)\n![GitHub issues](https://img.shields.io/github/issues/Fanaperana/rmd?style=for-the-badge)\n![GitHub license](https://img.shields.io/github/license/Fanaperana/rmd?style=for-the-badge)\n![CodeMirror 6](https://img.shields.io/badge/Editor-Core%20CodeMirror%206-1f6feb?style=for-the-badge)\n![Plugin First](https://img.shields.io/badge/Architecture-Plugin%20First-0e9f6e?style=for-the-badge)\n\nA plugin-first rich markdown editor built on **CodeMirror 6**, **Markdoc**, and **Svelte 5**.  \nRMD gives you a smooth dual-mode workflow: rich visual rendering when you read, raw markdown precision when you edit.\n\n![RMD editor screenshot in action](docs/screenshots/rmd-editor.png)\n\n---\n\n## Features\n\n| Category | What you get |\n|---|---|\n| **Formatting** | Bold, italic, inline code, strikethrough, links, emoji |\n| **Structure** | Headings, lists (bullet / ordered / task), task checkboxes, horizontal rule, hard break, collapsible sections |\n| **Blocks** | Code fences with syntax highlight, blockquotes, callouts (info / warning / custom), tables, database tables, images |\n| **Math & Diagrams** | LaTeX math (KaTeX — inline `$`, display `$$`, fenced), Mermaid diagrams (flowcharts, sequences, ER, Gantt, pie) |\n| **Interactive** | Flashcards, quiz blocks, table of contents (`[toc]` / `[toc(1:3)]`) |\n| **AI & Collab** | AI writing assistance with streaming & diff review, real-time collaboration (Yjs + WebSocket + remote cursors) |\n| **Authoring UX** | Slash command palette (`/`), command palette (`Ctrl/Cmd+Shift+P`), inline selection toolbar, context menu, debug panel |\n| **Export** | Markdown, HTML (print-friendly), plain text |\n| **Stats** | Word / character / line count with reading time estimate |\n| **Runtime** | Toggle / enable / disable / add / remove any plugin from the browser console |\n| **Theming** | Light, dark, night — or bring your own tokens |\n\n## Table Editing\n\n| Shortcut | Action |\n|---|---|\n| `Tab` / `Shift+Tab` | Next / previous cell |\n| `Enter` | Next row (inserts if needed) |\n| `Ctrl/Cmd+Enter` | Escape table editing |\n| `Ctrl/Cmd+Shift+F` | Format current table |\n| `Ctrl/Cmd+Alt+Shift+F` | Format all tables |\n| `Ctrl/Cmd+Alt+Arrow` | Align column |\n\n---\n\n## Monorepo Structure\n\nRMD is organized as a **pnpm workspace monorepo**. Each plugin is its own package under the `@rmd` scope.\n\n```\npackages/\n  core/                   → @rmd/core                   Editor engine, types, themes, helpers\n  rmd/                    → @rmd/rmd                    Convenience bundle (re-exports everything)\n  plugin-ai/              → @rmd/plugin-ai\n  plugin-blockquote/      → @rmd/plugin-blockquote\n  plugin-bold/            → @rmd/plugin-bold\n  plugin-code-block/      → @rmd/plugin-code-block\n  plugin-collab/          → @rmd/plugin-collab\n  plugin-collapsible/     → @rmd/plugin-collapsible\n  plugin-command/         → @rmd/plugin-command\n  plugin-content-style/   → @rmd/plugin-content-style\n  plugin-context-menu/    → @rmd/plugin-context-menu\n  plugin-database/        → @rmd/plugin-database\n  plugin-debug/           → @rmd/plugin-debug\n  plugin-diff/            → @rmd/plugin-diff\n  plugin-emoji/           → @rmd/plugin-emoji\n  plugin-export/          → @rmd/plugin-export\n  plugin-flashcards/      → @rmd/plugin-flashcards\n  plugin-hard-break/      → @rmd/plugin-hard-break\n  plugin-headings/        → @rmd/plugin-headings\n  plugin-horizontal-rule/ → @rmd/plugin-horizontal-rule\n  plugin-image/           → @rmd/plugin-image\n  plugin-inline-code/     → @rmd/plugin-inline-code\n  plugin-inline-menu/     → @rmd/plugin-inline-menu\n  plugin-italic/          → @rmd/plugin-italic\n  plugin-latex/           → @rmd/plugin-latex\n  plugin-link/            → @rmd/plugin-link\n  plugin-list/            → @rmd/plugin-list\n  plugin-mermaid/         → @rmd/plugin-mermaid\n  plugin-quiz/            → @rmd/plugin-quiz\n  plugin-slash-command/   → @rmd/plugin-slash-command\n  plugin-strikethrough/   → @rmd/plugin-strikethrough\n  plugin-table/           → @rmd/plugin-table\n  plugin-task-list/       → @rmd/plugin-task-list\n  plugin-toc/             → @rmd/plugin-toc\n  plugin-wordcount/       → @rmd/plugin-wordcount\napps/\n  playground/             → @rmd/playground              Development demo app\n```\n\n---\n\n## Quick Start\n\n```bash\npnpm install\npnpm dev            # → http://localhost:5173 (playground)\n```\n\n```bash\npnpm typecheck      # type-check all packages\n```\n\n---\n\n## Using RMD\n\n### Install the bundle\n\n```typescript\n// Import everything from the convenience bundle:\nimport {\n  createEditor,\n  headingsPlugin,\n  boldPlugin,\n  italicPlugin,\n  codeBlockPlugin,\n  linkPlugin,\n  listPlugin,\n} from \"@rmd/rmd\";\n```\n\n### Or pick individual packages\n\n```typescript\n// Import only what you need:\nimport { createEditor } from \"@rmd/core\";\nimport { boldPlugin } from \"@rmd/plugin-bold\";\nimport { headingsPlugin } from \"@rmd/plugin-headings\";\n```\n\n### Create an editor\n\n```typescript\nconst editor = createEditor({\n  parent: document.getElementById(\"editor\")!,\n  doc: \"# Welcome\\n\\nStart writing...\",\n  plugins: [\n    headingsPlugin(),\n    boldPlugin(),\n    italicPlugin(),\n    codeBlockPlugin(),\n    linkPlugin(),\n    listPlugin(),\n  ],\n});\n\n// Access the CodeMirror EditorView directly\nconst doc = editor.view.state.doc.toString();\n\n// Clean up when done\neditor.destroy();\n```\n\n### Runtime management\n\n```javascript\n// Toggle, enable, disable by name\neditor.plugins.toggle(\"bold\");\neditor.plugins.enable(\"bold\");\neditor.plugins.disable(\"bold\");\n\n// Add a plugin at runtime (supports async factories for lazy loading)\nawait editor.plugins.add(myPlugin);\n\n// Remove a plugin\neditor.plugins.remove(\"headings\");\n\n// List all plugins and their state\neditor.plugins.list();\n```\n\n---\n\n## Built-in Plugins (33)\n\n| Package | Plugin | Description |\n|---|---|---|\n| `@rmd/plugin-ai` | `ai` | AI writing assistance with streaming, text rewriting, and diff review |\n| `@rmd/plugin-blockquote` | `blockquote` | Styled blockquotes + callout variants (`[!info]`, `[!warning]`) |\n| `@rmd/plugin-bold` | `bold` | **Bold** with `**text**` |\n| `@rmd/plugin-code-block` | `code-block` | Fenced code with language badge and syntax highlight |\n| `@rmd/plugin-collab` | `collab` | Real-time collaboration via Yjs CRDT with remote cursor awareness |\n| `@rmd/plugin-collapsible` | `collapsible` | Collapsible sections with markdown-formatted content |\n| `@rmd/plugin-command` | `command` | VS Code-style command palette (`Ctrl/Cmd+Shift+P`) |\n| `@rmd/plugin-content-style` | `content-style` | Base content typography |\n| `@rmd/plugin-context-menu` | `context-menu` | Right-click context menu with formatting actions |\n| `@rmd/plugin-database` | `database` | Interactive database tables with columns, filtering, and pagination |\n| `@rmd/plugin-debug` | `debug` | Live stats panel + inline highlight decorator |\n| `@rmd/plugin-diff` | `diff` | Unified diff visualization with syntax highlighting |\n| `@rmd/plugin-emoji` | `emoji` | Emoji picker with colon-trigger autocomplete and searchable panel |\n| `@rmd/plugin-export` | `export` | Export document to Markdown, HTML, or plain text |\n| `@rmd/plugin-flashcards` | `flashcards` | Interactive flip-card decks with theme presets |\n| `@rmd/plugin-hard-break` | `hard-break` | Trailing `\\` line breaks |\n| `@rmd/plugin-headings` | `headings` | Render heading levels 1–6 |\n| `@rmd/plugin-horizontal-rule` | `horizontal-rule` | `---` dividers |\n| `@rmd/plugin-image` | `image` | Image blocks with upload placeholder |\n| `@rmd/plugin-inline-code` | `inline-code` | `code` with backticks |\n| `@rmd/plugin-inline-menu` | `inline-menu` | Floating toolbar on text selection |\n| `@rmd/plugin-italic` | `italic` | *Italic* with `*text*` |\n| `@rmd/plugin-latex` | `latex` | KaTeX math rendering — inline `$`, display `$$`, fenced `` ```math `` |\n| `@rmd/plugin-link` | `link` | Clickable links |\n| `@rmd/plugin-list` | `list` | Bullet, ordered, and task lists |\n| `@rmd/plugin-mermaid` | `mermaid` | Mermaid diagrams (flowcharts, sequences, ER, Gantt, pie) |\n| `@rmd/plugin-quiz` | `quiz` | Interactive quizzes with answer verification (SHA-256) |\n| `@rmd/plugin-slash-command` | `slash-command` | `/` command palette for fast insertion |\n| `@rmd/plugin-strikethrough` | `strikethrough` | ~~Strikethrough~~ with `~~text~~` |\n| `@rmd/plugin-table` | `table` | Advanced table editing via `@susisu/mte-kernel` |\n| `@rmd/plugin-task-list` | `task-list` | Interactive checkboxes for `- [ ]` / `- [x]` task items |\n| `@rmd/plugin-toc` | `toc` | Table of contents with heading range syntax |\n| `@rmd/plugin-wordcount` | `wordcount` | Status bar with word / character / line counts and reading time |\n\n---\n\n## Creating Your Own Plugin\n\nEvery plugin is a plain object that implements `RMDPlugin`. All fields are optional — contribute only what you need.\n\n```typescript\nimport type { RMDPlugin } from \"@rmd/core\";\n\nconst myPlugin: RMDPlugin = {\n  name: \"my-plugin\",\n\n  // Decorate syntax-tree nodes with CSS classes\n  nodeDecorators: [\n    { nodes: \"Emphasis\", class: \"my-emphasis\" },\n  ],\n\n  // Replace blocks with rendered widgets\n  blockReplacers: [\n    {\n      nodes: \"FencedCode\",\n      toDOM({ source }) {\n        const div = document.createElement(\"div\");\n        div.textContent = source;\n        return div;\n      },\n    },\n  ],\n\n  // Keybindings\n  keymap: [\n    { key: \"Ctrl-Shift-x\", run: (view) => { /* ... */ return true; } },\n  ],\n\n  // Raw CodeMirror extensions (escape hatch)\n  extensions: [],\n\n  // Lifecycle hooks\n  onActivate(view) { console.log(\"plugin enabled\"); },\n  onDeactivate(view) { console.log(\"plugin disabled\"); },\n  onDocChange(update) { /* fires on doc change */ },\n  onUpdate(update) { /* fires on every view update */ },\n  onFocus(view) {},\n  onBlur(view) {},\n};\n```\n\n### Register your plugin\n\n```typescript\nimport { createEditor } from \"@rmd/core\";\nimport { headingsPlugin } from \"@rmd/plugin-headings\";\nimport { boldPlugin } from \"@rmd/plugin-bold\";\n\nconst editor = createEditor({\n  parent: document.getElementById(\"app\")!,\n  doc: \"# Hello\",\n  plugins: [\n    headingsPlugin(),\n    boldPlugin(),\n    myPlugin,          // ← your plugin\n  ],\n});\n```\n\n> See [docs/PLUGIN_SYSTEM_ARCHITECTURE.md](docs/PLUGIN_SYSTEM_ARCHITECTURE.md) for the full internal architecture guide.\n\n---\n\n## Benchmark Results\n\nAutomated benchmark suite measured on a local dev build with Playwright + Chromium.  \nRun your own with `pnpm bench:editor:local`.\n\n### Startup\n\n| Metric | Avg | Min | Max |\n|---|---|---|---|\n| Open → editor ready | **564ms** | 391ms | 1 469ms |\n| DOM content loaded | **533ms** | 362ms | 1 434ms |\n\n### Stress Test (34 plugins active)\n\n| Test | Result |\n|---|---|\n| Plugin toggle throughput | **27 ops/sec** (200 toggles) |\n| Large document render (5 405 lines) | **812ms** |\n| Incremental edits | **153 edits/sec** (150 insertions) |\n\n### Per-Plugin Toggle Cost (ranked by avg cycle time)\n\n| Plugin | Avg cycle | ops/sec |\n|---|---|---|\n| database | 79.0ms | 25 |\n| flashcards | 76.5ms | 26 |\n| ai | 66.6ms | 30 |\n| collab | 62.7ms | 32 |\n| quick-insert | 60.3ms | 33 |\n| command | 59.2ms | 34 |\n| context-menu | 58.7ms | 34 |\n| inline-menu | 57.6ms | 35 |\n| slash-command | 56.7ms | 35 |\n| debug | 52.7ms | 38 |\n| quiz | 51.6ms | 39 |\n| wordcount | 51.1ms | 39 |\n| emoji | 48.7ms | 41 |\n| export | 47.3ms | 42 |\n| toc | 47.2ms | 42 |\n| blockquote | 44.8ms | 45 |\n| image | 44.3ms | 45 |\n| horizontal-rule | 41.7ms | 48 |\n| table | 41.4ms | 48 |\n| list | 40.8ms | 49 |\n| task-list | 38.6ms | 52 |\n| code-block | 36.7ms | 54 |\n| collapsible | 34.1ms | 59 |\n| mermaid | 32.4ms | 62 |\n| diff | 30.6ms | 65 |\n| latex | 29.2ms | 69 |\n| hard-break | 26.7ms | 75 |\n| link | 24.2ms | 83 |\n| strikethrough | 23.4ms | 86 |\n| inline-code | 23.1ms | 87 |\n| italic | 21.6ms | 93 |\n| bold | 20.6ms | 97 |\n| content-style | 18.8ms | 106 |\n| headings | 17.8ms | 112 |\n\n> Full reports: [docs/benchmarks/latest.md](docs/benchmarks/latest.md) · [docs/benchmarks/latest.json](docs/benchmarks/latest.json)\n\n---\n\n## Tech Stack\n\n- [CodeMirror 6](https://codemirror.net/) — core editor engine\n- [Markdoc](https://markdoc.dev/) — markdown parsing\n- [Svelte 5](https://svelte.dev/) — block widgets & interactive components\n- [highlight.js](https://highlightjs.org/) — code syntax highlighting\n- [@susisu/mte-kernel](https://github.com/susisu/mte-kernel) — table editing\n- [KaTeX](https://katex.org/) — LaTeX math rendering\n- [Mermaid](https://mermaid.js.org/) — diagram rendering\n- [Yjs](https://yjs.dev/) — CRDT for real-time collaboration\n- [Vite 8](https://vitejs.dev/) + TypeScript 5.9\n\n## Project Structure\n\n```\npackages/\n  core/src/           — editor engine, plugin registry, types, themes, helpers\n  rmd/src/            — convenience bundle re-exporting core + all plugins\n  plugin-*/src/       — one package per plugin\napps/\n  playground/         — Vite + Svelte dev playground\nscripts/\n  benchmarks/         — Playwright-based editor performance benchmarks\ndocs/\n  benchmarks/         — benchmark reports (JSON + Markdown)\n```\n\n## Community\n\n- [Code of Conduct](CODE_OF_CONDUCT.md)\n- [Contributing Guide](CONTRIBUTING.md)\n- [Security Policy](SECURITY.md)\n- [Issue Templates](.github/ISSUE_TEMPLATE/)\n- [Pull Request Template](.github/PULL_REQUEST_TEMPLATE.md)\n\n## License\n\nMIT\n",
   "canvaswm": "<div align=\"center\">\n\n# 🖼️ CanvasWM\n\n**An infinite canvas Wayland compositor**\n\nArrange windows freely on a zoomable 2D surface — no grids, no tiling constraints.\nPan, zoom, and navigate your workspace like a design tool.\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)\n[![Rust](https://img.shields.io/badge/Rust-2021_Edition-orange.svg?logo=rust)](https://www.rust-lang.org/)\n[![Wayland](https://img.shields.io/badge/Wayland-Compositor-yellow.svg?logo=wayland)](https://wayland.freedesktop.org/)\n[![Smithay](https://img.shields.io/badge/Built_with-Smithay_0.7-purple.svg)](https://github.com/Smithay/smithay)\n[![GitHub issues](https://img.shields.io/github/issues/Fanaperana/canvaswm)](https://github.com/Fanaperana/canvaswm/issues)\n[![GitHub stars](https://img.shields.io/github/stars/Fanaperana/canvaswm)](https://github.com/Fanaperana/canvaswm/stargazers)\n[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)\n\n</div>\n\n---\n\n## What is CanvasWM?\n\nCanvasWM is a Wayland compositor that replaces the traditional desktop metaphor with an **infinite 2D canvas**. Instead of switching between virtual desktops or fighting with tiling layouts, you place windows anywhere on an unbounded surface and navigate with pan and zoom — just like Figma, Miro, or a maps application.\n\n### Key Ideas\n\n- **Infinite canvas** — windows live in a continuous 2D coordinate space with no edges\n- **Zoom to overview** — zoom out to see all your windows at once, zoom in to focus\n- **Momentum scrolling** — physics-based pan with natural deceleration\n- **Spatial memory** — remember where things are by their position, not their workspace number\n\n## Features\n\n| Category | Features |\n|---|---|\n| **Canvas** | Infinite 2D space, smooth zoom (scroll + pinch), momentum scrolling, camera animations |\n| **Windows** | Free placement, 8-direction resize, directional navigation, snap-to-grid, alt-tab cycling |\n| **Rendering** | Custom GLSL shader backgrounds, dot-grid overlay, rounded corners, drop shadows, SSD borders |\n| **Backgrounds** | Animated shaders, still images (PNG/JPEG/WebP), scrolling dot grid, solid colour |\n| **Minimap** | Live overview panel showing all windows and the current viewport |\n| **Config** | TOML/JSON/YAML, hot-reload, per-app window rules, custom keybindings |\n| **IPC** | Unix socket interface for external tooling |\n| **Backends** | Winit (development), DRM/KMS (bare metal, WIP) |\n| **Protocols** | XDG Shell, XDG Decoration, SHM, Compositor, Output, Seat, Data Device, XWayland |\n\n## Default Keybindings\n\n| Shortcut | Action |\n|---|---|\n| <kbd>Super</kbd> + <kbd>Return</kbd> | Spawn terminal |\n| <kbd>Super</kbd> + <kbd>D</kbd> | App launcher |\n| <kbd>Super</kbd> + <kbd>Q</kbd> | Close window |\n| <kbd>Super</kbd> + <kbd>=</kbd> / <kbd>-</kbd> | Zoom in / out |\n| <kbd>Super</kbd> + <kbd>W</kbd> | Zoom to fit all windows |\n| <kbd>Super</kbd> + <kbd>0</kbd> | Reset viewport |\n| <kbd>Super</kbd> + <kbd>C</kbd> | Center focused window |\n| <kbd>Super</kbd> + <kbd>F</kbd> | Toggle fullscreen |\n| <kbd>Super</kbd> + <kbd>Home</kbd> | Toggle home position |\n| <kbd>Super</kbd> + <kbd>Arrows</kbd> | Navigate to nearest window |\n| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Arrows</kbd> | Nudge window |\n| <kbd>Alt</kbd> + <kbd>Tab</kbd> | Cycle windows |\n| <kbd>Super</kbd> + <kbd>LMB drag</kbd> | Pan viewport |\n| <kbd>Super</kbd> + <kbd>Scroll</kbd> | Zoom at cursor |\n| <kbd>Alt</kbd> + <kbd>LMB drag</kbd> | Move window |\n| <kbd>Alt</kbd> + <kbd>RMB drag</kbd> | Resize window |\n| <kbd>Super</kbd> + <kbd>R</kbd> | Reload config |\n| <kbd>Super</kbd> + <kbd>Escape</kbd> | Quit |\n\n## Getting Started\n\n### Prerequisites\n\n- **Rust** 1.75+ (2021 edition)\n- **Wayland** development libraries\n- **Linux** with a Wayland-capable graphics driver\n\n#### Debian / Ubuntu\n\n```bash\nsudo apt install libwayland-dev libxkbcommon-dev libudev-dev libinput-dev \\\n  libgbm-dev libdrm-dev libseat-dev libsystemd-dev\n```\n\n#### Fedora\n\n```bash\nsudo dnf install wayland-devel libxkbcommon-devel systemd-devel libinput-devel \\\n  mesa-libgbm-devel libdrm-devel libseat-devel\n```\n\n#### Arch Linux\n\n```bash\nsudo pacman -S wayland libxkbcommon libinput libseat mesa\n```\n\n### Build & Run\n\n```bash\ngit clone https://github.com/Fanaperana/canvaswm.git\ncd canvaswm\ncargo build --release\n```\n\n#### Development mode (runs inside a Winit window)\n\n```bash\ncargo run\n```\n\n#### Native mode (from a TTY, replaces your display server)\n\n```bash\n./target/release/canvaswm --backend=drm\n```\n\n#### Validate your config without starting\n\n```bash\n./target/release/canvaswm --check-config\n```\n\n## Configuration\n\nCanvasWM loads configuration from `~/.config/canvaswm/` in TOML, JSON, or YAML format.\n\n<details>\n<summary><strong>Example <code>config.toml</code></strong></summary>\n\n```toml\n[background]\nmode = \"dots\"           # \"shader\", \"image\", \"dots\", or \"solid\"\ncolor = [0.08, 0.08, 0.12, 1.0]\ngrid_spacing = 60.0\ndot_size = 2.0\ndot_color = [0.3, 0.3, 0.4, 0.4]\n# shader_path = \"~/.config/canvaswm/bg.glsl\"\n# image_path = \"~/.config/canvaswm/wallpaper.png\"\n\n[zoom]\nstep = 1.1\nfit_padding = 100.0\nmax_zoom = 1.0\n\n[scroll]\nspeed = 1.5\nfriction = 0.94\n\n[effects]\nshadows = true\nshadow_radius = 24.0\ncorner_rounding = true\ncorner_radius = 12.0\n\n[decorations]\nmode = \"server\"         # \"server\", \"client\", or \"none\"\nborder_width = 2.0\nfocused_color = [0.4, 0.5, 0.9, 1.0]\nunfocused_color = [0.3, 0.3, 0.3, 1.0]\n\n[navigation]\nanimation_speed = 0.3\nnudge_step = 20\npan_step = 100\n\n[snap]\nenabled = true\ngap = 10\nactivation_distance = 20\nbreak_force = 50\n\n# Per-app rules\n[[window_rules]]\napp_id = \"firefox\"\npinned = true\nopacity = 1.0\n\n[[autostart]]\ncommand = \"waybar\"\n```\n\n</details>\n\n### Custom Shader Backgrounds\n\nCanvasWM supports live GLSL fragment shaders as backgrounds with these uniforms:\n\n| Uniform | Type | Description |\n|---|---|---|\n| `u_time` | `float` | Elapsed seconds since startup |\n| `u_camera` | `vec2` | Camera position on the canvas |\n| `u_zoom` | `float` | Current zoom level |\n| `u_resolution` | `vec2` | Output resolution in pixels |\n\n## Architecture\n\nCanvasWM is structured as a Rust workspace with five crates:\n\n```\ncanvaswm/\n├── canvaswm-canvas       # Pure math — viewport transforms, momentum physics, snapping\n├── canvaswm-config       # TOML/JSON/YAML config parsing with hot-reload\n├── canvaswm-input        # Action and direction type definitions\n├── canvaswm-render       # GLSL shaders, decorations, backgrounds, minimap, elements\n└── canvaswm-compositor   # Main binary — Smithay event loop, input handling, IPC\n```\n\nThe canvas and config crates have **zero** Wayland dependencies, making them independently testable. The render crate depends only on Smithay's renderer types. The compositor crate wires everything together.\n\n## Roadmap\n\n- [ ] Multi-pass Kawase blur for window backgrounds\n- [ ] DRM/KMS bare-metal backend (event loop completion)\n- [ ] Layer-shell protocol (status bars, launchers)\n- [ ] XWayland window rendering\n- [ ] Workspace presets (save/restore canvas layouts)\n- [ ] Touchpad gesture recognition (three-finger pan, pinch zoom)\n- [ ] Screencopy protocol for screenshots\n\n## Contributing\n\nContributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before opening a PR.\n\n## License\n\nThis project is licensed under the [MIT License](LICENSE).\n\n## Acknowledgements\n\n- [Smithay](https://github.com/Smithay/smithay) — the Wayland compositor library that makes this possible\n- [wlroots](https://gitlab.freedesktop.org/wlroots/wlroots) — for pioneering modular compositor architecture\n- The Wayland protocol community for the protocol specifications\n",
   "fuzzy-search-rs": "# fuzzly - Fuzzy Search Algorithm Implementation\n\n<p align=\"center\">\n    <a href=\"https://opensource.org/licenses/MIT\"><img src=\"https://img.shields.io/badge/License-MIT-yellow.svg\" alt=\"License: MIT\" /></a>\n    <a href=\"https://www.rust-lang.org/\"><img src=\"https://img.shields.io/badge/rust-%23000000.svg?logo=rust&logoColor=white\" alt=\"Rust\" /></a>\n    <a href=\"https://github.com/Fanaperana/fuzzy-search-rs/releases\"><img src=\"https://img.shields.io/github/v/release/Fanaperana/fuzzy-search-rs\" alt=\"GitHub release\" /></a>\n    <a href=\"https://fanaperana.github.io/fuzzy-search-rs/\"><img src=\"https://img.shields.io/badge/docs-live-orange\" alt=\"Docs\" /></a>\n    <a href=\"https://github.com/Fanaperana/fuzzy-search-rs/actions/workflows/deploy-pages.yml\"><img src=\"https://github.com/Fanaperana/fuzzy-search-rs/actions/workflows/deploy-pages.yml/badge.svg\" alt=\"Deploy GitHub Pages\" /></a>\n    <a href=\"https://github.com/Fanaperana/fuzzy-search-rs/stargazers\"><img src=\"https://img.shields.io/github/stars/Fanaperana/fuzzy-search-rs?style=social\" alt=\"GitHub stars\" /></a>\n</p>\n\n<p align=\"center\">\n  <img src=\"docs/Fuzzly_logo.png\" width=\"620\" alt=\"fuzzly — fuzzy search algorithm in Rust\" />\n</p>\n\n> ⭐ **If fuzzly helped you learn**, please [leave a star on GitHub](https://github.com/Fanaperana/fuzzy-search-rs)! It helps others discover the project and keeps the motivation going.\n\nA **comprehensive, educational implementation** of fuzzy search algorithms in Rust with an interactive Levenshtein visualizer, benchmarked implementations, and heavily annotated source code.\n\nQuick links: [Docs site](https://fanaperana.github.io/fuzzy-search-rs/) · [First release](https://github.com/Fanaperana/fuzzy-search-rs/releases/tag/v0.1.0) · [Discussions](https://github.com/Fanaperana/fuzzy-search-rs/discussions)\n\n## Why fuzzly?\n\n- Learn fuzzy search from a real, readable Rust implementation\n- Compare `compute`, `compute_optimized`, `compute_fast`, and `compute_myers` side-by-side\n- Explore an interactive docs site instead of reading source alone\n- Use it as a reference for typo-tolerant search, ranking, and edit distance\n\n## Quick Start\n\nAdd fuzzly directly from GitHub today:\n\n```toml\n[dependencies]\nfuzzly = { git = \"https://github.com/Fanaperana/fuzzy-search-rs\" }\n```\n\nMinimal example:\n\n```rust\nuse fuzzly::{FuzzySearcher, LevenshteinDistance};\n\nfn main() {\n    let distance = LevenshteinDistance::compute(\"kitten\", \"sitting\");\n    println!(\"distance: {distance}\");\n\n    let searcher = FuzzySearcher::new(0.6);\n    let results = searcher.search(\"aple\", &[\"apple\", \"application\", \"banana\"]);\n\n    for result in results {\n        println!(\"{}: {:.0}%\", result.text, result.score * 100.0);\n    }\n}\n```\n\nBest entry points:\n\n- Read the live docs: [fanaperana.github.io/fuzzy-search-rs](https://fanaperana.github.io/fuzzy-search-rs/)\n- Browse the release: [v0.1.0](https://github.com/Fanaperana/fuzzy-search-rs/releases/tag/v0.1.0)\n- Join the conversation: [GitHub Discussions](https://github.com/Fanaperana/fuzzy-search-rs/discussions)\n\n## 🎯 What is Fuzzy Search?\n\nFuzzy search (also known as approximate string matching) finds strings that **approximately match** a pattern, rather than requiring an exact match. This is useful for:\n\n- **Typo tolerance**: Finding \"apple\" when user types \"aple\"\n- **Autocomplete**: Suggesting completions as users type\n- **File finders**: Tools like fzf, Ctrl+P in editors\n- **Search engines**: Handling misspellings gracefully\n\n## 📚 Algorithm Overview\n\nThis implementation uses the **Levenshtein Distance** (Edit Distance) algorithm as its core, enhanced with scoring and ranking mechanisms.\n\n### Core Concept: Edit Distance\n\nThe edit distance between two strings is the **minimum number of single-character operations** needed to transform one string into another:\n\n| Operation | Description | Example |\n|-----------|-------------|---------|\n| **Insert** | Add a character | `cat` → `cart` (insert 'r') |\n| **Delete** | Remove a character | `cart` → `cat` (delete 'r') |\n| **Substitute** | Replace a character | `cat` → `bat` (substitute 'c' → 'b') |\n\n### The Algorithm: Wagner-Fischer (Dynamic Programming)\n\nWe use dynamic programming to efficiently compute the edit distance.\n\n---\n\n## 🔍 Pseudo Code\n\n### 1. Levenshtein Distance Calculation\n\n```\nFUNCTION levenshtein_distance(source, target):\n    m = length(source)\n    n = length(target)\n    \n    // Handle edge cases\n    IF m == 0: RETURN n\n    IF n == 0: RETURN m\n    \n    // Create matrix of size (m+1) x (n+1)\n    matrix = new Matrix[m+1][n+1]\n    \n    // STEP 1: Initialize first column (deletions from source)\n    FOR i FROM 0 TO m:\n        matrix[i][0] = i\n    \n    // STEP 2: Initialize first row (insertions into source)  \n    FOR j FROM 0 TO n:\n        matrix[0][j] = j\n    \n    // STEP 3: Fill the matrix\n    FOR i FROM 1 TO m:\n        FOR j FROM 1 TO n:\n            // Cost is 0 if characters match, 1 otherwise\n            IF source[i-1] == target[j-1]:\n                cost = 0\n            ELSE:\n                cost = 1\n            \n            // Take minimum of three operations:\n            deletion    = matrix[i-1][j] + 1      // Delete from source\n            insertion   = matrix[i][j-1] + 1      // Insert into source\n            substitution = matrix[i-1][j-1] + cost // Substitute (or match)\n            \n            matrix[i][j] = MIN(deletion, insertion, substitution)\n    \n    // STEP 4: Result is in bottom-right cell\n    RETURN matrix[m][n]\n```\n\n### 2. Similarity Score (0.0 to 1.0)\n\n```\nFUNCTION similarity_score(source, target):\n    distance = levenshtein_distance(source, target)\n    max_length = MAX(length(source), length(target))\n    \n    IF max_length == 0:\n        RETURN 1.0  // Both empty strings are identical\n    \n    // Convert distance to similarity (1.0 = identical, 0.0 = completely different)\n    RETURN 1.0 - (distance / max_length)\n```\n\n### 3. Fuzzy Match with Threshold\n\n```\nFUNCTION fuzzy_match(query, candidates, threshold):\n    results = empty list\n    \n    FOR each candidate IN candidates:\n        score = similarity_score(query, candidate)\n        \n        IF score >= threshold:\n            ADD (candidate, score) TO results\n    \n    // Sort by score descending (best matches first)\n    SORT results BY score DESCENDING\n    \n    RETURN results\n```\n\n### 4. Memory-Optimized Version (Two-Row Technique)\n\n```\nFUNCTION levenshtein_distance_optimized(source, target):\n    m = length(source)\n    n = length(target)\n    \n    IF m == 0: RETURN n\n    IF n == 0: RETURN m\n    \n    // Only need two rows instead of full matrix\n    previous_row = new Array[n+1]\n    current_row = new Array[n+1]\n    \n    // Initialize first row\n    FOR j FROM 0 TO n:\n        previous_row[j] = j\n    \n    // Process each character of source\n    FOR i FROM 1 TO m:\n        current_row[0] = i\n        \n        FOR j FROM 1 TO n:\n            IF source[i-1] == target[j-1]:\n                cost = 0\n            ELSE:\n                cost = 1\n            \n            current_row[j] = MIN(\n                current_row[j-1] + 1,      // Insertion\n                previous_row[j] + 1,        // Deletion\n                previous_row[j-1] + cost    // Substitution\n            )\n        \n        // Swap rows\n        SWAP(previous_row, current_row)\n    \n    RETURN previous_row[n]\n```\n\n---\n\n## 📊 Visual Example\n\nComputing distance between `\"kitten\"` and `\"sitting\"`:\n\n```\n        \"\"  s  i  t  t  i  n  g\n    \"\"   0  1  2  3  4  5  6  7\n    k    1  1  2  3  4  5  6  7\n    i    2  2  1  2  3  4  5  6\n    t    3  3  2  1  2  3  4  5\n    t    4  4  3  2  1  2  3  4\n    e    5  5  4  3  2  2  3  4\n    n    6  6  5  4  3  3  2  3\n\nDistance = 3 (substitute k→s, substitute e→i, insert g)\nSimilarity = 1 - (3 / 7) = 0.571 or 57.1%\n```\n\n---\n\n## 🚀 Usage\n\n### Basic Usage\n\n```rust\nuse fuzzly::{FuzzySearcher, MatchResult};\n\nfn main() {\n    // Create a fuzzy searcher with a threshold (0.0 to 1.0)\n    let searcher = FuzzySearcher::new(0.6);\n    \n    // Define candidates to search through\n    let candidates = vec![\n        \"apple\", \"application\", \"applet\", \n        \"banana\", \"bandana\", \"orange\"\n    ];\n    \n    // Search for matches\n    let results = searcher.search(\"aple\", &candidates);\n    \n    for result in results {\n        println!(\"{}: {:.1}%\", result.text, result.score * 100.0);\n    }\n}\n```\n\n### Output\n\n```\napple: 80.0%\napplet: 66.7%\n```\n\n### Advanced Usage\n\n```rust\nuse fuzzly::{FuzzySearcher, LevenshteinDistance};\n\nfn main() {\n    // Direct distance calculation\n    let distance = LevenshteinDistance::compute(\"kitten\", \"sitting\");\n    println!(\"Edit distance: {}\", distance); // 3\n    \n    // Get similarity score\n    let similarity = LevenshteinDistance::similarity(\"kitten\", \"sitting\");\n    println!(\"Similarity: {:.1}%\", similarity * 100.0); // 57.1%\n    \n    // Case-insensitive matching\n    let searcher = FuzzySearcher::new(0.5)\n        .case_insensitive(true);\n    \n    let results = searcher.search(\"APPLE\", &[\"apple\", \"Apple\", \"APPLE\"]);\n    // All will match with score 1.0\n}\n```\n\n---\n\n## 🏗️ Project Structure\n\n```\nfuzzy-search-rs/\n├── .github/            # Workflows, issue templates, PR template, discussions\n├── benches/            # Criterion benchmarks\n├── docs/               # GitHub Pages site and branding assets\n├── src/\n│   ├── lib.rs          # Library: Levenshtein + fuzzy-search implementations\n│   └── main.rs         # CLI/demo entry point\n├── CHANGELOG.md        # Release notes by version\n├── CODE_OF_CONDUCT.md  # Community expectations\n├── CONTRIBUTING.md     # Contribution guide\n├── Cargo.toml          # Project metadata and dependencies\n├── LICENSE             # MIT License\n├── README.md           # Project overview and usage guide\n└── SECURITY.md         # Security reporting guidance\n```\n\n---\n\n## 🔧 Implementation Details\n\n### Time Complexity\n- **O(m × n)** where m and n are the lengths of the two strings\n\n### Space Complexity\n- **Standard version**: O(m × n) for the full matrix\n- **Optimized version**: O(min(m, n)) using two-row technique\n\n### Features\n- ✅ Levenshtein distance calculation\n- ✅ Similarity scoring (0.0 to 1.0)\n- ✅ Threshold-based filtering\n- ✅ Case-insensitive matching\n- ✅ Memory-optimized implementation\n- ✅ Detailed match information (operations performed)\n- ✅ Ranked results by relevance\n\n---\n\n## 📖 Implementing in Other Languages\n\nThe pseudo code above can be directly translated to any language:\n\n<details>\n<summary>Python</summary>\n\n```python\ndef levenshtein_distance(source: str, target: str) -> int:\n    m, n = len(source), len(target)\n    \n    if m == 0: return n\n    if n == 0: return m\n    \n    # Use two rows for optimization\n    prev_row = list(range(n + 1))\n    curr_row = [0] * (n + 1)\n    \n    for i in range(1, m + 1):\n        curr_row[0] = i\n        for j in range(1, n + 1):\n            cost = 0 if source[i-1] == target[j-1] else 1\n            curr_row[j] = min(\n                curr_row[j-1] + 1,      # insertion\n                prev_row[j] + 1,         # deletion\n                prev_row[j-1] + cost     # substitution\n            )\n        prev_row, curr_row = curr_row, prev_row\n    \n    return prev_row[n]\n```\n</details>\n\n<details>\n<summary>JavaScript</summary>\n\n```javascript\nfunction levenshteinDistance(source, target) {\n    const m = source.length;\n    const n = target.length;\n    \n    if (m === 0) return n;\n    if (n === 0) return m;\n    \n    let prevRow = Array.from({ length: n + 1 }, (_, i) => i);\n    let currRow = new Array(n + 1).fill(0);\n    \n    for (let i = 1; i <= m; i++) {\n        currRow[0] = i;\n        for (let j = 1; j <= n; j++) {\n            const cost = source[i-1] === target[j-1] ? 0 : 1;\n            currRow[j] = Math.min(\n                currRow[j-1] + 1,      // insertion\n                prevRow[j] + 1,         // deletion\n                prevRow[j-1] + cost     // substitution\n            );\n        }\n        [prevRow, currRow] = [currRow, prevRow];\n    }\n    \n    return prevRow[n];\n}\n```\n</details>\n\n<details>\n<summary>Go</summary>\n\n```go\nfunc levenshteinDistance(source, target string) int {\n    m, n := len(source), len(target)\n    \n    if m == 0 { return n }\n    if n == 0 { return m }\n    \n    prevRow := make([]int, n+1)\n    currRow := make([]int, n+1)\n    \n    for j := 0; j <= n; j++ {\n        prevRow[j] = j\n    }\n    \n    for i := 1; i <= m; i++ {\n        currRow[0] = i\n        for j := 1; j <= n; j++ {\n            cost := 1\n            if source[i-1] == target[j-1] {\n                cost = 0\n            }\n            currRow[j] = min(\n                currRow[j-1]+1,      // insertion\n                prevRow[j]+1,         // deletion\n                prevRow[j-1]+cost,    // substitution\n            )\n        }\n        prevRow, currRow = currRow, prevRow\n    }\n    \n    return prevRow[n]\n}\n```\n</details>\n\n---\n\n## ⚡ Performance\n\n### Running benchmarks\n\n```sh\ncargo bench\n```\n\nHTML reports with charts are written to `target/criterion/`. Open any\n`target/criterion/<group>/report/index.html` in a browser to see the full\nanalysis.\n\nQuick run (without the slow measurement warmup):\n\n```sh\ncargo bench -- --quick\n```\n\n### What is benchmarked\n\nThe single `levenshtein` benchmark group runs all three implementations on the\nsame input, at five stress levels, so you can see the progression side-by-side.\n\n| Tier | String lengths | What it stresses |\n|------|---------------|-----------------|\n| tiny | 6 vs 7 | Function-call overhead dominates — gap is small |\n| short | 22 vs 24 | Matrix allocation cost starts to show |\n| medium | 66 vs 68 | Cache pressure — full matrix no longer fits in L1 |\n| long | 182 vs 191 | O(m×n) full matrix vs two-row gap fully visible |\n| stress | 270 vs 268 | Worst-case: alphabet vs reversed alphabet, every DP cell forced |\n\n### Results\n\nMeasured on an x86-64 Linux machine (median of 40 samples, release build).\nNumbers are the **median** time per call.\n\n| Tier | `compute` | `compute_optimized` | `compute_fast` | `compute_myers` | `fast` vs `compute` |\n|------|----------:|--------------------:|---------------:|----------------:|:-------------------:|\n| tiny (6 vs 7) | 332 ns | 286 ns | **39 ns** | 40 ns | **8.5× faster** |\n| short (22 vs 24) | 2,478 ns | 1,342 ns | **105 ns** | 106 ns | **23× faster** |\n| medium (66 vs 68) | 14,003 ns | 9,497 ns | 10,085 ns | **10,011 ns** | 1.4× faster |\n| long (182 vs 191) | 99,178 ns | 104,900 ns | 79,650 ns | **79,973 ns** | 1.2× faster |\n| stress (270 vs 268) | 119,310 ns | **79,560 ns** | 96,125 ns | 94,962 ns | 1.2× faster |\n\n> **How to read the table:**\n> - `compute` is the learning-friendly full-matrix baseline.\n> - `compute_optimized` saves memory (two rows instead of full matrix) but keeps\n>   `usize` (8-byte) cells — it wins on the stress tier where the full matrix\n>   exceeds cache capacity.\n> - `compute_fast` uses an ASCII byte path (no `Vec<char>` allocation) **and\n>   picks the narrowest DP cell type that can't overflow** — `u8` for strings\n>   under 256 chars, `u16` under 65 536, otherwise `u32`. On tiny/short inputs\n>   the `u8` buffers stay entirely in L1 and LLVM auto-vectorises the inner\n>   loop, yielding the 8–23× speedups you see above.\n> - `compute_myers` is Myers' 1999 bit-parallel algorithm: the whole DP column\n>   is packed into a single `u64` and advanced with ~7 bitwise ops per text\n>   character — **O(n)** instead of O(m·n) when the shorter string is ≤ 64\n>   chars. At these sizes it ties `compute_fast` (the auto-vectorised `u8` DP\n>   is already memory-bandwidth-bound), but it scales better as patterns grow\n>   and is the foundation for future block-Myers and SIMD work. For patterns\n>   longer than 64 chars it falls back to `compute_fast`.\n>\n> Reproduce on your machine: `cargo bench`\n\n### Optimisation tiers\n\nFour implementations are provided, each building on the previous:\n\n| Method | Time | Space | Notes |\n|--------|------|-------|-------|\n| `compute` | O(m·n) | O(m·n) | Full matrix — easiest to follow |\n| `compute_optimized` | O(m·n) | O(min(m,n)) | Two-row rolling buffer, `usize` cells |\n| `compute_fast` | O(m·n) | O(min(m,n)) | Two-row rolling buffer, **adaptive `u8`/`u16`/`u32` cells** + **ASCII byte path** |\n| `compute_myers` | **O(n)** words | O(1) words | Myers 1999 bit-parallel; pattern ≤ 64 chars, ASCII |\n\n#### Key techniques in `compute_fast`\n\n1. **ASCII fast path** — if both strings are ASCII, `as_bytes()` is used directly\n   instead of collecting a `Vec<char>`. This eliminates a heap allocation per call\n   and keeps the data as a tight byte slice.\n\n2. **Adaptive DP cell width (`u8` / `u16` / `u32`)** — with gap cost 1 every\n   DP cell satisfies `cell ≤ max(m, n)`, so we pick the narrowest integer type\n   that can't overflow. For strings under 256 chars every cell is a single\n   byte — 8× smaller than `usize`, 4× smaller than `u32`. The two rolling\n   rows then fit in a handful of cache lines and LLVM auto-vectorises the\n   inner loop, turning the DP into a near-streaming memory operation.\n\n3. **Length-difference early exit in `search`** — before running the DP,\n   `FuzzySearcher::search` checks whether the length difference between the query\n   and a candidate already makes it impossible to reach the similarity threshold.\n   Candidates that can't possibly match are skipped without computing anything.\n\n#### Key techniques in `compute_myers`\n\n1. **Bit-parallel column state** — the differences between consecutive cells in\n   a DP column are encoded as two `u64` bit-vectors (`Pv`, `Mv`). The running\n   score of the bottom cell is maintained as a plain integer. Advancing one\n   column (consuming one text character) is a fixed sequence of ~7 bitwise\n   operations — **no inner loop over the column**.\n\n2. **`Peq` lookup table** — a 128-entry stack array (one bitmask per ASCII\n   byte) encodes at which positions of the pattern each character occurs.\n   Populated in O(m) before the main loop; indexed once per text character\n   inside it.\n\n3. **Automatic fallback** — patterns longer than 64 chars or non-ASCII input\n   fall through to `compute_fast`. The function always returns the same\n   result as `compute`; only the path through the code differs.\n\nReference: Gene Myers, *\"A fast bit-vector algorithm for approximate string\nmatching based on dynamic programming\"*, J. ACM 46(3), 1999.\n\n---\n\n## 📄 License\n\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.\n\n---\n\n## 🤝 Contributing\n\nContributions are welcome.\n\n- Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request\n- Use [Discussions](https://github.com/Fanaperana/fuzzy-search-rs/discussions) for questions and ideas\n- Open issues for bugs or feature requests using the repository templates\n- Report sensitive issues through the guidance in [SECURITY.md](SECURITY.md)\n\n---\n\n## 🔗 Related Resources\n\n- [Levenshtein Distance (Wikipedia)](https://en.wikipedia.org/wiki/Levenshtein_distance)\n- [Wagner-Fischer Algorithm](https://en.wikipedia.org/wiki/Wagner%E2%80%93Fischer_algorithm)\n- [fzf - Command-line fuzzy finder](https://github.com/junegunn/fzf)\n",
@@ -1944,7 +1964,12 @@ export const GH_READMES: Record<string, string> = {
   "make-the-docs": "<p align=\"center\"><a href=\"https://laravel.com\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg\" width=\"400\"></a></p>\n\n<p align=\"center\">\n<a href=\"https://travis-ci.org/laravel/framework\"><img src=\"https://travis-ci.org/laravel/framework.svg\" alt=\"Build Status\"></a>\n<a href=\"https://packagist.org/packages/laravel/framework\"><img src=\"https://img.shields.io/packagist/dt/laravel/framework\" alt=\"Total Downloads\"></a>\n<a href=\"https://packagist.org/packages/laravel/framework\"><img src=\"https://img.shields.io/packagist/v/laravel/framework\" alt=\"Latest Stable Version\"></a>\n<a href=\"https://packagist.org/packages/laravel/framework\"><img src=\"https://img.shields.io/packagist/l/laravel/framework\" alt=\"License\"></a>\n</p>\n\n## About Laravel\n\nLaravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:\n\n- [Simple, fast routing engine](https://laravel.com/docs/routing).\n- [Powerful dependency injection container](https://laravel.com/docs/container).\n- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.\n- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).\n- Database agnostic [schema migrations](https://laravel.com/docs/migrations).\n- [Robust background job processing](https://laravel.com/docs/queues).\n- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).\n\nLaravel is accessible, powerful, and provides tools required for large, robust applications.\n\n## Learning Laravel\n\nLaravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.\n\nIf you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.\n\n## Laravel Sponsors\n\nWe would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).\n\n### Premium Partners\n\n- **[Vehikl](https://vehikl.com/)**\n- **[Tighten Co.](https://tighten.co)**\n- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**\n- **[64 Robots](https://64robots.com)**\n- **[Cubet Techno Labs](https://cubettech.com)**\n- **[Cyber-Duck](https://cyber-duck.co.uk)**\n- **[Many](https://www.many.co.uk)**\n- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**\n- **[DevSquad](https://devsquad.com)**\n- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**\n- **[OP.GG](https://op.gg)**\n- **[CMS Max](https://www.cmsmax.com/)**\n- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**\n\n## Contributing\n\nThank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).\n\n## Code of Conduct\n\nIn order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).\n\n## Security Vulnerabilities\n\nIf you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.\n\n## License\n\nThe Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).\n",
   "make-the-doc-vue": "# make-the-doc-vue\n\n## Project setup\n```\nnpm install\n```\n\n### Compiles and hot-reloads for development\n```\nnpm run serve\n```\n\n### Compiles and minifies for production\n```\nnpm run build\n```\n\n### Customize configuration\nSee [Configuration Reference](https://cli.vuejs.org/config/).\n",
   "fluid-converter": "# Fluid Converter\n\nFluid Converter is a mobile application built with Expo, React, and TypeScript that can help users convert ounces to fluid ounces and vice versa. \n\n## Features\n* Conversion of water ounces to fluid ounces and vice versa\n* Calculation of water density based on temperature\n* Simple and user-friendly UI with reactive inputs\n\n## Getting Started\n\nTo get started with this project, clone the repository and run `npm install` to install the necessary dependencies. You can then run the app using `expo start` or `npm start`. \n\n## Usage\n\nThe app consists of two input fields: one for water ounces and one for fluid ounces. Users can enter a value in either field, and the app will automatically calculate and display the corresponding value in the other field. \n\nTo ensure accurate conversions, users must also input the temperature in Fahrenheit and the density of the water they are using. The app will automatically calculate the density based on the temperature entered. \n\n## Contributing\n\nContributions to this project are always welcome! If you find a bug or would like to suggest a new feature, please create a new issue or submit a pull request.\n\n## License\n\nThis project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.\n",
-  "custom-greenscreen-chat": "# message-bubble\n\n## Project setup\n```\nnpm install\n```\n\n### Compiles and hot-reloads for development\n```\nnpm run serve\n```\n\n### Compiles and minifies for production\n```\nnpm run build\n```\n\n### Lints and fixes files\n```\nnpm run lint\n```\n\n### Customize configuration\nSee [Configuration Reference](https://cli.vuejs.org/config/).\n"
+  "custom-greenscreen-chat": "# message-bubble\n\n## Project setup\n```\nnpm install\n```\n\n### Compiles and hot-reloads for development\n```\nnpm run serve\n```\n\n### Compiles and minifies for production\n```\nnpm run build\n```\n\n### Lints and fixes files\n```\nnpm run lint\n```\n\n### Customize configuration\nSee [Configuration Reference](https://cli.vuejs.org/config/).\n",
+  "semtree": "<div align=\"center\">\n\n# SemTree\n\n### Universal Incremental Language Infrastructure\n\n*The parsing engine that beats Tree-sitter — with a complete language toolchain built in.*\n\n[![Rust](https://img.shields.io/badge/Rust-1.85%2B-orange?logo=rust&logoColor=white)](https://www.rust-lang.org/)\n[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)\n[![Crates](https://img.shields.io/badge/Crates-19-brightgreen)](ROADMAP.md)\n[![Tests](https://img.shields.io/badge/Tests-52%2B_passing-success)](https://github.com/Fanaperana/semtree)\n[![GLR](https://img.shields.io/badge/Parser-RD_%2B_GLR-blueviolet)]()\n[![Languages](https://img.shields.io/badge/Grammars-6_languages-ff69b4)]()\n[![Neovim](https://img.shields.io/badge/Neovim-Plugin-57A143?logo=neovim&logoColor=white)]()\n[![WASM](https://img.shields.io/badge/WASM-Ready-624DE5?logo=webassembly&logoColor=white)]()\n\n---\n\n**Parser** · **Formatter** · **Linter** · **Refactoring** · **IDE Services** · **AI APIs** · **Plugin System**\n\n*All from a single grammar definition.*\n\n[Getting Started](#quick-start) · [Benchmarks](#benchmarks-semtree-vs-tree-sitter) · [Neovim](#neovim-integration) · [Architecture](#architecture) · [Roadmap](ROADMAP.md)\n\n</div>\n\n---\n\n## Why SemTree?\n\n| | Tree-sitter | SemTree |\n|--|------------|---------|\n| **What you get** | Parser only | Parser + formatter + linter + refactoring + IDE + AI APIs |\n| **Parse speed** | Baseline | **1.5-3.7x faster** |\n| **Incremental** | Edit + reparse | **Up to 5,419x faster** on deletions |\n| **Setup** | Install per-language parser | One binary, all languages |\n| **Grammar format** | JavaScript DSL | Clean declarative DSL |\n| **Parser algorithms** | LR + GLR | Recursive Descent + GLR |\n| **Language** | C | Rust |\n| **Error recovery** | Good | **1.6-8.7x faster**, 100% lossless |\n\n---\n\n## Benchmarks: SemTree vs Tree-sitter\n\n> All benchmarks: median of 30 iterations, `--release` build, 5 languages.\n\n### Parse Speed\n\nSemTree is **1.5-3.7x faster** than tree-sitter on cold parse across all languages and sizes.\n\n| Language | 1 KB | 10 KB | 100 KB | 1 MB |\n|----------|------|-------|--------|------|\n| **JSON** | 2.9x faster | 3.6x faster | 3.7x faster | 3.6x faster |\n| **JavaScript** | 1.7x faster | 1.8x faster | 1.9x faster | 1.9x faster |\n| **Rust** | 1.7x faster | 1.8x faster | 1.8x faster | 1.8x faster |\n| **CSS** | 1.6x faster | 1.7x faster | 1.8x faster | 1.8x faster |\n| **Python** | 2.5x faster | 3.0x faster | 3.0x faster | 3.0x faster |\n\n### Incremental Reparse\n\nEven doing a **full reparse**, SemTree beats tree-sitter's optimized `edit() + reparse()`.\n\n| Edit Type | Tree-sitter | SemTree | Speedup |\n|-----------|-------------|---------|---------|\n| Insert character | 1.35 ms | 190 us | **7.1x** |\n| Delete line | 677 us | 125 ns | **5,419x** |\n| Append block | 1.33 ms | 191 us | **7.0x** |\n\n### Error Recovery\n\nSemTree handles broken code **1.6-8.7x faster** while preserving 100% of source text.\n\n| Broken Code | Tree-sitter | SemTree | Speedup |\n|-------------|-------------|---------|---------|\n| Missing semicolons (JS) | 18.5 us | 11.7 us | **1.6x** |\n| Unclosed braces (JS) | 71.9 us | 8.2 us | **8.7x** |\n| Garbage tokens (JS) | 31.5 us | 9.8 us | **3.2x** |\n| Mixed valid/invalid (Rust) | 61.4 us | 13.1 us | **4.7x** |\n| Invalid JSON | 21.1 us | 8.2 us | **2.6x** |\n\n### Features Only SemTree Has\n\n| Feature | Status |\n|---------|--------|\n| Semantic model (symbols, scopes, references) | Built-in |\n| Code formatting | Built-in |\n| Linting with semantics | Built-in |\n| Refactoring (rename, extract, inline) | Built-in |\n| AI APIs (JSON command interface) | Built-in |\n| Plugin system | Built-in |\n| Interactive tree inspector (Neovim) | Built-in |\n| GLR parser for ambiguous grammars | Built-in |\n\n<details>\n<summary><b>Run Benchmarks Yourself</b></summary>\n\n```bash\ncargo run -p semtree_bench --release -- 100   # 100 iterations\ncargo run -p semtree_bench --release -- 30    # quick run\n```\n\n</details>\n\n---\n\n## Quick Start\n\n```bash\n# Clone and build\ngit clone https://github.com/Fanaperana/semtree.git\ncd semtree\ncargo build\n\n# Install the CLI\ncargo install --path crates/semtree_cli\n\n# Parse a Python file (grammar auto-detected)\nsemtree run myfile.py\n\n# Pretty-printed tree\nsemtree run -f sexp-pretty myfile.py\n\n# Indented tree with byte ranges\nsemtree run -f tree myfile.py\n\n# JSON output\nsemtree run -f json myfile.py\n\n# Use the GLR parser backend\nsemtree run --backend glr -f tree myfile.py\n\n# Lint, format, query\nsemtree lint myfile.rs\nsemtree format myfile.rs\nsemtree query myfile.rs Function\nsemtree symbols myfile.rs\n```\n\n---\n\n## Neovim Integration\n\nSemTree includes a Neovim plugin with an **interactive tree inspector** — navigate the syntax tree and see source code highlighted in real time, just like tree-sitter's `:InspectTree`.\n\n### Install\n\nAdd to your `lazy.nvim` config (`~/.config/nvim/lua/plugins/init.lua`):\n\n```lua\n{\n    dir = \"/path/to/semtree/editors/neovim\",\n    name = \"semtree\",\n    lazy = false,\n    config = function()\n        require(\"semtree\").setup({\n            binary_path = nil,  -- auto-detect from PATH\n        })\n    end,\n},\n```\n\n### Commands\n\n| Command | Description |\n|---------|-------------|\n| `:SemTreeInspect` | Interactive tree inspector with real-time highlighting |\n| `:SemTreeParse` | Pretty-printed syntax tree |\n| `:SemTreeSymbols` | List all symbols |\n| `:SemTreeLint` | Inline diagnostics |\n| `:SemTreeFormat` | Format buffer |\n\n### Inspector Keybindings\n\n| Key | Action |\n|-----|--------|\n| `j`/`k` | Navigate nodes (source highlights automatically) |\n| `Enter` | Jump to source location |\n| `q` | Close inspector |\n\n> See [`examples/neovim-setup/README.md`](examples/neovim-setup/README.md) for the complete setup guide.\n\n---\n\n## Grammar DSL\n\nSemTree grammars are clean, declarative `.semtree` files:\n\n```\nlanguage rust\n\nkeyword fn\nkeyword let\nkeyword struct\n\nFunction :=\n    \"fn\" name:Identifier Parameters Block\n\nParameters :=\n    \"(\" ParameterList? \")\"\n\nParameterList :=\n    Parameter ParameterTail*\n\nParameterTail :=\n    \",\" Parameter\n```\n\n**6 languages included**: JSON, TOML, JavaScript, Python, Rust, CSS.\n\nImport tree-sitter grammars: `semtree import grammar.json`\n\n---\n\n## Architecture\n\n```\nSource Code --> Lexer --> Tokens --> Parser --> Green Tree --> Red Tree --> Typed AST --> Semantic DB\n                                      |            |\n                                  RD / GLR    Arc-shared\n                                              immutable\n```\n\n### 19 Crates\n\n| Layer | Crates |\n|-------|--------|\n| **Core** | `semtree_core` · `semtree_lexer` · `semtree_green` · `semtree_red` |\n| **Parsing** | `semtree_parser` · `semtree_grammar` · `semtree_runtime` · `semtree_ts_import` |\n| **Analysis** | `semtree_query` · `semtree_ast` · `semtree_semantic` |\n| **Tooling** | `semtree_format` · `semtree_lint` · `semtree_ide` · `semtree_refactor` |\n| **Integration** | `semtree_ai` · `semtree_plugin` · `semtree_ffi` · `semtree_cli` |\n\n### Parser Backends\n\n| Backend | Algorithm | Best For |\n|---------|-----------|----------|\n| **RD** (default) | Recursive descent with backtracking | Most grammars, fastest for unambiguous languages |\n| **GLR** | Generalized LR with Graph-Structured Stack | Ambiguous grammars, conflict resolution |\n\nSelect with `--backend glr` or let SemTree auto-detect.\n\n### Tree Architecture\n\n- **Green Tree** — Immutable, `Arc`-shared, no parent pointers. Enables incremental reparsing by reusing unchanged subtrees.\n- **Red Tree** — On-demand wrapper with parent/sibling/ancestor navigation and absolute offsets.\n- **SPPF** — Shared Packed Parse Forest for compact ambiguity representation (GLR backend).\n\n---\n\n## Roadmap\n\nSee [ROADMAP.md](ROADMAP.md) for the full roadmap. Phases 1-11 are complete:\n\n- [x] Phase 1-3: Core infrastructure, parser, typed AST, semantics\n- [x] Phase 4: Performance parity with tree-sitter\n- [x] Phase 5: Language ecosystem (6 grammars)\n- [x] Phase 6-7: IDE services, refactoring API\n- [x] Phase 8-9: AI APIs, plugin system\n- [x] Phase 10: C FFI, CLI tools\n- [x] Phase 11: GLR/RNGLR parser engine\n\n---\n\n## Contributing\n\nContributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.\n\n## License\n\n[MIT](LICENSE)\n\n---\n\n<div align=\"center\">\n\n**Built with Rust** · **Faster than Tree-sitter** · **Complete Language Toolchain**\n\n</div>\n",
+  "adaptive-codegraph": "<div align=\"center\">\n\n# 🧬 adaptive-codegraph\n\n**Language-agnostic code graph indexer, search engine, and MCP server**\n\n[![Rust](https://img.shields.io/badge/Rust-1.75%2B-orange?logo=rust&logoColor=white)](https://www.rust-lang.org/)\n[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![MCP](https://img.shields.io/badge/MCP-2024--11--05-blueviolet)](https://modelcontextprotocol.io/)\n[![tree-sitter](https://img.shields.io/badge/tree--sitter-0.25-green)](https://tree-sitter.github.io/)\n\n*Add a new language by dropping a `.toml` + `.scm` file — no Rust code changes needed.*\n\n[How It Works](#-how-it-works-under-the-hood) · [Why Not grep?](#-why-not-just-grep) · [Quick Start](#-quick-start) · [Adding a Language](#-adding-a-new-language) · [MCP Tools](#%EF%B8%8F-mcp-tools) · [CLI](#-cli-usage) · [Architecture](#%EF%B8%8F-architecture) · [Full Docs](DOCS.md)\n\n</div>\n\n---\n\n## 💡 Why?\n\nA similar implementation to [mie-codegraph](https://github.com/mieweb/mie-codegraph) that replaces **hardcoded per-language extractors** with **tree-sitter query files**. The result:\n\n| | mie-codegraph | adaptive-codegraph |\n|---|---|---|\n| Add a language | Write a Rust extractor (~200 LOC) | Drop 2 `.scm` files + 1 `.toml` |\n| Extraction engine | Mixed tree-sitter + regex | Pure tree-sitter queries |\n| Symbol/Edge kinds | Rust enums (recompile to add) | **Strings** (no recompile) |\n| Language detection | Hardcoded | **Auto-detect** from marker files |\n| Plugin edges | Hardcoded patterns | **Regex plugin system** |\n| WebChart-specific | Yes | **Generic** — works on any codebase |\n\n## 📊 Status\n\n| Component | Status |\n|-----------|--------|\n| Core library (extract, store, search, embed) | ✅ Complete |\n| CLI (index, search, callers, callees, neighborhood) | ✅ Complete |\n| MCP server (JSON-RPC 2.0 over stdio, 8 tools) | ✅ Complete |\n| Built-in grammars (C, JS, Rust, Python, TypeScript, Go) | ✅ Complete |\n| Fastembed semantic search | ✅ Default (opt-out with `--no-default-features`) |\n| Daemon (file-watching incremental reindex) | 🔨 Skeleton |\n\n## � How It Works Under the Hood\n\nadaptive-codegraph builds a **structural understanding** of your codebase, not just a text index. Here's what happens when you run `adaptive-codegraph index`:\n\n### 1. Parse — Tree-sitter turns source code into syntax trees\n\nEvery source file is parsed with [tree-sitter](https://tree-sitter.github.io/), producing a concrete syntax tree (CST). This is a full structural parse — it knows the difference between a function *definition*, a function *call*, a *variable*, and a *string literal*.\n\n### 2. Extract — Query files pull out symbols and relationships\n\nTree-sitter S-expression queries (`.scm` files) are run against the syntax tree to extract:\n\n- **Symbols** — function definitions, classes, structs, enums, modules, traits, interfaces, etc.\n- **Edges** — function calls, imports, inheritance, trait implementations, etc.\n\nEach symbol gets a **stable ID** computed via BLAKE3 hashing of its language, kind, fully-qualified name, and file path. This ID survives edits that don't rename or move the symbol.\n\n### 3. Build — A directed graph of your entire codebase\n\nAll symbols become **nodes** and all relationships become **directed edges** in a [petgraph](https://docs.rs/petgraph) graph, with side-table indexes for O(1) lookup by ID, file path, and name. This gives you:\n\n- **\"Who calls this function?\"** → walk incoming edges\n- **\"What does this function call?\"** → walk outgoing edges\n- **\"Show me everything connected to this symbol within 3 hops\"** → BFS traversal\n\n### 4. Index — Full-text search with BM25 ranking\n\nEvery symbol is indexed into a [Tantivy](https://github.com/quickwit-oss/tantivy) search engine across multiple fields (name, fully-qualified name, file path, signature). Queries are ranked using BM25 — the same algorithm used by Elasticsearch and Lucene — so a function *named* `parse_config` ranks higher than one that merely *contains* those words in a long path.\n\n### 5. Embed — Optional vector search for semantic matching\n\nSymbol names are embedded into vector space for similarity search:\n\n- **Default:** BLAKE3 hash-based embeddings (32-dim, fast, deterministic)\n- **With `fastembed`:** BGE-small-en-v1.5 transformer (384-dim, semantic understanding)\n\nWith transformer embeddings, a search for `\"authenticate user\"` can match `login`, `verify_credentials`, and `check_password` even though the words don't overlap.\n\n### 6. Persist — Everything is saved for instant reloads\n\nThe graph, search index, and vectors are serialized to `.adaptive-codegraph/` in the project root. Subsequent runs load the index in milliseconds. **Incremental reindexing** uses `git diff` to detect changed files and only re-processes those.\n\n---\n\n## 🆚 Why Not Just `grep`?\n\n`grep` searches text. adaptive-codegraph understands **code structure**.\n\n| | `grep` / `ripgrep` | adaptive-codegraph |\n|---|---|---|\n| **What it searches** | Raw text / regex patterns | Parsed symbols, relationships, graph structure |\n| **\"Find the function `parse`\"** | Matches every string containing \"parse\" — comments, variables, imports, documentation | Returns only the **function definition** named `parse` |\n| **\"Who calls `handle_request`?\"** | `grep handle_request` → hundreds of hits, including the definition itself, string literals, comments | `callers \"handle_request\"` → only the **actual call sites**, with the calling function name and file |\n| **\"What does `main` depend on?\"** | Not possible with grep | `callees \"main\"` → every function called by `main`, then `neighborhood \"main\" --depth 3` for the full dependency subgraph |\n| **Ranking** | No ranking — results are in file order | **BM25 relevance scoring** — best matches first |\n| **Semantic search** | Not possible | `\"process authentication\"` matches `login()`, `verify_token()` (with fastembed) |\n| **Understands language syntax** | No — treats code as plain text | Yes — knows that `def parse():` is a definition and `parse()` is a call |\n| **Cross-file relationships** | Manual — you grep, read the result, then grep again | Built-in — the graph connects symbols across all files automatically |\n| **Speed on repeated queries** | Re-scans files every time | Index once, query in milliseconds |\n\n### When grep is still the right tool\n\n- Searching for **arbitrary text** (log messages, string literals, comments)\n- One-off searches where you don't need an index\n- Searching non-code files (docs, configs, data files)\n\n### When adaptive-codegraph is better\n\n- Understanding **code structure** — what calls what, what depends on what\n- Navigating **large codebases** where grep returns too many irrelevant results\n- Powering **AI assistants** (via MCP) that need structural context, not just text matches\n- Finding **all callers** of a function across the entire project\n- Exploring the **dependency graph** around a symbol\n- **Semantic search** — finding code by meaning, not exact text\n\n---\n\n> 📖 **[Full documentation →](DOCS.md)** — CLI reference, MCP tool schemas, config options, data model, plugin system, and more.\n\n---\n\n## 🚀 Quick Start\n\n### Prerequisites\n\n- **Rust 1.75+** (`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`)\n\n### Install\n\n```bash\ngit clone https://github.com/Fanaperana/adaptive-codegraph.git\ncd adaptive-codegraph\n./install.sh\n```\n\n### Use in Any Project\n\n```bash\ncd /path/to/your/project\n\n# One-time setup: creates .adaptive-codegraph/ with languages, MCP config, and .gitignore entry\nadaptive-codegraph init\n\n# Build the index\nadaptive-codegraph index\n\n# Search\nadaptive-codegraph search \"handle_request\"\n```\n\nEverything lives inside `.adaptive-codegraph/` — just add it to `.gitignore` (done automatically by `init`).\n\n### Add a Custom Language\n\n```bash\nadaptive-codegraph add-language my_lang.toml --symbol-query my_lang.scm --edge-query my_lang_edges.scm\n```\n\n\n## 🏗️ Architecture\n\n```\n┌─────────────────────────────────────────────────────────────┐\n│                     adaptive-codegraph                       │\n├─────────┬─────────┬───────────┬────────────────────────────┤\n│   CLI   │   MCP   │  Daemon   │  (future: LSP, web UI)     │\n├─────────┴─────────┴───────────┴────────────────────────────┤\n│                        Core Library                         │\n│  ┌──────────┐ ┌──────────┐ ┌────────────┐ ┌────────────┐  │\n│  │ Extract  │ │  Store   │ │   Search   │ │   Embed    │  │\n│  │ (TS+SCM) │ │ (Graph)  │ │  (Tantivy) │ │(HNSW/Hash) │  │\n│  └──────────┘ └──────────┘ └────────────┘ └────────────┘  │\n│  ┌──────────┐ ┌──────────┐ ┌────────────┐ ┌────────────┐  │\n│  │  Config  │ │  Index   │ │Incremental │ │   Query    │  │\n│  │(auto-det)│ │(pipeline)│ │ (git-aware)│ │  (BFS etc) │  │\n│  └──────────┘ └──────────┘ └────────────┘ └────────────┘  │\n├─────────────────────────────────────────────────────────────┤\n│                    Language Definitions                      │\n│  languages/*.toml + languages/queries/*.scm                 │\n│  (C, JavaScript, Rust, Python, TypeScript, Go, ...)         │\n└─────────────────────────────────────────────────────────────┘\n```\n\n### Key Design Decisions\n\n| Decision | Rationale |\n|----------|-----------|\n| **String-based SymbolKind/EdgeKind** | No enum changes when adding a language |\n| **Tree-sitter `.scm` queries** | Add a language by writing query files, not Rust code |\n| **Auto-detect languages** | Scan marker files + extensions to know what to index |\n| **BLAKE3 symbol IDs** | Stable, deterministic, content-addressable hashing |\n| **Tantivy BM25** | Full-text search over names, fqnames, signatures, paths |\n| **HNSW vectors** | Semantic search with fastembed (optional) or hash fallback |\n| **Plugin system** | Custom edge patterns via regex (Django routes, etc.) |\n| **Git-aware incremental** | Only re-extract changed files since last indexed HEAD |\n\n---\n\n## 🌐 Adding a New Language\n\nThree files. Zero Rust changes.\n\n### 1. Language definition — `languages/<lang>.toml`\n\n```toml\nid = \"ruby\"\nname = \"Ruby\"\nextensions = [\"rb\"]\ngrammar = \"builtin\"\n```\n\n### 2. Symbol extraction — `languages/queries/<lang>.scm`\n\n```scheme\n;; Methods\n(method name: (identifier) @symbol.name) @symbol.def\n\n;; Classes\n(class name: (constant) @symbol.name) @symbol.def\n```\n\n### 3. Edge extraction — `languages/queries/<lang>_edges.scm`\n\n```scheme\n;; Function calls\n(call method: (identifier) @call.name)\n\n;; Imports\n(call method: (identifier) @import.path\n  (#eq? @import.path \"require\"))\n```\n\n### Built-in Languages\n\n| Language | Grammar | Extensions |\n|----------|---------|------------|\n| 🇨 C | tree-sitter-c | `.c`, `.h` |\n| 📜 JavaScript | tree-sitter-javascript | `.js`, `.jsx`, `.mjs` |\n| 🦀 Rust | tree-sitter-rust | `.rs` |\n| 🐍 Python | tree-sitter-python | `.py` |\n| 🔷 TypeScript | tree-sitter-typescript | `.ts`, `.tsx` |\n| 🐹 Go | tree-sitter-go | `.go` |\n\n---\n\n## 🔌 Custom Edge Patterns (Plugins)\n\nFor domain-specific edges that tree-sitter queries can't capture (framework routing, layout rendering, etc.):\n\n```rust\nuse adaptive_codegraph_core::extract::plugin::RegexEdgePattern;\n\nlet pattern = RegexEdgePattern {\n    name: \"django_url\".to_string(),\n    pattern: regex_lite::Regex::new(r#\"path\\(\"([^\"]+)\",\\s*(\\w+)\"#).unwrap(),\n    edge_kind: \"endpoint\".to_string(),\n    from_group: 2,\n    to_group: 1,\n};\n```\n\n---\n\n## 🛠️ MCP Tools\n\nThe MCP server exposes these tools over JSON-RPC 2.0 (stdio):\n\n| Tool | Description |\n|------|-------------|\n| `search` | BM25 full-text search over symbols |\n| `semantic_search` | Vector similarity search (fastembed) |\n| `find_symbol` | Look up symbol by name substring |\n| `get_symbol` | Get symbol details by ID |\n| `find_callers` | Functions that call a given symbol |\n| `find_callees` | Functions called by a given symbol |\n| `expand_neighborhood` | BFS subgraph around a symbol |\n| `index` | Full index rebuild |\n| `incremental_index` | Re-process only changed files (git-aware) |\n| `index_status` | Report index state and staleness |\n\n### VS Code / Copilot Configuration\n\nAdd a `.vscode/mcp.json` to your project:\n\n```json\n{\n  \"servers\": {\n    \"adaptive-codegraph\": {\n      \"type\": \"stdio\",\n      \"command\": \"adaptive-codegraph-mcp\",\n      \"args\": [\"--base\", \"${workspaceFolder}\"]\n    }\n  }\n}\n```\n\n---\n\n## 💻 CLI Usage\n\n```bash\n# cd into any project, then:\n\n# Full index\nadaptive-codegraph index\n\n# Search symbols\nadaptive-codegraph search \"parse_config\"\n\n# Find callers of a function\nadaptive-codegraph callers \"handle_request\"\n\n# Find callees\nadaptive-codegraph callees \"main\"\n\n# BFS neighborhood (depth 3)\nadaptive-codegraph neighborhood \"main\" --depth 3\n\n# List detected languages\nadaptive-codegraph languages\n\n# Check index status\nadaptive-codegraph status\n```\n\nYou can also specify a different project with `--base`:\n\n```bash\nadaptive-codegraph --base /path/to/other/project index\n```\n\n---\n\n## ⚙️ Configuration\n\nPlace `.adaptive-codegraph.toml` in your project root. If absent, languages are auto-detected.\n\n### Minimal\n\n```toml\nroots = [\"src\"]\n```\n\n### Full\n\n```toml\nroots = [\"src\", \"lib\"]\nindex_dir = \".adaptive-codegraph\"\nexclude = [\n  \"**/.git/**\",\n  \"**/node_modules/**\",\n  \"**/target/**\",\n  \"**/build/**\",\n  \"**/*.min.js\",\n]\n\n[[languages]]\nid = \"c\"\nextensions = [\"c\", \"h\"]\n\n[[languages]]\nid = \"javascript\"\nextensions = [\"js\"]\n```\n\n### Config Reference\n\n| Field | Type | Default | Description |\n|-------|------|---------|-------------|\n| `roots` | `string[]` | `[\".\"]` | Directories to index |\n| `index_dir` | `string` | `\".adaptive-codegraph\"` | Index storage location |\n| `exclude` | `string[]` | *(common patterns)* | Glob patterns to skip |\n| `languages` | `table[]` | *(auto-detected)* | Explicit language list |\n\n### Language Auto-Detection\n\nWhen `languages` is omitted, the tool scans for marker files:\n\n| Language | Marker Files | Extensions |\n|----------|-------------|------------|\n| C | `Makefile`, `CMakeLists.txt` | `.c`, `.h` |\n| Rust | `Cargo.toml` | `.rs` |\n| Python | `pyproject.toml`, `setup.py`, `requirements.txt` | `.py` |\n| JavaScript | `package.json` | `.js`, `.mjs`, `.cjs` |\n| TypeScript | `tsconfig.json` | `.ts`, `.tsx` |\n| Go | `go.mod` | `.go` |\n| Java | `pom.xml`, `build.gradle` | `.java` |\n| Ruby | `Gemfile` | `.rb` |\n| C# | `*.csproj`, `*.sln` | `.cs` |\n| C++ | `CMakeLists.txt` | `.cpp`, `.cc`, `.cxx`, `.hpp` |\n\n---\n\n## 📁 Project Layout\n\n```\nadaptive-codegraph/\n├── Cargo.toml              # Workspace root\n├── crates/\n│   ├── core/               # Core library (extract, store, search, embed)\n│   ├── cli/                # Command-line interface (clap)\n│   ├── mcp/                # MCP server (JSON-RPC 2.0 over stdio)\n│   └── daemon/             # File-watching daemon (notify-rs)\n└── languages/\n    ├── c.toml              # Language definitions\n    ├── javascript.toml\n    ├── rust.toml\n    ├── python.toml\n    ├── typescript.toml\n    ├── go.toml\n    └── queries/\n        ├── c.scm           # Symbol extraction queries\n        ├── c_edges.scm     # Edge extraction queries\n        ├── javascript.scm\n        ├── javascript_edges.scm\n        ├── rust.scm\n        ├── rust_edges.scm\n        └── ...\n```\n\n---\n\n## 📄 License\n\n[MIT](LICENSE)\n",
+  "codegraph": "# codegraph\n\nA Rust-native codebase graph with hybrid retrieval — combining **Neo4j graph traversal** with **vector similarity search** for AI agents and humans navigating large codebases.\n\n## Architecture\n\n```\ncodegraph/\n├── crates/\n│   ├── codegraph-core/       # Core types: entities, relationships, config\n│   ├── codegraph-parser/     # tree-sitter parsing (Rust, extensible)\n│   ├── codegraph-graph/      # Neo4j storage, schema, queries\n│   ├── codegraph-embed/      # Embedding providers (OpenAI, local ONNX)\n│   └── codegraph-query/      # Hybrid retrieval engine\n│   └── codegraph-cli/        # CLI binary\n├── codegraph.toml            # Default config\n└── docker-compose.yml        # Neo4j setup\n```\n\n## Quick Start\n\n```bash\n# 1. Start Neo4j\ndocker compose up -d\n\n# 2. Initialize config\ncodegraph init\n\n# 3. Index your codebase\ncodegraph index --path /path/to/project\n\n# 4. Search (hybrid: vector + graph)\ncodegraph search \"function that parses configuration\"\n\n# 5. Explain an entity\ncodegraph explain \"src/config.rs::Config::from_file\"\n\n# 6. Find path between entities\ncodegraph path \"src/main.rs::main\" \"src/config.rs::Config\"\n```\n\n## Hybrid Retrieval\n\nThe key insight: **graph** and **vector** retrieval are complementary.\n\n| Approach | Finds | Example |\n|----------|-------|---------|\n| **Graph** (relationships) | Who calls what, what depends on what | \"Show me everything that calls `parse_config`\" |\n| **Vector** (semantic similarity) | Things like this, fuzzy intent | \"Find functions related to error handling\" |\n| **Hybrid** (both) | Fast + smart | \"Find the config parser and show its callers\" |\n\n### How it works\n\n1. **Index**: Parse source → extract entities & relationships → generate embeddings → store in Neo4j\n2. **Search**: Embed query → vector similarity search → expand results via graph neighbors → rank by combined score\n3. **Explain**: Graph traversal for callers/callees/deps + vector similarity for related entities\n\n## Graph Schema\n\n### Nodes\n\n`File`, `Module`, `Function`, `Method`, `Struct`, `Enum`, `Trait`, `Impl`, `TypeAlias`, `Macro`, `Constant`, `Static`\n\n### Relationships\n\n`CONTAINS`, `DEFINES`, `CALLS`, `DEPENDS_ON`, `IMPLEMENTS`, `IMPL_FOR`, `HAS_METHOD`, `EXTENDS`, `RETURNS`, `ACCEPTS_PARAM`, `HAS_FIELD`, `HAS_VARIANT`, `USES_TYPE`, `IMPORTS`\n\n## Configuration\n\nSee `codegraph.toml` for all options. Key settings:\n\n```toml\n[embedding]\nprovider = \"openai\"     # or \"local\" or \"none\"\ndimensions = 384\n\n[embedding.openai]\nmodel = \"text-embedding-3-small\"\n# Set OPENAI_API_KEY env var\n\n[embedding.local]\nmodel_path = \"models/all-MiniLM-L6-v2.onnx\"\ntokenizer_path = \"models/tokenizer.json\"\n```\n\n## Output Formats\n\n```bash\n# Human-readable (default)\ncodegraph search \"config parser\"\n\n# JSON (for AI agents)\ncodegraph search \"config parser\" --format json\n```\n\n## Building\n\n```bash\n# Default (OpenAI embeddings only)\ncargo build --release\n\n# With local ONNX embeddings\ncargo build --release --features local\n\n# All embedding providers\ncargo build --release --features \"openai,local\"\n```\n\n## Adding Language Support\n\nImplement the `LanguageParser` trait in `codegraph-parser` and register it in `ParserRegistry::new()`. Tree-sitter grammars are available for 100+ languages.\n",
+  "cinecode-docs": "# CineCode Documentation\n\nThe official documentation site for [**CineCode**](https://github.com/Fanaperana/cinecode)\n— a pure-Rust, deterministic cinematic engine for turning source code into\nprogramming documentaries.\n\nBuilt with [Fumadocs](https://fumadocs.dev) and structured with the\n[Diátaxis](https://diataxis.fr) framework. Every video embedded in the docs is\n**real, unedited CineCode output**.\n\n## Structure\n\nThe documentation is organized into the four Diátaxis quadrants under\n`content/docs/`:\n\n| Section | Need it serves |\n| --- | --- |\n| **Tutorials** | Learning — hands-on lessons from install to a finished film. |\n| **How-to guides** | Tasks — focused recipes for a specific job. |\n| **Reference** | Information — precise descriptions of every command, key, and function. |\n| **Explanation** | Understanding — the ideas and architecture behind the engine. |\n\n## Development\n\n```bash\nnpm install        # runs `fumadocs-mdx` via postinstall\nnpm run dev        # start the dev server at http://localhost:3000\nnpm run build      # production build\nnpm run types:check\n```\n\nOpen http://localhost:3000 to view the site.\n\n## Project layout\n\n```text\ncinecode-docs/\n├── app/                 # Next.js App Router (home page, docs routes, OG, llms.txt)\n├── components/\n│   ├── mdx.tsx          # registers MDX components (incl. <Video>)\n│   └── video.tsx        # <Video> / <VideoGrid> for embedding rendered output\n├── content/docs/        # all documentation (Diátaxis MDX + meta.json)\n├── lib/                 # shared config, source loader, layout options\n└── public/videos/       # rendered example clips + poster thumbnails\n```\n\n## Embedding videos\n\nDrop an MP4 in `public/videos/<name>.mp4` (and an optional poster at\n`public/videos/posters/<name>.jpg`), then reference it by name in any MDX page:\n\n```mdx\n<Video src=\"terrain\" caption=\"Terrain heightmap bound to code.\" />\n```\n\nThe clips here are rendered from the\n[`rivers-project`](https://github.com/Fanaperana/cinecode/tree/main/examples/rivers-project)\nexample:\n\n```bash\ncinecode render examples/rivers-project -o public/videos/rivers-full.mp4\n```\n\n## License\n\nDocumentation content follows the license of the\n[CineCode engine repository](https://github.com/Fanaperana/cinecode).\n",
+  "pskey": "<div align=\"center\">\n\n<img src=\"public/hero.png\" alt=\"PSKey\" width=\"220\" />\n\n# 🔐 PSKey\n\n**A tiny, transparent, always-on-top password manager widget.**\nBuilt with [Tauri](https://tauri.app) + [React](https://react.dev) + [libsodium](https://doc.libsodium.org).\n\n<br />\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)\n[![Tauri](https://img.shields.io/badge/Tauri-2.x-24C8DB?style=flat-square&logo=tauri&logoColor=white)](https://tauri.app)\n[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)\n[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)\n[![Rust](https://img.shields.io/badge/Rust-stable-DEA584?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org)\n[![libsodium](https://img.shields.io/badge/crypto-libsodium-3B2D8F?style=flat-square)](https://doc.libsodium.org)\n[![Argon2id](https://img.shields.io/badge/KDF-Argon2id-5A1F7A?style=flat-square)](https://en.wikipedia.org/wiki/Argon2)\n[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)\n[![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey?style=flat-square)](#)\n[![Status](https://img.shields.io/badge/status-alpha-orange?style=flat-square)](#)\n\n<sub>145 px wide · transparent · draggable · autolocks on blur · 4-digit PIN with Base36 rolling challenge</sub>\n\n</div>\n\n---\n\n## ✨ Highlights\n\n- 🪟 **Tiny widget** — 145 px transparent floating window; drag it anywhere.\n- 🔒 **Libsodium all the way down** — Argon2id + XSalsa20-Poly1305, nothing handrolled.\n- 🎛️ **4-digit PIN, still hard to crack** — every Argon2id derivation also\n  mixes in a 32-byte per-install **device secret** stored outside the vault\n  file, so a stolen `vault.bin` alone is useless.\n- 🎭 **Base36 rolling challenge** — the PIN you memorize is *never* what\n  you type. A fresh 4-character `0-9A-Z` challenge rotates every 30 s and\n  on every failed attempt; keystroke-only observers learn nothing reusable.\n- 🔐 **Per-entry encryption** — entries with a custom PIN are sealed under\n  a key derived from *that* PIN; unlocking the vault is not enough to\n  reveal them.\n- ⚡ **Async crypto** — every Argon2id call (unlock, add-entry, reveal,\n  rekey) runs off the UI thread, with a cheeky \"Cooking…\" indicator.\n- 🧊 **Autolock everywhere** — 30 s sliding session + instant lock on\n  window blur (suspended while you're filling out a form).\n- 📋 **Self-wiping clipboard** — copied secrets are cleared after 15 s.\n- 🚫 **Persistent lockout** — escalating cooldowns (1 m → 24 h cap) survive\n  process kill and reboot; first lockout costs 10 attempts, every one after\n  that costs only 3.\n- 🎨 **Themes & UI scale** — 5 dark variants and 6 zoom levels, persisted in\n  `settings.json` (auto-generated with sane defaults).\n- 🔑 **Rekey on demand** — change PIN and/or KDF strength\n  (Interactive / Moderate / Sensitive) without re-entering data.\n- 🗄️ **Forward-compatible vault** — magic v01 vaults auto-migrate to v02\n  (device-secret-mixed) on first successful unlock.\n- 🧱 **Hardened capabilities** — strict CSP, minimal Tauri permissions.\n\n## 🔐 Security model\n\n| Layer               | What                                                                |\n| ------------------- | ------------------------------------------------------------------- |\n| Vault file          | `$APP_DATA/vault.bin`, atomic write with `.bak` rotation            |\n| Vault format        | `PSKEYv02` (current). `PSKEYv01` (PIN-only KDF) is read transparently and re-encrypted to v02 on first unlock |\n| KDF                 | Argon2id via libsodium `crypto_pwhash`. Input is `pin \\|\\| device_secret`. Strength selectable per vault: Interactive ≈ 64 MiB, Moderate ≈ 256 MiB, Sensitive ≈ 1 GiB |\n| Device secret       | 32 random bytes in `$APP_DATA/device_secret.bin` (mode `0600` on Unix). Mixed into every Argon2id derivation — a stolen `vault.bin` alone cannot be brute-forced even with a 4-digit PIN |\n| Cipher              | XSalsa20-Poly1305 (libsodium `secretbox`)                           |\n| Plaintext           | msgpack-encoded `VaultData`, zeroized on drop                       |\n| Per-entry secrets   | passwords with a custom PIN are sealed in a `CustomSecret` block (separate Argon2id salt + nonce, key = `argon2id(custom_pin \\|\\| device_secret)`). Wrong PIN → secretbox MAC failure. No separate hash-and-compare step |\n| Session             | 30 s sliding TTL, opaque 24-byte token held in Rust state only      |\n| Clipboard           | copy performed in Rust, auto-cleared after 15 s if unchanged        |\n| Rate limit          | persistent escalating lockout: 10 attempts → 1 m, 3 m, 5 m, 10 m, 15 m, 30 m, 1 h, 3 h, 12 h, 24 h cap; only **3** attempts between lockouts; resets on success |\n| Autolock            | on window blur and on session expiry (suspended while a form / action overlay is open) |\n| Front-end surface   | strict CSP, no remote assets, minimal Tauri capabilities            |\n\n### What this defends against\n\n- **Stolen `vault.bin`** (cloud sync, backup, mis-shared archive): without\n  `device_secret.bin`, brute-forcing the 10⁴ PIN keyspace is infeasible —\n  the effective work factor is 10⁴ × 2²⁵⁶.\n- **Keystroke-only observers**: the rolling Base36 challenge means typed\n  characters change every attempt; a recorded keystroke sequence cannot be\n  replayed.\n- **Idle / casual access** to an unlocked widget: window-blur and session-TTL\n  autolock fire within seconds.\n- **Brute-forcing through the UI**: persistent escalating lockout caps real\n  attempts well below any meaningful coverage of a tiny PIN space.\n\n### What it does **not** defend against\n\n- An attacker who can read **both** `vault.bin` *and* `device_secret.bin`\n  from your home directory — they have the full KDF input. Treat the device\n  secret like an ssh private key. Hardware-backed storage (Secret Service /\n  Keychain / DPAPI) is the natural follow-up.\n- An attacker who sees **the screen and the keystrokes** simultaneously — the\n  rolling challenge is a defence against keystroke-only capture, not against\n  full screen recording.\n- Malware running as your user: it can read clipboard, scrape memory after\n  unlock, and key-log without restriction. PSKey is a userland tool.\n\n## 🧩 Rolling challenge unlock\n\nYour PIN is **4 digits** (`0-9`). To prevent keystroke-only observers from\nrecording a replayable PIN, the lock screen displays a **4-character Base36\nchallenge** (`0-9A-Z`) above the OTP input. You never type your raw PIN —\nyou type a **response** computed per slot from your memorized PIN and the\ncurrent challenge.\n\n```text\n  ┌───┐ ┌───┐ ┌───┐ ┌───┐\n  │ 7 │ │ Z │ │ 5 │ │ 8 │   ← challenge (rotates every 30 s and on each fail)\n  └───┘ └───┘ └───┘ └───┘\n      PIN in your head: 1 2 3 4\n  ┌───┐ ┌───┐ ┌───┐ ┌───┐\n  │ 8 │ │ 1 │ │ 8 │ │ C │   ← what you actually type\n  └───┘ └───┘ └───┘ └───┘\n```\n\n### Per-slot rule\n\nFor each slot *i* (1..4):\n\n```text\nresponse[i] = base36( ( pin_digit[i] + value(challenge[i]) ) mod 36 )\n```\n\nBase36 values: `0..9` → 0..9, `A` → 10, `B` → 11, …, `Z` → 35. Lowercase\ninput is auto-uppercased. The animated bar under the title bar drains over\nthe challenge's 30-second life and pulses red in the final seconds.\n\n### Walk-through\n\nChallenge `7Z58`, PIN `1234`:\n\n| slot | PIN | challenge | value | sum | mod 36 | type |\n| ---- | --- | --------- | ----- | --- | ------ | ---- |\n|  1   |  1  |    `7`    |   7   |  8  |   8    | `8`  |\n|  2   |  2  |    `Z`    |  35   | 37  |   1    | `1`  |\n|  3   |  3  |    `5`    |   5   |  8  |   8    | `8`  |\n|  4   |  4  |    `8`    |   8   | 12  |  12    | `C`  |\n\nYou type **`818C`** into the OTP. ✅\n\n### Verification (backend)\n\nThe frontend sends `(challenge, response)` to `vault_unlock_challenge`. The\nRust backend:\n\n1. Validates that both strings are 4 Base36 characters of equal length.\n2. Reverses the math per slot:\n   `pin_digit = (value(response[i]) − value(challenge[i])) mod 36`.\n3. Rejects any decoded slot ≥ 10 as malformed (cannot match a real PIN) —\n   **without** consuming a lockout attempt, so accidental letter typos in a\n   digit slot don't burn through the rate limiter.\n4. Runs **one** Argon2id derivation against the recovered PIN (no candidate\n   enumeration, exactly one PIN per `(challenge, response)` pair).\n5. On secretbox MAC failure, records a single attempt against the lockout\n   schedule and rotates the challenge.\n\n## 📁 App data layout\n\nEverything PSKey writes lives under your platform's `$APP_DATA/com.fanaperana.pskey/`:\n\n| File                | Purpose                                                                | Encrypted?       |\n| ------------------- | ---------------------------------------------------------------------- | ---------------- |\n| `vault.bin`         | secrets — header (KDF params + nonce) followed by `secretbox` blob     | yes              |\n| `vault.bin.bak`     | one-step rollback of the previous good `vault.bin` (kept across writes) | yes (same key)  |\n| `device_secret.bin` | 32 random bytes mixed into every Argon2id derivation (`0600` on Unix)  | no — keep it private |\n| `settings.json`     | theme, UI scale, default KDF strength for new vaults                   | no (no secrets)  |\n| `lockout.json`      | failed-attempt counter, current lockout level, cooldown deadline       | no (counters)    |\n\nAll non-vault files are auto-created with safe defaults on first launch and\nwritten atomically (`*.tmp` → rename). **Back up `vault.bin` *and*\n`device_secret.bin` together** — either one alone is unusable.\n\n## 🚀 Getting started\n\n```sh\npnpm install\npnpm tauri dev\n```\n\nRequirements:\n\n- Node 20+ and pnpm\n- Rust stable toolchain\n- Tauri v2 prerequisites — <https://v2.tauri.app/start/prerequisites/>\n\n### Build\n\n```sh\npnpm tauri build\n```\n\n## 🧪 Checks\n\n```sh\nnpx tsc --noEmit              # TypeScript\ncd src-tauri && cargo check   # Rust\n```\n\n## 🗺️ Roadmap\n\n- [ ] Linux / Windows packaging + icons\n- [ ] Optional auto-update channel\n- [ ] Import / export (encrypted)\n- [ ] Tests for the vault format + challenge decoder\n- [ ] Accessibility pass on the tiny widget UI\n\n## 🐞 Troubleshooting\n\n**`libpthread.so.0: undefined symbol: __libc_pthread_init` on Linux.**\nThis happens when WebKitGTK is launched from a Snap-installed VS Code: the\nSnap leaks `GTK_PATH` / `XDG_DATA_DIRS` pointing into `/snap/...` which\nload an incompatible glibc. Run `pnpm tauri dev` from a regular terminal\n(or install VS Code from `.deb` / Flatpak / the official repo). If you must\nlaunch from Snap, prefix the command with:\n\n```sh\nenv -u GTK_PATH -u GTK_EXE_PREFIX -u GIO_MODULE_DIR -u GTK_IM_MODULE_FILE \\\n    -u XDG_DATA_DIRS -u XDG_DATA_HOME pnpm tauri dev\n```\n\nOpen to ideas — see [CONTRIBUTING.md](CONTRIBUTING.md).\n\n## 🤝 Contributing\n\nPRs welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) and the\n[Code of Conduct](CODE_OF_CONDUCT.md) before opening a PR. Security issues?\nReport them privately via [SECURITY.md](SECURITY.md).\n\n## 🧰 Recommended IDE Setup\n\n- [VS Code](https://code.visualstudio.com/)\n  + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode)\n  + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)\n\n## 📜 License\n\n[MIT](LICENSE) © 2026 Fanaperana\n"
 }
 
-export const GH_GENERATED_AT = "2026-04-19T20:53:06.124Z"
+export const GH_GENERATED_AT = "2026-07-09T18:26:38.096Z"
