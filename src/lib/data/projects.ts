@@ -114,6 +114,21 @@ export const PROJECTS: Project[] = [
     glyph: "⊛",
   },
   {
+    slug: "cinecode",
+    title: "cinecode",
+    description:
+      "Pure-Rust cinematic engine for programming documentaries — keyframe-driven code animations, narrated walkthroughs, and rendered video output.",
+    language: "Rust",
+    tags: ["rust", "cinematic", "animation", "video", "code"],
+    stars: 1,
+    pushed_at: "2026-07-06T23:28:36Z",
+    url: "https://github.com/Fanaperana/cinecode",
+    highlight: true,
+    accent: "rose",
+    glyph: "🎬",
+    visibility: "private",
+  },
+  {
     slug: "cinecode-docs",
     title: "cinecode-docs",
     description:
