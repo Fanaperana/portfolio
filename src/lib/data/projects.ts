@@ -33,8 +33,8 @@ export const PROFILE = {
   email: "fanaperanaprince@gmail.com",
   linkedin: "https://www.linkedin.com/in/prince-fanaperana",
   twitter: "https://twitter.com/Fanaperana",
-  // Drop a PDF at /public/resume.pdf and this link will work out of the box.
-  resume: "/resume.pdf",
+  // Drop a PDF at /public/assets/resume.pdf and this link will work out of the box.
+  resume: "/assets/resume.pdf",
   // Short "what I'm into" list surfaced on the About section.
   hobbies: [
     "Building tiny OSes & kernels for fun",

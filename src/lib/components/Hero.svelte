@@ -70,13 +70,7 @@
           <FolderTree class="size-4" />
           ls projects/
         </Button>
-        <Button
-          variant="outline"
-          href={PROFILE.resume}
-          target="_blank"
-          rel="noreferrer"
-          size="lg"
-        >
+        <Button variant="outline" href="#/resume" size="lg">
           <FileDown class="size-4" />
           résumé.pdf
         </Button>

@@ -7,6 +7,7 @@
   import Footer from "$lib/components/Footer.svelte";
   import ProjectDetail from "$lib/components/ProjectDetail.svelte";
   import CommandPalette from "$lib/components/CommandPalette.svelte";
+  import ResumeViewer from "$lib/components/ResumeViewer.svelte";
 </script>
 
 <div class="min-h-screen">
@@ -20,4 +21,5 @@
   <Footer />
   <ProjectDetail />
   <CommandPalette />
+  <ResumeViewer />
 </div>

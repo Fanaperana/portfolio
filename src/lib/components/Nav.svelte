@@ -49,9 +49,7 @@
         <Button
           variant="ghost"
           size="sm"
-          href={PROFILE.resume}
-          target="_blank"
-          rel="noreferrer"
+          href="#/resume"
           class="text-muted-foreground hover:text-foreground"
         >
           <FileDown class="size-3.5" />

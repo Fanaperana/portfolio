@@ -128,13 +128,13 @@
       run: openExternal(PROFILE.url),
     },
     {
-      id: "ext:resume",
-      group: "external",
-      label: "Download résumé",
-      hint: PROFILE.resume ?? "/resume.pdf",
-      keywords: "cv pdf",
+      id: "act:resume",
+      group: "action",
+      label: "Preview résumé",
+      hint: "read inline · pdf.js",
+      keywords: "cv pdf download resume",
       Icon: FileDown,
-      run: openExternal(PROFILE.resume ?? "/resume.pdf"),
+      run: navigate("#/resume"),
     },
   ];
 

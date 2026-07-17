@@ -56,9 +56,7 @@
       </a>
       <a
         class="inline-flex items-center gap-1.5 hover:text-primary"
-        href={PROFILE.resume}
-        target="_blank"
-        rel="noreferrer"
+        href="#/resume"
       >
         <FileDown class="size-3.5" />
         résumé.pdf
