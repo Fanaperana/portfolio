@@ -20,8 +20,9 @@
     "paths": {
       "$lib": ["src/lib"],
       "$lib/*": ["src/lib/*"],
-      "@mini-shell/*": ["crates/mini-shell/pkg/*"]
+      "@mini-shell/*": ["crates/mini-shell/pkg/*"],
+      "@fuzzly/*": ["crates/fuzzly-wasm/pkg/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte", "crates/mini-shell/pkg/*.d.ts"]
+  "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte", "crates/mini-shell/pkg/*.d.ts", "crates/fuzzly-wasm/pkg/*.d.ts"]
 }

@@ -78,6 +78,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "fuzzly"
+version = "0.1.0"
+source = "git+https://github.com/Fanaperana/fuzzy-search-rs?rev=99497426a73ae74f390eb5034ba5d0db4583f919#99497426a73ae74f390eb5034ba5d0db4583f919"
+
+[[package]]
+name = "fuzzly-wasm"
+version = "0.1.0"
+dependencies = [
+ "fuzzly",
+ "wasm-bindgen",
+]
+
+[[package]]
 name = "itoa"
 version = "1.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"

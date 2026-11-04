@@ -60,7 +60,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Test Rust crate
-        run: cargo test -p mini-shell
+        run: cargo test -p mini-shell -p fuzzly-wasm
 
       - name: Build
         env:
@@ -71,9 +71,6 @@ jobs:
           # script merges, preserving cached private copies.
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: pnpm build
-
-      - name: Copy 404 fallback
-        run: cp dist/index.html dist/404.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

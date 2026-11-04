@@ -142,7 +142,8 @@ pnpm dev
 |--------------------|-------------------------------------------------------|
 | `pnpm build`       | WASM + build-time GitHub fetch + production Vite bundle |
 | `pnpm preview`     | Preview the production build                          |
-| `pnpm fetch:github`| Refresh `src/lib/data/github.generated.ts`            |
+| `pnpm fetch:github`| Refresh `src/lib/data/github*.generated.ts`           |
+| `pnpm prerender`   | Write a static HTML page per project/note + sitemap (runs after `vite build`) |
 | `pnpm check`       | `svelte-check` + `tsc` on the Node-side config        |
 | `pnpm test:rust`   | `cargo test -p mini-shell`                            |
 
@@ -153,6 +154,7 @@ pnpm dev
 - the **contribution heatmap** (last 12 months, via GraphQL)
 - the **language breakdown** (top 8)
 - the **README.md** of every curated project — **including private repos**
+  (written to `github.readmes.generated.ts`, loaded lazily on project pages)
 
 It reads a token from `GH_TOKEN` / `GITHUB_TOKEN`, and falls back to
 `gh auth token` when you run locally. The generated file
@@ -165,7 +167,7 @@ To refresh before pushing:
 
 ```sh
 pnpm fetch:github     # pulls fresh stats + private READMEs via `gh auth`
-git add src/lib/data/github.generated.ts && git commit -m "data: refresh github snapshot"
+git add src/lib/data/github*.generated.ts && git commit -m "data: refresh github snapshot"
 ```
 
 ### Keyboard
@@ -174,10 +176,22 @@ git add src/lib/data/github.generated.ts && git commit -m "data: refresh github 
 |-----------------------------------------------|-------------------------------------|
 | <kbd>⌘</kbd> / <kbd>Ctrl</kbd> + <kbd>K</kbd> | open the command palette            |
 | <kbd>/</kbd>                                  | open the palette (when not typing)  |
-| <kbd>Esc</kbd>                                | close palette or project modal      |
+| <kbd>Esc</kbd>                                | close palette or résumé             |
 
-Project cards open a **case-study modal** (URL-addressable via `#/p/<slug>`)
-that renders the repo's README with sanitized HTML (marked + DOMPurify).
+### Pages, case studies and notes
+
+Every project has its own page at `/projects/<slug>` (old `#/p/<slug>` links
+redirect). `scripts/prerender.mjs` writes a static `index.html` for each one
+after the Vite build, with its own title, description and readable content
+for search engines and link previews, plus `sitemap.xml` and `404.html`.
+
+- **Case studies** — `src/lib/data/case-studies.ts`. Projects listed there get
+  the full write-up (problem, architecture, decisions, outcome) above their
+  README and appear in *Selected work* on the home page.
+- **Notes** — drop a Markdown file in `src/content/notes/<slug>.md` with a
+  `title` / `date` / `summary` / `tags` / optional `project` frontmatter block.
+  Add `draft: true` to hide it.
+- **Services, process, contact copy** — `src/lib/data/site.ts`.
 
 ## Repo layout
 
@@ -190,6 +204,10 @@ src/
   lib/components/        # Hero, About, Terminal, Projects, Nav, Footer, ui/*, AnimatedBackdrop
   lib/terminal/          # Command definitions + dispatch for the in-page shell
   lib/data/projects.ts   # Source of truth: PROFILE + curated projects
+  lib/data/case-studies.ts # Long-form write-ups for the featured projects
+  lib/data/site.ts       # Services, process and contact copy
+  lib/router.svelte.ts   # Tiny path router (/projects/<slug>, /notes/<slug>)
+  content/notes/*.md     # Notes / blog posts
   lib/wasm/shell.ts      # Thin wrapper around the wasm-pack output
 ```
 
@@ -213,177 +231,3 @@ as-is to represent yourself.
 <br />
 <sub>Built with <span style="color:#CE422B">Rust</span> · <span style="color:#FF3E00">Svelte</span> · <span style="color:#646CFF">Vite</span>. Powered by caffeine and <code>cargo build --release</code>.</sub>
 </div>
-# Portfolio // Fanaperana
-
-> Systems tinkerer · Rust · TypeScript · agentic AI, tiny shells, and interesting OSes.
-
-This repo **is** my portfolio site. It doubles as a showcase and as a demo of the kind of thing
-I like building: a real pipeline shell written in Rust, compiled to WebAssembly, embedded in a
-Svelte 5 app, and driven from an in-page terminal you can actually type into.
-
-GitHub: https://github.com/Fanaperana
-
----
-
-## What this site is
-
-- A handwritten portfolio — no template, no headless CMS.
-- An **in-browser terminal** where `help`, `ls`, `open <slug>`, `theme <name>` and a tiny pipeline
-  language all work.
-- The pipeline language is parsed and evaluated by a **Rust crate (`mini-shell`) compiled to WASM**.
-  Example pipelines you can type on the live site:
-
-  ```sh
-  sh "projects | lang rust | count"
-  sh "projects | grep chess | names"
-  sh "projects | stars >= 3 | sort stars desc"
-  ```
-
-- Press <kbd>?</kbd> anywhere on the page to jump focus into the terminal.
-
-## Stack
-
-| Layer     | Tech                                                     |
-|-----------|----------------------------------------------------------|
-| Shell     | Rust → `wasm-bindgen` → `wasm-pack` ([crates/mini-shell](crates/mini-shell)) |
-| Frontend  | Svelte 5 (runes) + TypeScript + Vite 8                   |
-| Styling   | Tailwind CSS v4 + `shadcn-svelte` primitives + `bits-ui` |
-| Content   | Statically typed project list in [src/lib/data/projects.ts](src/lib/data/projects.ts) |
-
-## Featured projects (showcased on the site)
-
-The full curated list lives in [src/lib/data/projects.ts](src/lib/data/projects.ts). Highlights:
-
-### Agentic AI
-- **sentinel** — Agentic AI coding assistant in Rust, benchmarked against Claude Code / Hermes / OpenClaw. Local-first planner + tools loop.
-- **continuum** — Self-learning AI agent with continual-learning and self-improvement loops.
-- **AVIL** — *Adaptive Verified Iteration Loop*: a self-improving SDLC for agentic AI systems (research paper + formal model).
-- **genai** — TypeScript sandbox for prompts, chains, and GenAI feature experiments.
-
-### Apps
-- **MosaicFlow-Svelte** — Node-based infinite canvas for visual information mapping. Tauri 2 + Svelte 5.
-- **cahier** — Themeable PDF reader (React + Vite + Zustand, Turborepo, PDF.js, IndexedDB).
-- **rmd** — Plugin-first rich markdown editor (CodeMirror 6 + Svelte). Rich while reading, raw while editing.
-- **SandCode** — Local-first code snippet manager (Tauri + Vue).
-- **fkbr** — Cross-platform keyboard-driven mouse control (Tauri + React + Rust).
-- **Polymine** — Hexagonal minesweeper with WebGL rendering and a Rust backend (Tauri).
-
-### Systems / Rust
-- **spdf** — Fast, spatial PDF parsing in Rust — column-aware extraction, optional OCR.
-- **canvaswm** — Infinite-canvas Wayland compositor in Rust.
-- **fuzzy-search-rs** — Educational Rust implementation of fuzzy-search algorithms (Levenshtein et al.).
-- **minichess** — Terminal chess engine interface in Rust, powered by Stockfish.
-- **whisper-asr-cli-rs** — Offline Whisper speech-to-text CLI in Rust.
-- **quantrs** — Quantitative experiments in Rust.
-- **hexglyph** — Base-65536 procedural visual alphabet (Rust + TypeScript).
-
-### Operating systems
-- **mineos** — A Linux distribution that only runs Minecraft — boot-to-Minecraft in under 15 seconds.
-- **zigos** — Minimal x86_64 kernel in Zig, from the metal up.
-- **tauri-kiosk** — Scripts to turn bare Ubuntu into a locked Tauri-app kiosk.
-
-### Creative / tooling
-- **monax** — Keyframe-based code-animation engine with a visual node editor.
-- **kodex** — Cinematic code-animation studio powered by Monaco.
-- **framescript** — Tiny frame-based, expression-oriented scripting language in TypeScript.
-- **ae-reach**, **ae-curves-panel** — After Effects CEP panels (90+ tools, cubic-bezier easing editor).
-
-### Kanban lineage
-- **kan → ekan → rekan** — Three iterations of the same kanban idea: web, Electron, modern reboot.
-
-### Applied web work
-- **simpless** — Laravel e-commerce / storefront platform.
-
-*Some entries point at private repos; those are surfaced here as proof-of-work with descriptions and thumbnails but intentionally not linkable to source.*
-
-## Run it locally
-
-Requires Node 20+, pnpm, and the Rust toolchain (`rustup`) plus `wasm-pack`.
-
-```sh
-# 1. install JS deps
-pnpm install
-
-# 2. install the Rust → WASM toolchain (once)
-cargo install wasm-pack
-
-# 3. build the Rust shell to WASM (dev or release)
-pnpm wasm:dev     # or: pnpm wasm
-
-# 4. run the dev server
-pnpm dev
-```
-
-Other scripts:
-
-| Script             | What it does                                          |
-|--------------------|-------------------------------------------------------|
-| `pnpm build`       | Build the WASM crate + the production Vite bundle     |
-| `pnpm preview`     | Preview the production build                          |
-| `pnpm check`       | `svelte-check` + `tsc` on the Node-side config        |
-| `pnpm test:rust`   | `cargo test -p mini-shell`                            |
-
-## Repo layout
-
-```
-crates/mini-shell/       # Rust pipeline-language crate, compiled to WASM
-public/thumbnails/       # Project thumbnails (so private repos still ship art)
-src/
-  App.svelte             # Page composition
-  lib/components/        # Hero, About, Terminal, Projects, ProjectCard, Nav, Footer, ui/*
-  lib/terminal/          # Command definitions + dispatch for the in-page shell
-  lib/data/projects.ts   # Source of truth for the project list + profile
-  lib/wasm/shell.ts      # Thin wrapper around the wasm-pack output
-```
-
-## License
-
-Code in this repo is released under the MIT License. Project descriptions, thumbnails, and the
-curated project list are personal content — please don't reuse them as-is to represent yourself.
-# Svelte + TS + Vite
-
-This template should help get you started developing with Svelte and TypeScript in Vite.
-
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
-
-## Need an official Svelte framework?
-
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
-
-## Technical considerations
-
-**Why use this over SvelteKit?**
-
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
-
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
-
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
-
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
-
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
-
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `allowJs` in the TS template?**
-
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```

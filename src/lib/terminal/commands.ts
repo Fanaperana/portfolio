@@ -1,5 +1,6 @@
 import type { Project } from '$lib/data/projects'
 import { PROFILE, PROJECTS } from '$lib/data/projects'
+import { navigate, href } from '$lib/router.svelte'
 import { evaluate, version as wasmVersion, type ShellResult } from '$lib/wasm/shell'
 
 export type OutputLine =
@@ -71,7 +72,7 @@ export const COMMANDS: Command[] = [
   },
   {
     name: 'open',
-    describe: 'open <slug> in a new tab',
+    describe: 'open <slug> — go to its project page',
     run: (args, _r, ctx) => {
       const slug = args[0]
       if (!slug) {
@@ -84,7 +85,7 @@ export const COMMANDS: Command[] = [
         return
       }
       ctx.push({ kind: 'text', value: `→ opening ${p.title}`, tone: 'accent' })
-      if (typeof window !== 'undefined') window.open(p.url, '_blank', 'noopener')
+      if (typeof window !== 'undefined') navigate(href(`/projects/${p.slug}`))
     },
     complete: (prefix) =>
       PROJECTS.map((p) => p.slug).filter((s) =>

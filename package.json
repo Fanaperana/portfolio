@@ -4,14 +4,15 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "wasm": "wasm-pack build crates/mini-shell --target web --out-dir pkg --release",
-    "wasm:dev": "wasm-pack build crates/mini-shell --target web --out-dir pkg --dev",
+    "wasm": "wasm-pack build crates/mini-shell --target web --out-dir pkg --release && wasm-pack build crates/fuzzly-wasm --target web --out-dir pkg --release",
+    "wasm:dev": "wasm-pack build crates/mini-shell --target web --out-dir pkg --dev && wasm-pack build crates/fuzzly-wasm --target web --out-dir pkg --dev",
     "fetch:github": "node scripts/fetch-github.mjs",
     "dev": "vite",
-    "build": "pnpm wasm && pnpm fetch:github && vite build",
+    "build": "pnpm wasm && pnpm fetch:github && vite build && pnpm prerender",
+    "prerender": "node --experimental-strip-types --no-warnings scripts/prerender.mjs",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
-    "test:rust": "cargo test -p mini-shell"
+    "test:rust": "cargo test -p mini-shell -p fuzzly-wasm"
   },
   "devDependencies": {
     "@fontsource-variable/inter": "^5.2.8",

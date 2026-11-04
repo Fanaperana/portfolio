@@ -17,6 +17,7 @@ export default defineConfig({
     alias: {
       $lib: path.resolve(__dirname, 'src/lib'),
       '@mini-shell': path.resolve(__dirname, 'crates/mini-shell/pkg'),
+      '@fuzzly': path.resolve(__dirname, 'crates/fuzzly-wasm/pkg'),
     },
   },
   server: {

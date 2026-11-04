@@ -1,13 +1,16 @@
 <script lang="ts">
   import { PROFILE } from "$lib/data/projects";
   import { Button } from "$lib/components/ui/button";
-  import { Terminal, FolderTree, User, FileDown } from "@lucide/svelte";
+  import { FolderTree, Briefcase, NotebookPen, FileDown, Mail } from "@lucide/svelte";
   import GithubIcon from "./icons/GithubIcon.svelte";
+  import { href } from "$lib/router.svelte";
+  import { NOTES } from "$lib/notes";
 
   const links = [
-    { href: "#about", label: "about", icon: User },
-    { href: "#terminal", label: "terminal", icon: Terminal },
-    { href: "#projects", label: "projects", icon: FolderTree },
+    { href: href("/#work"), label: "work", icon: FolderTree },
+    { href: href("/#services"), label: "services", icon: Briefcase },
+    ...(NOTES.length ? [{ href: href("/notes"), label: "notes", icon: NotebookPen }] : []),
+    { href: href("/#contact"), label: "contact", icon: Mail },
   ];
 </script>
 
@@ -17,7 +20,7 @@
   <nav
     class="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-3 sm:px-8"
   >
-    <a href="#top" class="group flex items-center gap-2 font-mono text-sm">
+    <a href={href("/")} class="group flex items-center gap-2 font-mono text-sm">
       <span class="text-primary">~/</span>
       <span class="text-foreground">{PROFILE.login.toLowerCase()}</span>
       <span class="caret text-primary"></span>
@@ -41,7 +44,7 @@
             class="text-muted-foreground hover:text-foreground"
           >
             <l.icon class="size-3.5" />
-            <span class="hidden sm:inline">{l.label}</span>
+            <span class="hidden md:inline">{l.label}</span>
           </Button>
         </li>
       {/each}
@@ -53,7 +56,7 @@
           class="text-muted-foreground hover:text-foreground"
         >
           <FileDown class="size-3.5" />
-          <span class="hidden sm:inline">résumé</span>
+          <span class="hidden md:inline">résumé</span>
         </Button>
       </li>
       <li>
@@ -63,9 +66,10 @@
           href={PROFILE.url}
           target="_blank"
           rel="noreferrer"
+          aria-label="GitHub profile"
         >
           <GithubIcon class="size-3.5" />
-          <span class="hidden sm:inline">github</span>
+          <span class="hidden md:inline">github</span>
         </Button>
       </li>
     </ul>

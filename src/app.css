@@ -312,3 +312,135 @@ body.crt::before {
 		@apply font-sans;
   }
 }
+
+/* Rendered Markdown (READMEs, notes, case studies) */
+  /* Typography for the rendered README — styled to match the terminal theme. */
+  .readme-body {
+    color: var(--color-fg);
+    line-height: 1.65;
+  }
+  .readme-body h1,
+  .readme-body h2,
+  .readme-body h3,
+  .readme-body h4 {
+    font-family: var(--font-mono);
+    color: var(--color-fg);
+    font-weight: 600;
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+  .readme-body h1 {
+    font-size: 1.75rem;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.4rem;
+  }
+  .readme-body h2 {
+    font-size: 1.35rem;
+    border-bottom: 1px solid
+      color-mix(in oklab, var(--color-border) 50%, transparent);
+    padding-bottom: 0.3rem;
+  }
+  .readme-body h3 {
+    font-size: 1.1rem;
+  }
+  .readme-body p,
+  .readme-body ul,
+  .readme-body ol,
+  .readme-body blockquote,
+  .readme-body pre,
+  .readme-body table {
+    margin-bottom: 0.9rem;
+  }
+  .readme-body a {
+    color: var(--color-link);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
+  }
+  .readme-body a:hover {
+    color: var(--color-accent);
+  }
+  .readme-body code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    padding: 0.125rem 0.4rem;
+    border-radius: 0.35rem;
+    background: var(--color-bg-soft);
+    color: var(--color-accent);
+    border: 1px solid color-mix(in oklab, var(--color-border) 70%, transparent);
+  }
+  .readme-body pre {
+    font-family: var(--font-mono);
+    background: var(--color-bg-soft);
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    padding: 1rem 1.15rem;
+    overflow-x: auto;
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+  .readme-body pre code {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+  }
+  .readme-body ul,
+  .readme-body ol {
+    padding-left: 1.5rem;
+  }
+  .readme-body ul {
+    list-style: disc;
+  }
+  .readme-body ol {
+    list-style: decimal;
+  }
+  .readme-body li {
+    margin: 0.25rem 0;
+  }
+  .readme-body blockquote {
+    border-left: 3px solid var(--color-accent);
+    padding: 0.25rem 0.9rem;
+    color: var(--color-fg-muted);
+    background: color-mix(in oklab, var(--color-accent) 6%, transparent);
+    border-radius: 0 0.35rem 0.35rem 0;
+  }
+  .readme-body img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-border);
+    margin: 0.5rem 0;
+  }
+  .readme-body hr {
+    border: 0;
+    border-top: 1px solid var(--color-border);
+    margin: 1.5rem 0;
+  }
+  .readme-body table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+  }
+  .readme-body th,
+  .readme-body td {
+    border: 1px solid var(--color-border);
+    padding: 0.45rem 0.7rem;
+    text-align: left;
+  }
+  .readme-body th {
+    background: var(--color-bg-soft);
+    font-weight: 600;
+  }
+  .readme-body :is(h1, h2, h3, h4):first-child {
+    margin-top: 0;
+  }
+
+.prose-cs { color: var(--color-fg-muted); line-height: 1.7; }
+.prose-cs p + p, .prose-cs p + ul, .prose-cs ul + p { margin-top: 0.75rem; }
+.prose-cs ul { list-style: disc; padding-left: 1.25rem; margin-top: 0.75rem; }
+.prose-cs li { margin: 0.35rem 0; }
+.prose-cs strong { color: var(--color-fg); font-weight: 600; }
+.prose-cs code { font-family: var(--font-mono); font-size: 0.85em; color: var(--color-accent); }

@@ -5,14 +5,10 @@
   import { Badge } from "$lib/components/ui/badge";
   import { Star, ArrowUpRight, Lock, ExternalLink } from "@lucide/svelte";
   import GithubIcon from "./icons/GithubIcon.svelte";
+  import { href } from "$lib/router.svelte";
 
   let { project }: { project: Project } = $props();
 
-  function openDetail(e: MouseEvent | KeyboardEvent) {
-    e.preventDefault();
-    // Set hash; ProjectDetail listens for hashchange.
-    location.hash = `#/p/${project.slug}`;
-  }
 
   const gradients: Record<string, string> = {
     teal: "from-teal-500/25 to-cyan-900/10",
@@ -41,14 +37,7 @@
 </script>
 
 <div
-  role="button"
-  tabindex="0"
-  aria-label={`Open ${project.title} case study`}
-  onclick={openDetail}
-  onkeydown={(e) => {
-    if (e.key === "Enter" || e.key === " ") openDetail(e);
-  }}
-  class="group block cursor-pointer transition hover:-translate-y-0.5 hover:shadow-[0_0_30px_-8px_var(--color-accent-soft)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+  class="group relative block cursor-pointer transition hover:-translate-y-0.5 hover:shadow-[0_0_30px_-8px_var(--color-accent-soft)] focus-within:ring-2 focus-within:ring-primary/60 focus-within:ring-offset-2 focus-within:ring-offset-background"
 >
   <Card.Root
     class="gap-0 overflow-hidden border-border/80 bg-card/60 py-0 transition group-hover:border-primary/60"
@@ -100,7 +89,7 @@
         <Badge
           class="absolute top-2 right-2 bg-primary font-mono text-[10px] text-primary-foreground"
         >
-          featured
+          case study
         </Badge>
       {:else}
         <ArrowUpRight
@@ -123,7 +112,11 @@
         <h3
           class="font-mono text-base font-semibold text-foreground group-hover:text-primary"
         >
-          {project.title}
+          <a
+            href={href(`/projects/${project.slug}`)}
+            class="after:absolute after:inset-0 after:content-[''] focus:outline-none"
+            >{project.title}</a
+          >
         </h3>
         <span class="flex-none font-mono text-[10px] text-muted-foreground/70">
           {timeAgo(project.pushed_at)}
@@ -132,28 +125,22 @@
       <p class="flex-1 text-sm text-muted-foreground">{project.description}</p>
       <div class="flex flex-wrap gap-2">
         {#if project.visibility !== "private"}
-          <button
-            type="button"
-            class="group/link inline-flex w-fit items-center gap-1.5 rounded-full border border-border/60 bg-background/60 px-2.5 py-1 font-mono text-[11px] text-muted-foreground transition hover:border-primary/60 hover:text-primary"
-            onclick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              window.open(project.url, "_blank", "noopener,noreferrer");
-            }}
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noreferrer"
+            class="relative z-10 group/link inline-flex w-fit items-center gap-1.5 rounded-full border border-border/60 bg-background/60 px-2.5 py-1 font-mono text-[11px] text-muted-foreground transition hover:border-primary/60 hover:text-primary"
           >
             <GithubIcon class="size-3" />
             <span>github</span>
-          </button>
+          </a>
         {/if}
         {#if project.homepage}
-          <button
-            type="button"
-            class="group/link inline-flex w-fit items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-2.5 py-1 font-mono text-[11px] text-primary transition hover:border-primary hover:bg-primary/20"
-            onclick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              window.open(project.homepage, "_blank", "noopener,noreferrer");
-            }}
+          <a
+            href={project.homepage}
+            target="_blank"
+            rel="noreferrer"
+            class="relative z-10 group/link inline-flex w-fit items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-2.5 py-1 font-mono text-[11px] text-primary transition hover:border-primary hover:bg-primary/20"
           >
             <ExternalLink class="size-3" />
             <span
@@ -162,7 +149,7 @@
                 ""
               )}</span
             >
-          </button>
+          </a>
         {/if}
       </div>
       <div class="flex flex-wrap gap-1">

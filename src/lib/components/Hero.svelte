@@ -3,7 +3,9 @@
   import { Button } from "$lib/components/ui/button";
   import { Badge } from "$lib/components/ui/badge";
   import * as Card from "$lib/components/ui/card";
-  import { Play, FolderTree, FileDown, Mail } from "@lucide/svelte";
+  import { FolderTree, FileDown, Mail, Briefcase } from "@lucide/svelte";
+  import { POSITIONING } from "$lib/data/site";
+  import { CASE_STUDIES } from "$lib/data/case-studies";
   import GithubIcon from "./icons/GithubIcon.svelte";
   import LinkedinIcon from "./icons/LinkedinIcon.svelte";
   import AnimatedBackdrop from "./AnimatedBackdrop.svelte";
@@ -18,7 +20,7 @@
 
   const rustCount = PROJECTS.filter((p) => p.language === "Rust").length;
   const tsCount = PROJECTS.filter((p) => p.language === "TypeScript").length;
-  const highlightCount = PROJECTS.filter((p) => p.highlight).length;
+  const caseStudyCount = CASE_STUDIES.length;
 </script>
 
 <section id="top" class="relative overflow-hidden pt-16 pb-24 sm:pt-24">
@@ -38,8 +40,8 @@
           ></span>
         </span>
         <span>online · {PROFILE.status}</span>
-        <span class="text-muted-foreground/60">·</span>
-        <span>{PROFILE.location}</span>
+        <span class="hidden text-muted-foreground/60 sm:inline">·</span>
+        <span class="hidden sm:inline">{PROFILE.location}</span>
       </Badge>
 
       <h1
@@ -55,24 +57,25 @@
         {PROFILE.role} &nbsp;·&nbsp; {PROFILE.headline}
       </p>
 
-      <p class="mt-5 max-w-2xl text-lg text-muted-foreground">
-        {PROFILE.tagline}. A portfolio powered by a
-        <span class="font-mono text-primary">Rust → WASM</span>
-        mini-shell — type real pipelines against the project list below.
+      <p class="mt-5 max-w-2xl text-lg text-foreground/90">
+        {POSITIONING.pitch}
+      </p>
+      <p class="mt-2 max-w-2xl text-muted-foreground">
+        {POSITIONING.availability}
       </p>
 
       <div class="mt-8 flex flex-wrap gap-3 font-mono text-sm">
-        <Button href="#terminal" size="lg">
-          <Play class="size-4" />
-          launch terminal
-        </Button>
-        <Button variant="outline" href="#projects" size="lg">
+        <Button href="#work" size="lg">
           <FolderTree class="size-4" />
-          ls projects/
+          see my work
         </Button>
         <Button variant="outline" href="#/resume" size="lg">
           <FileDown class="size-4" />
-          résumé.pdf
+          hire me · résumé
+        </Button>
+        <Button variant="outline" href="#services" size="lg">
+          <Briefcase class="size-4" />
+          start a project
         </Button>
       </div>
 
@@ -154,8 +157,8 @@
             <span class="text-foreground">start</span>
           </div>
           <div class="pt-2 text-foreground">
-            → {PROJECTS.length} projects · {rustCount} rust · {tsCount} ts · {highlightCount}
-            featured
+            → {PROJECTS.length} projects · {rustCount} rust · {tsCount} ts · {caseStudyCount}
+            case studies
           </div>
         </div>
         <div class="mt-4 space-y-2">

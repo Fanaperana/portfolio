@@ -1,0 +1,16 @@
+[package]
+name = "fuzzly-wasm"
+version = "0.1.0"
+edition = "2021"
+description = "WASM bindings for fuzzly (github.com/Fanaperana/fuzzy-search-rs) — powers the portfolio's project search"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+fuzzly = { git = "https://github.com/Fanaperana/fuzzy-search-rs", rev = "99497426a73ae74f390eb5034ba5d0db4583f919" }
+wasm-bindgen = "0.2"
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false

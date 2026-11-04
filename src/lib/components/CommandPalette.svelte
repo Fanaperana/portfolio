@@ -2,7 +2,7 @@
   Cmd+K / Ctrl+K command palette.
   Provides a single, fuzzy-searchable launcher for:
     · section navigation
-    · opening project case studies (hash routing)
+    · opening project pages and notes
     · external actions (email, linkedin, github, resume)
     · terminal commands (executed when focused in the terminal)
 -->
@@ -23,6 +23,9 @@
   } from "@lucide/svelte";
   import { PROFILE, PROJECTS } from "$lib/data/projects";
   import GithubIcon from "./icons/GithubIcon.svelte";
+  import { navigate as go, href } from "$lib/router.svelte";
+  import { NOTES } from "$lib/notes";
+  import { CASE_STUDIES } from "$lib/data/case-studies";
   import LinkedinIcon from "./icons/LinkedinIcon.svelte";
 
   type Item = {
@@ -43,13 +46,8 @@
 
   const navigate = (hash: string) => () => {
     close();
-    if (location.hash === hash) {
-      // Force re-scroll
-      const el = document.querySelector(hash);
-      el?.scrollIntoView({ behavior: "smooth" });
-    } else {
-      location.hash = hash;
-    }
+    if (hash.startsWith("#/")) go(location.pathname + hash);
+    else go(href("/" + hash));
   };
   const openExternal = (url: string) => () => {
     close();
@@ -57,7 +55,7 @@
   };
   const openProject = (slug: string) => () => {
     close();
-    location.hash = `#/p/${slug}`;
+    go(href(`/projects/${slug}`));
   };
   const copyEmail = () => {
     close();
@@ -65,6 +63,33 @@
   };
 
   const baseItems: Item[] = [
+    {
+      id: "nav:work",
+      group: "navigate",
+      label: "Go to selected work",
+      hint: "#work",
+      keywords: "case studies featured portfolio",
+      Icon: FolderTree,
+      run: navigate("#work"),
+    },
+    {
+      id: "nav:services",
+      group: "navigate",
+      label: "Go to services",
+      hint: "#services",
+      keywords: "freelance hire contract work with me",
+      Icon: ArrowUpRight,
+      run: navigate("#services"),
+    },
+    {
+      id: "nav:contact",
+      group: "navigate",
+      label: "Go to contact",
+      hint: "#contact",
+      keywords: "email hire project inquiry",
+      Icon: Mail,
+      run: navigate("#contact"),
+    },
     {
       id: "nav:about",
       group: "navigate",
@@ -142,13 +167,26 @@
     id: `p:${p.slug}`,
     group: "project" as const,
     label: p.title,
-    hint: `${p.language} · view README`,
+    hint: `${p.language} · ${CASE_STUDIES.some((c) => c.slug === p.slug) ? "case study" : "view README"}`,
     keywords: `${p.slug} ${p.description} ${p.tags.join(" ")}`,
     Icon: Eye,
     run: openProject(p.slug),
   }));
 
-  const allItems = [...baseItems, ...projectItems];
+  const noteItems: Item[] = NOTES.map((n) => ({
+    id: `n:${n.slug}`,
+    group: "navigate" as const,
+    label: `Note: ${n.title}`,
+    hint: "notes",
+    keywords: `${n.summary} ${n.tags.join(" ")} blog article`,
+    Icon: Eye,
+    run: () => {
+      close();
+      go(href(`/notes/${n.slug}`));
+    },
+  }));
+
+  const allItems = [...baseItems, ...noteItems, ...projectItems];
 
   // tiny scorer — matches every query char in order, prefers shorter matches
   function score(item: Item, q: string): number {
