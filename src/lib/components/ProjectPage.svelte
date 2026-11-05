@@ -12,6 +12,7 @@
   import GithubIcon from "./icons/GithubIcon.svelte";
   import Readme from "./Readme.svelte";
   import NotFound from "./NotFound.svelte";
+  import Diorama from "./Diorama.svelte";
 
   let { slug }: { slug: string } = $props();
 
@@ -81,6 +82,15 @@
         {/if}
       </div>
     </header>
+
+    {#key project.slug}
+      <figure class="mt-8">
+        <Diorama slug={project.slug} active fallback={project.glyph ?? "▢"} class="aspect-[16/9] w-full border border-border/80 sm:aspect-[21/9]" />
+        <figcaption class="mt-2 font-mono text-[11px] text-muted-foreground/70">
+          {project.title}, as a diorama · three.js · 2px · bayer dither · 16 colours
+        </figcaption>
+      </figure>
+    {/key}
 
     {#if cs}
       <!-- At a glance -->

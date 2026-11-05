@@ -15,8 +15,8 @@
   let hover = $state<HoverInfo | null>(null);
   let failed = $state(false);
   let loaded = $state(false);
-  const hour = new Date().getHours();
-  let night = $state(hour < 6 || hour >= 19);
+  import { mood } from "$lib/scene/mood.svelte";
+  const night = $derived(mood.night);
 
   const LINKS: Record<string, string> = {
     terminal: "/#terminal",
@@ -28,8 +28,8 @@
   }
 
   function toggleNight() {
-    night = !night;
-    handle?.setNight(night);
+    mood.night = !mood.night;
+    handle?.setNight(mood.night);
   }
 
   onMount(() => {
