@@ -1,32 +1,19 @@
 <script lang="ts">
-  import { PROFILE, PROJECTS } from "$lib/data/projects";
+  import { PROFILE } from "$lib/data/projects";
   import { Button } from "$lib/components/ui/button";
   import { Badge } from "$lib/components/ui/badge";
-  import * as Card from "$lib/components/ui/card";
   import { FolderTree, FileDown, Mail, Briefcase } from "@lucide/svelte";
   import { POSITIONING } from "$lib/data/site";
-  import { CASE_STUDIES } from "$lib/data/case-studies";
   import GithubIcon from "./icons/GithubIcon.svelte";
   import LinkedinIcon from "./icons/LinkedinIcon.svelte";
   import AnimatedBackdrop from "./AnimatedBackdrop.svelte";
-
-  const stacks = [
-    { label: "Rust", pct: 40 },
-    { label: "TypeScript", pct: 30 },
-    { label: "Svelte / Vue", pct: 15 },
-    { label: "PHP / Laravel", pct: 10 },
-    { label: "Other", pct: 5 },
-  ];
-
-  const rustCount = PROJECTS.filter((p) => p.language === "Rust").length;
-  const tsCount = PROJECTS.filter((p) => p.language === "TypeScript").length;
-  const caseStudyCount = CASE_STUDIES.length;
+  import IsoScene from "./IsoScene.svelte";
 </script>
 
 <section id="top" class="relative overflow-hidden pt-16 pb-24 sm:pt-24">
   <AnimatedBackdrop />
 
-  <div class="relative grid items-center gap-10 md:grid-cols-[1.4fr_1fr]">
+  <div class="relative grid items-center gap-10 lg:grid-cols-[1fr_1.1fr]">
     <div class="min-w-0">
       <Badge
         variant="outline"
@@ -112,74 +99,6 @@
       </div>
     </div>
 
-    <!-- decorative console card -->
-    <Card.Root
-      class="relative overflow-hidden border-border/80 bg-card/80 py-0 shadow-2xl"
-    >
-      <!-- Data stream dots along the top border -->
-      <div
-        class="pointer-events-none absolute inset-x-0 top-0 h-px overflow-hidden"
-      >
-        <div
-          class="animate-stream absolute top-0 h-px w-24"
-          style="background: linear-gradient(90deg, transparent, var(--color-accent), transparent);"
-        ></div>
-        <div
-          class="animate-stream absolute top-0 h-px w-16"
-          style="background: linear-gradient(90deg, transparent, var(--color-link), transparent); animation-delay: -3s; animation-duration: 9s;"
-        ></div>
-      </div>
-      <div
-        class="flex items-center gap-1.5 border-b border-border/80 px-4 py-2.5"
-      >
-        <span class="h-2.5 w-2.5 rounded-full bg-[#ff5f56]"></span>
-        <span class="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]"></span>
-        <span class="h-2.5 w-2.5 rounded-full bg-[#27c93f]"></span>
-        <span class="ml-2 font-mono text-xs text-muted-foreground/70"
-          >~/portfolio</span
-        >
-      </div>
-      <div class="p-5 font-mono text-sm">
-        <div class="space-y-1 text-muted-foreground">
-          <div><span class="text-primary">$</span> cargo build --release</div>
-          <div class="text-muted-foreground/60">
-            Compiling mini-shell v0.1.0
-          </div>
-          <div class="text-muted-foreground/60">Finished `release` profile</div>
-          <div>
-            <span class="text-primary">$</span> wasm-pack build --target web
-          </div>
-          <div class="text-muted-foreground/60">
-            Your wasm pkg is ready to publish.
-          </div>
-          <div>
-            <span class="text-primary">$</span> portfolio
-            <span class="text-foreground">start</span>
-          </div>
-          <div class="pt-2 text-foreground">
-            → {PROJECTS.length} projects · {rustCount} rust · {tsCount} ts · {caseStudyCount}
-            case studies
-          </div>
-        </div>
-        <div class="mt-4 space-y-2">
-          {#each stacks as s}
-            <div class="flex items-center gap-3 text-xs">
-              <span class="w-24 text-muted-foreground">{s.label}</span>
-              <div
-                class="h-1.5 flex-1 overflow-hidden rounded-full bg-background"
-              >
-                <div
-                  class="h-full bg-gradient-to-r from-primary to-[var(--color-link)]"
-                  style="width: {s.pct}%"
-                ></div>
-              </div>
-              <span class="w-10 text-right text-muted-foreground/60"
-                >{s.pct}%</span
-              >
-            </div>
-          {/each}
-        </div>
-      </div>
-    </Card.Root>
+    <IsoScene />
   </div>
 </section>
